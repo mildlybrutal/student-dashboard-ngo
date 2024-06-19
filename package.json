@@ -1,0 +1,22 @@
+{
+  "name": "student-project",
+  "version": "1.0.0",
+  "description": "Project for a ngo",
+  "main": "App.js",
+  "scripts": {
+    "test": "jest"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/mildlybrutal/student-dashboard-ngo.git"
+  },
+  "author": "Akash",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/mildlybrutal/student-dashboard-ngo/issues"
+  },
+  "homepage": "https://github.com/mildlybrutal/student-dashboard-ngo#readme",
+  "devDependencies": {
+    "parcel": "^2.12.0"
+  }
+}
