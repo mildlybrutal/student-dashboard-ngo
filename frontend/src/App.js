@@ -11,15 +11,19 @@ import mockdata from "./utils/mockdata";
 import HomePage from "./components/Homepage";
 import Footer from "./components/Footer";
 import Donate from "./components/Donate";
+import { StudentProvider } from "./contexts/StudentContext";
+import AdminStudentForm from "./components/AdminStudentForm";
 const AppLayout = () => {
 	return (
-		<div className="flex flex-col min-h-screen">
-			<Header />
-			<main className="flex-grow">
-				<Outlet />
-			</main>
-			<Footer />
-		</div>
+		<StudentProvider>
+			<div className="flex flex-col min-h-screen">
+				<Header />
+				<main className="flex-grow">
+					<Outlet />
+				</main>
+				<Footer />
+			</div>
+		</StudentProvider>
 	);
 };
 
@@ -51,6 +55,10 @@ const appRouter = createBrowserRouter([
 			{
 				path: "/donate",
 				element: <Donate />,
+			},
+			{
+				path: "/upload",
+				element: <AdminStudentForm />,
 			},
 		],
 	},
