@@ -4,8 +4,10 @@
 	"description": "FrontEnd of the project",
 	"scripts": {
 		"start": "npx parcel index.html",
-		"build": " parcel build index.html",
-		"test": "jest"
+		"build": "parcel build index.html --dist-dir build",
+		"test": "jest",
+		"predeploy": "npm run build",
+		"deploy": "gh-pages -d build"
 	},
 	"repository": {
 		"type": "git",
@@ -19,6 +21,7 @@
 	"homepage": "https://github.com/mildlybrutal/student-dashboard-ngo#readme",
 	"devDependencies": {
 		"buffer": "^6.0.3",
+		"gh-pages": "^6.1.1",
 		"parcel": "^2.12.0",
 		"postcss": "^8.4.38",
 		"process": "^0.11.10",
