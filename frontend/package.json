@@ -2,6 +2,7 @@
 	"name": "student-project-frontend",
 	"version": "1.0.0",
 	"description": "FrontEnd of the project",
+	"homepage": "https://mildlybrutal.github.io/student-dashboard-ngo",
 	"scripts": {
 		"start": "npx parcel index.html",
 		"build": "parcel build index.html --dist-dir build",
@@ -18,7 +19,6 @@
 	"bugs": {
 		"url": "https://github.com/mildlybrutal/student-dashboard-ngo/issues"
 	},
-	"homepage": "https://github.com/mildlybrutal/student-dashboard-ngo#readme",
 	"devDependencies": {
 		"buffer": "^6.0.3",
 		"gh-pages": "^6.1.1",
