@@ -5,7 +5,7 @@
 	"main": "App.js",
 	"scripts": {
 		"start": "npx parcel index.html",
-		"build": "npm parcel build index.html",
+		"build": " parcel build index.html",
 		"test": "jest"
 	},
 	"repository": {
