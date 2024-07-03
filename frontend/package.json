@@ -2,7 +2,6 @@
 	"name": "student-project-frontend",
 	"version": "1.0.0",
 	"description": "FrontEnd of the project",
-	"main": "App.js",
 	"scripts": {
 		"start": "npx parcel index.html",
 		"build": " parcel build index.html",
