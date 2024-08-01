@@ -16,17 +16,17 @@ const ImageCarousel = ({ images }) => {
   };
 
   return (
-    <div className="relative rounded-lg overflow-hidden shadow-xl">
+    <div className="relative rounded-lg overflow-hidden shadow-2xl">
       <Slider {...settings}>
         {images.map((image, index) => (
           <div key={index} className="relative">
             <img
               src={image.src}
               alt={image.alt}
-              className="w-full h-[500px] object-cover transform transition-transform duration-300 hover:scale-105"
+              className="w-full h-[600px] object-cover"
             />
-            <div className="absolute inset-0 bg-black bg-opacity-40 flex items-center justify-center">
-              <h2 className="text-white text-3xl font-bold font-heading">
+            <div className="absolute inset-0 bg-gradient-to-t from-black to-transparent flex items-end justify-start p-10">
+              <h2 className="text-white text-4xl font-bold font-heading max-w-lg leading-tight">
                 {image.alt}
               </h2>
             </div>

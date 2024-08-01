@@ -2975,8 +2975,17 @@ var _footerDefault = parcelHelpers.interopDefault(_footer);
 var _donate = require("./components/Donate");
 var _donateDefault = parcelHelpers.interopDefault(_donate);
 var _studentContext = require("./contexts/StudentContext");
-var _adminStudentForm = require("./components/AdminStudentForm");
+var _adminContext = require("./admin/contexts/AdminContext");
+var _adminLogin = require("./admin/components/AdminLogin");
+var _adminLoginDefault = parcelHelpers.interopDefault(_adminLogin);
+var _adminDashboard = require("./admin/components/AdminDashboard");
+var _adminDashboardDefault = parcelHelpers.interopDefault(_adminDashboard);
+var _adminStudentEdit = require("./admin/components/AdminStudentEdit");
+var _adminStudentEditDefault = parcelHelpers.interopDefault(_adminStudentEdit);
+var _adminStudentForm = require("./admin/components/AdminStudentForm");
 var _adminStudentFormDefault = parcelHelpers.interopDefault(_adminStudentForm);
+var _adminStudentList = require("./admin/components/AdminStudentList");
+var _adminStudentListDefault = parcelHelpers.interopDefault(_adminStudentList);
 const AppLayout = ()=>{
     return /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _studentContext.StudentProvider), {
         children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
@@ -2984,102 +2993,172 @@ const AppLayout = ()=>{
             children: [
                 /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _headerDefault.default), {}, void 0, false, {
                     fileName: "src/App.js",
-                    lineNumber: 19,
-                    columnNumber: 5
+                    lineNumber: 24,
+                    columnNumber: 9
                 }, undefined),
                 /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("main", {
                     className: "flex-grow",
                     children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _reactRouterDom.Outlet), {}, void 0, false, {
                         fileName: "src/App.js",
-                        lineNumber: 21,
-                        columnNumber: 6
+                        lineNumber: 26,
+                        columnNumber: 11
                     }, undefined)
                 }, void 0, false, {
                     fileName: "src/App.js",
-                    lineNumber: 20,
-                    columnNumber: 5
+                    lineNumber: 25,
+                    columnNumber: 9
                 }, undefined),
                 /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _footerDefault.default), {}, void 0, false, {
                     fileName: "src/App.js",
-                    lineNumber: 23,
-                    columnNumber: 5
+                    lineNumber: 28,
+                    columnNumber: 9
                 }, undefined)
             ]
         }, void 0, true, {
             fileName: "src/App.js",
-            lineNumber: 18,
-            columnNumber: 4
+            lineNumber: 23,
+            columnNumber: 7
         }, undefined)
     }, void 0, false, {
         fileName: "src/App.js",
-        lineNumber: 17,
-        columnNumber: 3
+        lineNumber: 22,
+        columnNumber: 5
     }, undefined);
 };
 _c = AppLayout;
+const AdminLayout = ()=>{
+    return /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _adminContext.AdminProvider), {
+        children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+            className: "flex flex-col min-h-screen",
+            children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("main", {
+                className: "flex-grow",
+                children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _reactRouterDom.Outlet), {}, void 0, false, {
+                    fileName: "src/App.js",
+                    lineNumber: 39,
+                    columnNumber: 11
+                }, undefined)
+            }, void 0, false, {
+                fileName: "src/App.js",
+                lineNumber: 38,
+                columnNumber: 9
+            }, undefined)
+        }, void 0, false, {
+            fileName: "src/App.js",
+            lineNumber: 37,
+            columnNumber: 7
+        }, undefined)
+    }, void 0, false, {
+        fileName: "src/App.js",
+        lineNumber: 36,
+        columnNumber: 5
+    }, undefined);
+};
+_c1 = AdminLayout;
 const appRouter = (0, _reactRouterDom.createBrowserRouter)([
     {
         path: "/",
         element: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)(AppLayout, {}, void 0, false, {
             fileName: "src/App.js",
-            lineNumber: 32,
-            columnNumber: 12
+            lineNumber: 49,
+            columnNumber: 14
         }, undefined),
         children: [
             {
                 path: "/",
                 element: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _homepageDefault.default), {}, void 0, false, {
                     fileName: "src/App.js",
-                    lineNumber: 36,
-                    columnNumber: 14
+                    lineNumber: 53,
+                    columnNumber: 18
                 }, undefined)
             },
             {
                 path: "/our-students",
                 element: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _bodyDefault.default), {}, void 0, false, {
                     fileName: "src/App.js",
-                    lineNumber: 40,
-                    columnNumber: 14
+                    lineNumber: 57,
+                    columnNumber: 18
                 }, undefined)
             },
             {
                 path: "/about",
                 element: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _aboutDefault.default), {}, void 0, false, {
                     fileName: "src/App.js",
-                    lineNumber: 44,
-                    columnNumber: 14
+                    lineNumber: 61,
+                    columnNumber: 18
                 }, undefined)
             },
             {
                 path: "/contact",
                 element: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _contactDefault.default), {}, void 0, false, {
                     fileName: "src/App.js",
-                    lineNumber: 48,
-                    columnNumber: 14
+                    lineNumber: 65,
+                    columnNumber: 18
                 }, undefined)
             },
             {
                 path: "/student/:id",
                 element: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _studentDetailsDefault.default), {}, void 0, false, {
                     fileName: "src/App.js",
-                    lineNumber: 52,
-                    columnNumber: 14
+                    lineNumber: 69,
+                    columnNumber: 18
                 }, undefined)
             },
             {
                 path: "/donate",
                 element: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _donateDefault.default), {}, void 0, false, {
                     fileName: "src/App.js",
-                    lineNumber: 56,
-                    columnNumber: 14
+                    lineNumber: 73,
+                    columnNumber: 18
+                }, undefined)
+            }
+        ]
+    },
+    {
+        path: "/admin",
+        element: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)(AdminLayout, {}, void 0, false, {
+            fileName: "src/App.js",
+            lineNumber: 79,
+            columnNumber: 14
+        }, undefined),
+        children: [
+            {
+                path: "login",
+                element: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _adminLoginDefault.default), {}, void 0, false, {
+                    fileName: "src/App.js",
+                    lineNumber: 83,
+                    columnNumber: 18
                 }, undefined)
             },
             {
-                path: "/add-student",
+                path: "dashboard",
+                element: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _adminDashboardDefault.default), {}, void 0, false, {
+                    fileName: "src/App.js",
+                    lineNumber: 87,
+                    columnNumber: 18
+                }, undefined)
+            },
+            {
+                path: "students",
+                element: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _adminStudentListDefault.default), {}, void 0, false, {
+                    fileName: "src/App.js",
+                    lineNumber: 91,
+                    columnNumber: 18
+                }, undefined)
+            },
+            {
+                path: "student/add",
                 element: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _adminStudentFormDefault.default), {}, void 0, false, {
                     fileName: "src/App.js",
-                    lineNumber: 60,
-                    columnNumber: 14
+                    lineNumber: 95,
+                    columnNumber: 18
+                }, undefined)
+            },
+            {
+                path: "student/:id/edit",
+                element: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _adminStudentEditDefault.default), {}, void 0, false, {
+                    fileName: "src/App.js",
+                    lineNumber: 99,
+                    columnNumber: 18
                 }, undefined)
             }
         ]
@@ -3090,18 +3169,19 @@ root.render(/*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _reactRouterDom.RouterP
     router: appRouter
 }, void 0, false, {
     fileName: "src/App.js",
-    lineNumber: 67,
+    lineNumber: 106,
     columnNumber: 13
 }, undefined));
-var _c;
+var _c, _c1;
 $RefreshReg$(_c, "AppLayout");
+$RefreshReg$(_c1, "AdminLayout");
 
   $parcel$ReactRefreshHelpers$f00f.postlude(module);
 } finally {
   window.$RefreshReg$ = prevRefreshReg;
   window.$RefreshSig$ = prevRefreshSig;
 }
-},{"react/jsx-dev-runtime":"iTorj","react":"21dqq","react-dom/client":"lOjBx","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"km3Ru","./components/Header":"hsJbF","./components/Body":"8yaV8","react-router-dom":"9xmpe","./components/About":"9R1Eu","./components/Contact":"cgAOG","./components/StudentDetails":"aukjb","./components/Homepage":"f7Rc0","./components/Footer":"8pPOA","./components/Donate":"kOUbL","./components/AdminStudentForm":"291yY","./contexts/StudentContext":"76LUH"}],"iTorj":[function(require,module,exports) {
+},{"react/jsx-dev-runtime":"iTorj","react":"21dqq","react-dom/client":"lOjBx","./components/Header":"hsJbF","./components/Body":"8yaV8","./components/About":"9R1Eu","./components/Contact":"cgAOG","react-router-dom":"9xmpe","./components/StudentDetails":"aukjb","./components/Homepage":"f7Rc0","./components/Footer":"8pPOA","./components/Donate":"kOUbL","./contexts/StudentContext":"76LUH","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"km3Ru","./admin/contexts/AdminContext":"hL10n","./admin/components/AdminLogin":"jTg1i","./admin/components/AdminDashboard":"fWUgN","./admin/components/AdminStudentEdit":"5J0LL","./admin/components/AdminStudentForm":"8k8BT","./admin/components/AdminStudentList":"bLOF7"}],"iTorj":[function(require,module,exports) {
 "use strict";
 module.exports = require("ee51401569654d91");
 
@@ -27344,175 +27424,7 @@ module.exports = require("ef03b89c8fe2794e");
     /* global __REACT_DEVTOOLS_GLOBAL_HOOK__ */ if (typeof __REACT_DEVTOOLS_GLOBAL_HOOK__ !== "undefined" && typeof __REACT_DEVTOOLS_GLOBAL_HOOK__.registerInternalModuleStop === "function") __REACT_DEVTOOLS_GLOBAL_HOOK__.registerInternalModuleStop(new Error());
 })();
 
-},{}],"gkKU3":[function(require,module,exports) {
-exports.interopDefault = function(a) {
-    return a && a.__esModule ? a : {
-        default: a
-    };
-};
-exports.defineInteropFlag = function(a) {
-    Object.defineProperty(a, "__esModule", {
-        value: true
-    });
-};
-exports.exportAll = function(source, dest) {
-    Object.keys(source).forEach(function(key) {
-        if (key === "default" || key === "__esModule" || Object.prototype.hasOwnProperty.call(dest, key)) return;
-        Object.defineProperty(dest, key, {
-            enumerable: true,
-            get: function() {
-                return source[key];
-            }
-        });
-    });
-    return dest;
-};
-exports.export = function(dest, destName, get) {
-    Object.defineProperty(dest, destName, {
-        enumerable: true,
-        get: get
-    });
-};
-
-},{}],"km3Ru":[function(require,module,exports) {
-"use strict";
-var Refresh = require("7422ead32dcc1e6b");
-function debounce(func, delay) {
-    {
-        let timeout = undefined;
-        let lastTime = 0;
-        return function(args) {
-            // Call immediately if last call was more than the delay ago.
-            // Otherwise, set a timeout. This means the first call is fast
-            // (for the common case of a single update), and subsequent updates
-            // are batched.
-            let now = Date.now();
-            if (now - lastTime > delay) {
-                lastTime = now;
-                func.call(null, args);
-            } else {
-                clearTimeout(timeout);
-                timeout = setTimeout(function() {
-                    timeout = undefined;
-                    lastTime = Date.now();
-                    func.call(null, args);
-                }, delay);
-            }
-        };
-    }
-}
-var enqueueUpdate = debounce(function() {
-    Refresh.performReactRefresh();
-}, 30);
-// Everthing below is either adapted or copied from
-// https://github.com/facebook/metro/blob/61de16bd1edd7e738dd0311c89555a644023ab2d/packages/metro/src/lib/polyfills/require.js
-// MIT License - Copyright (c) Facebook, Inc. and its affiliates.
-module.exports.prelude = function(module1) {
-    window.$RefreshReg$ = function(type, id) {
-        Refresh.register(type, module1.id + " " + id);
-    };
-    window.$RefreshSig$ = Refresh.createSignatureFunctionForTransform;
-};
-module.exports.postlude = function(module1) {
-    if (isReactRefreshBoundary(module1.exports)) {
-        registerExportsForReactRefresh(module1);
-        if (module1.hot) {
-            module1.hot.dispose(function(data) {
-                if (Refresh.hasUnrecoverableErrors()) window.location.reload();
-                data.prevExports = module1.exports;
-            });
-            module1.hot.accept(function(getParents) {
-                var prevExports = module1.hot.data.prevExports;
-                var nextExports = module1.exports;
-                // Since we just executed the code for it, it's possible
-                // that the new exports make it ineligible for being a boundary.
-                var isNoLongerABoundary = !isReactRefreshBoundary(nextExports);
-                // It can also become ineligible if its exports are incompatible
-                // with the previous exports.
-                // For example, if you add/remove/change exports, we'll want
-                // to re-execute the importing modules, and force those components
-                // to re-render. Similarly, if you convert a class component
-                // to a function, we want to invalidate the boundary.
-                var didInvalidate = shouldInvalidateReactRefreshBoundary(prevExports, nextExports);
-                if (isNoLongerABoundary || didInvalidate) {
-                    // We'll be conservative. The only case in which we won't do a full
-                    // reload is if all parent modules are also refresh boundaries.
-                    // In that case we'll add them to the current queue.
-                    var parents = getParents();
-                    if (parents.length === 0) {
-                        // Looks like we bubbled to the root. Can't recover from that.
-                        window.location.reload();
-                        return;
-                    }
-                    return parents;
-                }
-                enqueueUpdate();
-            });
-        }
-    }
-};
-function isReactRefreshBoundary(exports) {
-    if (Refresh.isLikelyComponentType(exports)) return true;
-    if (exports == null || typeof exports !== "object") // Exit if we can't iterate over exports.
-    return false;
-    var hasExports = false;
-    var areAllExportsComponents = true;
-    let isESM = "__esModule" in exports;
-    for(var key in exports){
-        hasExports = true;
-        if (key === "__esModule") continue;
-        var desc = Object.getOwnPropertyDescriptor(exports, key);
-        if (desc && desc.get && !isESM) // Don't invoke getters for CJS as they may have side effects.
-        return false;
-        var exportValue = exports[key];
-        if (!Refresh.isLikelyComponentType(exportValue)) areAllExportsComponents = false;
-    }
-    return hasExports && areAllExportsComponents;
-}
-function shouldInvalidateReactRefreshBoundary(prevExports, nextExports) {
-    var prevSignature = getRefreshBoundarySignature(prevExports);
-    var nextSignature = getRefreshBoundarySignature(nextExports);
-    if (prevSignature.length !== nextSignature.length) return true;
-    for(var i = 0; i < nextSignature.length; i++){
-        if (prevSignature[i] !== nextSignature[i]) return true;
-    }
-    return false;
-}
-// When this signature changes, it's unsafe to stop at this refresh boundary.
-function getRefreshBoundarySignature(exports) {
-    var signature = [];
-    signature.push(Refresh.getFamilyByType(exports));
-    if (exports == null || typeof exports !== "object") // Exit if we can't iterate over exports.
-    // (This is important for legacy environments.)
-    return signature;
-    let isESM = "__esModule" in exports;
-    for(var key in exports){
-        if (key === "__esModule") continue;
-        var desc = Object.getOwnPropertyDescriptor(exports, key);
-        if (desc && desc.get && !isESM) continue;
-        var exportValue = exports[key];
-        signature.push(key);
-        signature.push(Refresh.getFamilyByType(exportValue));
-    }
-    return signature;
-}
-function registerExportsForReactRefresh(module1) {
-    var exports = module1.exports, id = module1.id;
-    Refresh.register(exports, id + " %exports%");
-    if (exports == null || typeof exports !== "object") // Exit if we can't iterate over exports.
-    // (This is important for legacy environments.)
-    return;
-    let isESM = "__esModule" in exports;
-    for(var key in exports){
-        var desc = Object.getOwnPropertyDescriptor(exports, key);
-        if (desc && desc.get && !isESM) continue;
-        var exportValue = exports[key];
-        var typeID = id + " %exports% " + key;
-        Refresh.register(exportValue, typeID);
-    }
-}
-
-},{"7422ead32dcc1e6b":"786KC"}],"hsJbF":[function(require,module,exports) {
+},{}],"hsJbF":[function(require,module,exports) {
 var $parcel$ReactRefreshHelpers$bfed = require("@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js");
 var prevRefreshReg = window.$RefreshReg$;
 var prevRefreshSig = window.$RefreshSig$;
@@ -27708,15 +27620,45 @@ $RefreshReg$(_c1, "NavLink");
   window.$RefreshReg$ = prevRefreshReg;
   window.$RefreshSig$ = prevRefreshSig;
 }
-},{"react/jsx-dev-runtime":"iTorj","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"km3Ru","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3","../utils/constants":"hB8jg","react-router-dom":"9xmpe","react":"21dqq"}],"hB8jg":[function(require,module,exports) {
+},{"react/jsx-dev-runtime":"iTorj","react":"21dqq","../utils/constants":"hB8jg","react-router-dom":"9xmpe","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"km3Ru"}],"hB8jg":[function(require,module,exports) {
 var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
 parcelHelpers.defineInteropFlag(exports);
 parcelHelpers.export(exports, "LOGO_URL", ()=>LOGO_URL);
 LOGO_URL = "https://www.designmantic.com/logo-images/166751.png?company=Company%20Name&keyword=ngo&slogan=&verify=1";
 
-},{"@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3"}],"9xmpe":[function(require,module,exports) {
+},{"@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3"}],"gkKU3":[function(require,module,exports) {
+exports.interopDefault = function(a) {
+    return a && a.__esModule ? a : {
+        default: a
+    };
+};
+exports.defineInteropFlag = function(a) {
+    Object.defineProperty(a, "__esModule", {
+        value: true
+    });
+};
+exports.exportAll = function(source, dest) {
+    Object.keys(source).forEach(function(key) {
+        if (key === "default" || key === "__esModule" || Object.prototype.hasOwnProperty.call(dest, key)) return;
+        Object.defineProperty(dest, key, {
+            enumerable: true,
+            get: function() {
+                return source[key];
+            }
+        });
+    });
+    return dest;
+};
+exports.export = function(dest, destName, get) {
+    Object.defineProperty(dest, destName, {
+        enumerable: true,
+        get: get
+    });
+};
+
+},{}],"9xmpe":[function(require,module,exports) {
 /**
- * React Router DOM v6.23.1
+ * React Router DOM v6.25.1
  *
  * Copyright (c) Remix Software Inc.
  *
@@ -28044,6 +27986,7 @@ function createBrowserRouter(routes, opts) {
         routes,
         mapRouteProperties: (0, _reactRouter.UNSAFE_mapRouteProperties),
         unstable_dataStrategy: opts == null ? void 0 : opts.unstable_dataStrategy,
+        unstable_patchRoutesOnMiss: opts == null ? void 0 : opts.unstable_patchRoutesOnMiss,
         window: opts == null ? void 0 : opts.window
     }).initialize();
 }
@@ -28060,6 +28003,7 @@ function createHashRouter(routes, opts) {
         routes,
         mapRouteProperties: (0, _reactRouter.UNSAFE_mapRouteProperties),
         unstable_dataStrategy: opts == null ? void 0 : opts.unstable_dataStrategy,
+        unstable_patchRoutesOnMiss: opts == null ? void 0 : opts.unstable_patchRoutesOnMiss,
         window: opts == null ? void 0 : opts.window
     }).initialize();
 }
@@ -28365,6 +28309,11 @@ class Deferred {
         navigator,
         basename
     ]);
+    let routerFuture = _react.useMemo(()=>({
+            v7_relativeSplatPath: router.future.v7_relativeSplatPath
+        }), [
+        router.future.v7_relativeSplatPath
+    ]);
     // The fragment and {null} here are important!  We need them to keep React 18's
     // useId happy when we are server-rendering since we may have a <script> here
     // containing the hydrated server-side staticContext (from StaticRouterProvider).
@@ -28384,15 +28333,15 @@ class Deferred {
         location: state.location,
         navigationType: state.historyAction,
         navigator: navigator,
-        future: {
-            v7_relativeSplatPath: router.future.v7_relativeSplatPath
-        }
-    }, state.initialized || router.future.v7_partialHydration ? /*#__PURE__*/ _react.createElement(DataRoutes, {
+        future: routerFuture
+    }, state.initialized || router.future.v7_partialHydration ? /*#__PURE__*/ _react.createElement(MemoizedDataRoutes, {
         routes: router.routes,
         future: router.future,
         state: state
     }) : fallbackElement))))), null);
 }
+// Memoize to avoid re-renders when updating `ViewTransitionContext`
+const MemoizedDataRoutes = /*#__PURE__*/ _react.memo(DataRoutes);
 function DataRoutes(_ref3) {
     let { routes, future, state } = _ref3;
     return (0, _reactRouter.UNSAFE_useRoutesImpl)(routes, undefined, state, future);
@@ -28733,7 +28682,7 @@ function useDataRouterState(hookName) {
  * A convenient wrapper for reading and writing search parameters via the
  * URLSearchParams interface.
  */ function useSearchParams(defaultInit) {
-    (0, _router.UNSAFE_warning)(typeof URLSearchParams !== "undefined", "You cannot use the `useSearchParams` hook in a browser that does not support the URLSearchParams API. If you need to support Internet Explorer 11, we recommend you load a polyfill such as https://github.com/ungap/url-search-params\n\nIf you're unsure how to load polyfills, we recommend you check out https://polyfill.io/v3/ which provides some recommendations about how to load polyfills only for users that need them, instead of for every user.");
+    (0, _router.UNSAFE_warning)(typeof URLSearchParams !== "undefined", "You cannot use the `useSearchParams` hook in a browser that does not support the URLSearchParams API. If you need to support Internet Explorer 11, we recommend you load a polyfill such as https://github.com/ungap/url-search-params.");
     let defaultSearchParamsRef = _react.useRef(createSearchParams(defaultInit));
     let hasSetSearchParamsRef = _react.useRef(false);
     let location = (0, _reactRouter.useLocation)();
@@ -29143,7 +29092,7 @@ let savedScrollPositions = {};
 
 },{"react":"21dqq","react-dom":"j6uA9","react-router":"dbWyW","@remix-run/router":"5ncDG","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3"}],"dbWyW":[function(require,module,exports) {
 /**
- * React Router v6.23.1
+ * React Router v6.25.1
  *
  * Copyright (c) Remix Software Inc.
  *
@@ -29314,7 +29263,7 @@ RouteErrorContext.displayName = "RouteError";
     !useInRouterContext() && (0, _router.UNSAFE_invariant)(false, // router loaded. We can help them understand how to avoid that.
     "useMatch() may be used only in the context of a <Router> component.");
     let { pathname } = useLocation();
-    return _react.useMemo(()=>(0, _router.matchPath)(pattern, pathname), [
+    return _react.useMemo(()=>(0, _router.matchPath)(pattern, (0, _router.UNSAFE_decodePath)(pathname)), [
         pathname,
         pattern
     ]);
@@ -30404,13 +30353,14 @@ function createMemoryRouter(routes, opts) {
         hydrationData: opts == null ? void 0 : opts.hydrationData,
         routes,
         mapRouteProperties,
-        unstable_dataStrategy: opts == null ? void 0 : opts.unstable_dataStrategy
+        unstable_dataStrategy: opts == null ? void 0 : opts.unstable_dataStrategy,
+        unstable_patchRoutesOnMiss: opts == null ? void 0 : opts.unstable_patchRoutesOnMiss
     }).initialize();
 }
 
 },{"react":"21dqq","@remix-run/router":"5ncDG","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3"}],"5ncDG":[function(require,module,exports) {
 /**
- * @remix-run/router v1.16.1
+ * @remix-run/router v1.18.0
  *
  * Copyright (c) Remix Software Inc.
  *
@@ -30431,6 +30381,7 @@ parcelHelpers.export(exports, "UNSAFE_DeferredData", ()=>DeferredData);
 parcelHelpers.export(exports, "UNSAFE_ErrorResponseImpl", ()=>ErrorResponseImpl);
 parcelHelpers.export(exports, "UNSAFE_convertRouteMatchToUiMatch", ()=>convertRouteMatchToUiMatch);
 parcelHelpers.export(exports, "UNSAFE_convertRoutesToDataRoutes", ()=>convertRoutesToDataRoutes);
+parcelHelpers.export(exports, "UNSAFE_decodePath", ()=>decodePath);
 parcelHelpers.export(exports, "UNSAFE_getResolveToMatches", ()=>getResolveToMatches);
 parcelHelpers.export(exports, "UNSAFE_invariant", ()=>invariant);
 parcelHelpers.export(exports, "UNSAFE_warning", ()=>warning);
@@ -30870,7 +30821,7 @@ function convertRoutesToDataRoutes(routes, mapRouteProperties, parentPath, manif
     return routes.map((route, index)=>{
         let treePath = [
             ...parentPath,
-            index
+            String(index)
         ];
         let id = typeof route.id === "string" ? route.id : treePath.join("-");
         invariant(route.index !== true || !route.children, "Cannot specify children on an index route");
@@ -30898,6 +30849,9 @@ function convertRoutesToDataRoutes(routes, mapRouteProperties, parentPath, manif
  * @see https://reactrouter.com/utils/match-routes
  */ function matchRoutes(routes, locationArg, basename) {
     if (basename === void 0) basename = "/";
+    return matchRoutesImpl(routes, locationArg, basename, false);
+}
+function matchRoutesImpl(routes, locationArg, basename, allowPartial) {
     let location = typeof locationArg === "string" ? parsePath(locationArg) : locationArg;
     let pathname = stripBasename(location.pathname || "/", basename);
     if (pathname == null) return null;
@@ -30912,7 +30866,7 @@ function convertRoutesToDataRoutes(routes, mapRouteProperties, parentPath, manif
         // should be a safe operation.  This avoids needing matchRoutes to be
         // history-aware.
         let decoded = decodePath(pathname);
-        matches = matchRouteBranch(branches[i], decoded);
+        matches = matchRouteBranch(branches[i], decoded, allowPartial);
     }
     return matches;
 }
@@ -31047,7 +31001,8 @@ function compareIndexes(a, b) {
     // so they sort equally.
     0;
 }
-function matchRouteBranch(branch, pathname) {
+function matchRouteBranch(branch, pathname, allowPartial) {
+    if (allowPartial === void 0) allowPartial = false;
     let { routesMeta } = branch;
     let matchedParams = {};
     let matchedPathname = "/";
@@ -31061,9 +31016,14 @@ function matchRouteBranch(branch, pathname) {
             caseSensitive: meta.caseSensitive,
             end
         }, remainingPathname);
+        let route = meta.route;
+        if (!match && end && allowPartial && !routesMeta[routesMeta.length - 1].route.index) match = matchPath({
+            path: meta.relativePath,
+            caseSensitive: meta.caseSensitive,
+            end: false
+        }, remainingPathname);
         if (!match) return null;
         Object.assign(matchedParams, match.params);
-        let route = meta.route;
         matches.push({
             // TODO: Can this as be avoided?
             params: matchedParams,
@@ -31274,7 +31234,7 @@ function getResolveToMatches(matches, v7_relativeSplatPath) {
     // When v7_relativeSplatPath is enabled, use the full pathname for the leaf
     // match so we include splat values for "." links.  See:
     // https://github.com/remix-run/react-router/issues/11052#issuecomment-1836589329
-    if (v7_relativeSplatPath) return pathMatches.map((match, idx)=>idx === matches.length - 1 ? match.pathname : match.pathnameBase);
+    if (v7_relativeSplatPath) return pathMatches.map((match, idx)=>idx === pathMatches.length - 1 ? match.pathname : match.pathnameBase);
     return pathMatches.map((match)=>match.pathnameBase);
 }
 /**
@@ -31624,6 +31584,7 @@ const TRANSITIONS_STORAGE_KEY = "remix-router-transitions";
     let inFlightDataRoutes;
     let basename = init.basename || "/";
     let dataStrategyImpl = init.unstable_dataStrategy || defaultDataStrategy;
+    let patchRoutesOnMissImpl = init.unstable_patchRoutesOnMiss;
     // Config driven behavior flags
     let future = _extends({
         v7_fetcherPersist: false,
@@ -31631,7 +31592,7 @@ const TRANSITIONS_STORAGE_KEY = "remix-router-transitions";
         v7_partialHydration: false,
         v7_prependBasename: false,
         v7_relativeSplatPath: false,
-        unstable_skipActionErrorRevalidation: false
+        v7_skipActionErrorRevalidation: false
     }, init.future);
     // Cleanup function for history
     let unlistenHistory = null;
@@ -31652,7 +31613,7 @@ const TRANSITIONS_STORAGE_KEY = "remix-router-transitions";
     let initialScrollRestored = init.hydrationData != null;
     let initialMatches = matchRoutes(dataRoutes, init.history.location, basename);
     let initialErrors = null;
-    if (initialMatches == null) {
+    if (initialMatches == null && !patchRoutesOnMissImpl) {
         // If we do not match a user-provided-route, fall back to the root
         // to allow the error boundary to take over
         let error = getInternalRouterError(404, {
@@ -31664,13 +31625,25 @@ const TRANSITIONS_STORAGE_KEY = "remix-router-transitions";
             [route.id]: error
         };
     }
+    // In SPA apps, if the user provided a patchRoutesOnMiss implementation and
+    // our initial match is a splat route, clear them out so we run through lazy
+    // discovery on hydration in case there's a more accurate lazy route match.
+    // In SSR apps (with `hydrationData`), we expect that the server will send
+    // up the proper matched routes so we don't want to run lazy discovery on
+    // initial hydration and want to hydrate into the splat route.
+    if (initialMatches && patchRoutesOnMissImpl && !init.hydrationData) {
+        let fogOfWar = checkFogOfWar(initialMatches, dataRoutes, init.history.location.pathname);
+        if (fogOfWar.active) initialMatches = null;
+    }
     let initialized;
-    let hasLazyRoutes = initialMatches.some((m)=>m.route.lazy);
-    let hasLoaders = initialMatches.some((m)=>m.route.loader);
-    if (hasLazyRoutes) // All initialMatches need to be loaded before we're ready.  If we have lazy
+    if (!initialMatches) {
+        // We need to run patchRoutesOnMiss in initialize()
+        initialized = false;
+        initialMatches = [];
+    } else if (initialMatches.some((m)=>m.route.lazy)) // All initialMatches need to be loaded before we're ready.  If we have lazy
     // functions around still then we'll need to run them in initialize()
     initialized = false;
-    else if (!hasLoaders) // If we've got no loaders to run, then we're good to go
+    else if (!initialMatches.some((m)=>m.route.loader)) // If we've got no loaders to run, then we're good to go
     initialized = true;
     else if (future.v7_partialHydration) {
         // If partial hydration is enabled, we're initialized so long as we were
@@ -31766,6 +31739,9 @@ const TRANSITIONS_STORAGE_KEY = "remix-router-transitions";
     // Store blocker functions in a separate Map outside of router state since
     // we don't need to update UI state if they change
     let blockerFunctions = new Map();
+    // Map of pending patchRoutesOnMiss() promises (keyed by path/matches) so
+    // that we only kick them off once for a given combo
+    let pendingPatchRoutes = new Map();
     // Flag to ignore the next history update, so we can revert the URL change on
     // a POP navigation that was blocked by the user without touching router state
     let ignoreNextHistoryUpdate = false;
@@ -31919,6 +31895,7 @@ const TRANSITIONS_STORAGE_KEY = "remix-router-transitions";
         // Always respect the user flag.  Otherwise don't reset on mutation
         // submission navigations unless they redirect
         let preventScrollReset = pendingPreventScrollReset === true || state.navigation.formMethod != null && isMutationMethod(state.navigation.formMethod) && ((_location$state2 = location.state) == null ? void 0 : _location$state2._isRedirect) !== true;
+        // Commit any in-flight routes at the end of the HMR revalidation "navigation"
         if (inFlightDataRoutes) {
             dataRoutes = inFlightDataRoutes;
             inFlightDataRoutes = undefined;
@@ -32097,14 +32074,11 @@ const TRANSITIONS_STORAGE_KEY = "remix-router-transitions";
         let loadingNavigation = opts && opts.overrideNavigation;
         let matches = matchRoutes(routesToUse, location, basename);
         let flushSync = (opts && opts.flushSync) === true;
+        let fogOfWar = checkFogOfWar(matches, routesToUse, location.pathname);
+        if (fogOfWar.active && fogOfWar.matches) matches = fogOfWar.matches;
         // Short circuit with a 404 on the root error boundary if we match nothing
         if (!matches) {
-            let error = getInternalRouterError(404, {
-                pathname: location.pathname
-            });
-            let { matches: notFoundMatches, route } = getShortCircuitMatches(routesToUse);
-            // Cancel all pending deferred on 404s since we don't keep any routes
-            cancelActiveDeferreds();
+            let { error, notFoundMatches, route } = handleNavigational404(location.pathname);
             completeNavigation(location, {
                 matches: notFoundMatches,
                 loaderData: {},
@@ -32147,26 +32121,45 @@ const TRANSITIONS_STORAGE_KEY = "remix-router-transitions";
         ];
         else if (opts && opts.submission && isMutationMethod(opts.submission.formMethod)) {
             // Call action if we received an action submission
-            let actionResult = await handleAction(request, location, opts.submission, matches, {
+            let actionResult = await handleAction(request, location, opts.submission, matches, fogOfWar.active, {
                 replace: opts.replace,
                 flushSync
             });
             if (actionResult.shortCircuited) return;
+            // If we received a 404 from handleAction, it's because we couldn't lazily
+            // discover the destination route so we don't want to call loaders
+            if (actionResult.pendingActionResult) {
+                let [routeId, result] = actionResult.pendingActionResult;
+                if (isErrorResult(result) && isRouteErrorResponse(result.error) && result.error.status === 404) {
+                    pendingNavigationController = null;
+                    completeNavigation(location, {
+                        matches: actionResult.matches,
+                        loaderData: {},
+                        errors: {
+                            [routeId]: result.error
+                        }
+                    });
+                    return;
+                }
+            }
+            matches = actionResult.matches || matches;
             pendingActionResult = actionResult.pendingActionResult;
             loadingNavigation = getLoadingNavigation(location, opts.submission);
             flushSync = false;
+            // No need to do fog of war matching again on loader execution
+            fogOfWar.active = false;
             // Create a GET request for the loaders
             request = createClientSideRequest(init.history, request.url, request.signal);
         }
         // Call loaders
-        let { shortCircuited, loaderData, errors } = await handleLoaders(request, location, matches, loadingNavigation, opts && opts.submission, opts && opts.fetcherSubmission, opts && opts.replace, opts && opts.initialHydration === true, flushSync, pendingActionResult);
+        let { shortCircuited, matches: updatedMatches, loaderData, errors } = await handleLoaders(request, location, matches, fogOfWar.active, loadingNavigation, opts && opts.submission, opts && opts.fetcherSubmission, opts && opts.replace, opts && opts.initialHydration === true, flushSync, pendingActionResult);
         if (shortCircuited) return;
         // Clean up now that the action/loaders have completed.  Don't clean up if
         // we short circuited because pendingNavigationController will have already
         // been assigned to a new controller for the next navigation
         pendingNavigationController = null;
         completeNavigation(location, _extends({
-            matches
+            matches: updatedMatches || matches
         }, getActionDataForCommit(pendingActionResult), {
             loaderData,
             errors
@@ -32174,7 +32167,7 @@ const TRANSITIONS_STORAGE_KEY = "remix-router-transitions";
     }
     // Call the action matched by the leaf route for this navigation and handle
     // redirects/errors
-    async function handleAction(request, location, submission, matches, opts) {
+    async function handleAction(request, location, submission, matches, isFogOfWar, opts) {
         if (opts === void 0) opts = {};
         interruptActiveLoads();
         // Put us in a submitting state
@@ -32184,6 +32177,37 @@ const TRANSITIONS_STORAGE_KEY = "remix-router-transitions";
         }, {
             flushSync: opts.flushSync === true
         });
+        if (isFogOfWar) {
+            let discoverResult = await discoverRoutes(matches, location.pathname, request.signal);
+            if (discoverResult.type === "aborted") return {
+                shortCircuited: true
+            };
+            else if (discoverResult.type === "error") {
+                let { boundaryId, error } = handleDiscoverRouteError(location.pathname, discoverResult);
+                return {
+                    matches: discoverResult.partialMatches,
+                    pendingActionResult: [
+                        boundaryId,
+                        {
+                            type: ResultType.error,
+                            error
+                        }
+                    ]
+                };
+            } else if (!discoverResult.matches) {
+                let { notFoundMatches, error, route } = handleNavigational404(location.pathname);
+                return {
+                    matches: notFoundMatches,
+                    pendingActionResult: [
+                        route.id,
+                        {
+                            type: ResultType.error,
+                            error
+                        }
+                    ]
+                };
+            } else matches = discoverResult.matches;
+        }
         // Call our action and get the result
         let result;
         let actionMatch = getTargetMatch(matches, location);
@@ -32229,12 +32253,14 @@ const TRANSITIONS_STORAGE_KEY = "remix-router-transitions";
             // Store off the pending error - we use it to determine which loaders
             // to call and will commit it when we complete the navigation
             let boundaryMatch = findNearestBoundary(matches, actionMatch.route.id);
-            // By default, all submissions are REPLACE navigations, but if the
-            // action threw an error that'll be rendered in an errorElement, we fall
-            // back to PUSH so that the user can use the back button to get back to
-            // the pre-submission form location to try again
+            // By default, all submissions to the current location are REPLACE
+            // navigations, but if the action threw an error that'll be rendered in
+            // an errorElement, we fall back to PUSH so that the user can use the
+            // back button to get back to the pre-submission form location to try
+            // again
             if ((opts && opts.replace) !== true) pendingAction = Action.Push;
             return {
+                matches,
                 pendingActionResult: [
                     boundaryMatch.route.id,
                     result
@@ -32242,6 +32268,7 @@ const TRANSITIONS_STORAGE_KEY = "remix-router-transitions";
             };
         }
         return {
+            matches,
             pendingActionResult: [
                 actionMatch.route.id,
                 result
@@ -32250,14 +32277,61 @@ const TRANSITIONS_STORAGE_KEY = "remix-router-transitions";
     }
     // Call all applicable loaders for the given matches, handling redirects,
     // errors, etc.
-    async function handleLoaders(request, location, matches, overrideNavigation, submission, fetcherSubmission, replace, initialHydration, flushSync, pendingActionResult) {
+    async function handleLoaders(request, location, matches, isFogOfWar, overrideNavigation, submission, fetcherSubmission, replace, initialHydration, flushSync, pendingActionResult) {
         // Figure out the right navigation we want to use for data loading
         let loadingNavigation = overrideNavigation || getLoadingNavigation(location, submission);
         // If this was a redirect from an action we don't have a "submission" but
         // we have it on the loading navigation so use that if available
         let activeSubmission = submission || fetcherSubmission || getSubmissionFromNavigation(loadingNavigation);
+        // If this is an uninterrupted revalidation, we remain in our current idle
+        // state.  If not, we need to switch to our loading state and load data,
+        // preserving any new action data or existing action data (in the case of
+        // a revalidation interrupting an actionReload)
+        // If we have partialHydration enabled, then don't update the state for the
+        // initial data load since it's not a "navigation"
+        let shouldUpdateNavigationState = !isUninterruptedRevalidation && (!future.v7_partialHydration || !initialHydration);
+        // When fog of war is enabled, we enter our `loading` state earlier so we
+        // can discover new routes during the `loading` state.  We skip this if
+        // we've already run actions since we would have done our matching already.
+        // If the children() function threw then, we want to proceed with the
+        // partial matches it discovered.
+        if (isFogOfWar) {
+            if (shouldUpdateNavigationState) {
+                let actionData = getUpdatedActionData(pendingActionResult);
+                updateState(_extends({
+                    navigation: loadingNavigation
+                }, actionData !== undefined ? {
+                    actionData
+                } : {}), {
+                    flushSync
+                });
+            }
+            let discoverResult = await discoverRoutes(matches, location.pathname, request.signal);
+            if (discoverResult.type === "aborted") return {
+                shortCircuited: true
+            };
+            else if (discoverResult.type === "error") {
+                let { boundaryId, error } = handleDiscoverRouteError(location.pathname, discoverResult);
+                return {
+                    matches: discoverResult.partialMatches,
+                    loaderData: {},
+                    errors: {
+                        [boundaryId]: error
+                    }
+                };
+            } else if (!discoverResult.matches) {
+                let { error, notFoundMatches, route } = handleNavigational404(location.pathname);
+                return {
+                    matches: notFoundMatches,
+                    loaderData: {},
+                    errors: {
+                        [route.id]: error
+                    }
+                };
+            } else matches = discoverResult.matches;
+        }
         let routesToUse = inFlightDataRoutes || dataRoutes;
-        let [matchesToLoad, revalidatingFetchers] = getMatchesToLoad(init.history, state, matches, activeSubmission, location, future.v7_partialHydration && initialHydration === true, future.unstable_skipActionErrorRevalidation, isRevalidationRequired, cancelledDeferredRoutes, cancelledFetcherLoads, deletedFetchers, fetchLoadMatches, fetchRedirectIds, routesToUse, basename, pendingActionResult);
+        let [matchesToLoad, revalidatingFetchers] = getMatchesToLoad(init.history, state, matches, activeSubmission, location, future.v7_partialHydration && initialHydration === true, future.v7_skipActionErrorRevalidation, isRevalidationRequired, cancelledDeferredRoutes, cancelledFetcherLoads, deletedFetchers, fetchLoadMatches, fetchRedirectIds, routesToUse, basename, pendingActionResult);
         // Cancel pending deferreds for no-longer-matched routes or routes we're
         // about to reload.  Note that if this is an action reload we would have
         // already cancelled all pending deferreds so this would be a no-op
@@ -32282,36 +32356,16 @@ const TRANSITIONS_STORAGE_KEY = "remix-router-transitions";
                 shortCircuited: true
             };
         }
-        // If this is an uninterrupted revalidation, we remain in our current idle
-        // state.  If not, we need to switch to our loading state and load data,
-        // preserving any new action data or existing action data (in the case of
-        // a revalidation interrupting an actionReload)
-        // If we have partialHydration enabled, then don't update the state for the
-        // initial data load since it's not a "navigation"
-        if (!isUninterruptedRevalidation && (!future.v7_partialHydration || !initialHydration)) {
-            revalidatingFetchers.forEach((rf)=>{
-                let fetcher = state.fetchers.get(rf.key);
-                let revalidatingFetcher = getLoadingFetcher(undefined, fetcher ? fetcher.data : undefined);
-                state.fetchers.set(rf.key, revalidatingFetcher);
-            });
-            let actionData;
-            if (pendingActionResult && !isErrorResult(pendingActionResult[1])) // This is cast to `any` currently because `RouteData`uses any and it
-            // would be a breaking change to use any.
-            // TODO: v7 - change `RouteData` to use `unknown` instead of `any`
-            actionData = {
-                [pendingActionResult[0]]: pendingActionResult[1].data
-            };
-            else if (state.actionData) {
-                if (Object.keys(state.actionData).length === 0) actionData = null;
-                else actionData = state.actionData;
+        if (shouldUpdateNavigationState) {
+            let updates = {};
+            if (!isFogOfWar) {
+                // Only update navigation/actionNData if we didn't already do it above
+                updates.navigation = loadingNavigation;
+                let actionData = getUpdatedActionData(pendingActionResult);
+                if (actionData !== undefined) updates.actionData = actionData;
             }
-            updateState(_extends({
-                navigation: loadingNavigation
-            }, actionData !== undefined ? {
-                actionData
-            } : {}, revalidatingFetchers.length > 0 ? {
-                fetchers: new Map(state.fetchers)
-            } : {}), {
+            if (revalidatingFetchers.length > 0) updates.fetchers = getUpdatedRevalidatingFetchers(revalidatingFetchers);
+            updateState(updates, {
                 flushSync
             });
         }
@@ -32379,11 +32433,32 @@ const TRANSITIONS_STORAGE_KEY = "remix-router-transitions";
         let didAbortFetchLoads = abortStaleFetchLoads(pendingNavigationLoadId);
         let shouldUpdateFetchers = updatedFetchers || didAbortFetchLoads || revalidatingFetchers.length > 0;
         return _extends({
+            matches,
             loaderData,
             errors
         }, shouldUpdateFetchers ? {
             fetchers: new Map(state.fetchers)
         } : {});
+    }
+    function getUpdatedActionData(pendingActionResult) {
+        if (pendingActionResult && !isErrorResult(pendingActionResult[1])) // This is cast to `any` currently because `RouteData`uses any and it
+        // would be a breaking change to use any.
+        // TODO: v7 - change `RouteData` to use `unknown` instead of `any`
+        return {
+            [pendingActionResult[0]]: pendingActionResult[1].data
+        };
+        else if (state.actionData) {
+            if (Object.keys(state.actionData).length === 0) return null;
+            else return state.actionData;
+        }
+    }
+    function getUpdatedRevalidatingFetchers(revalidatingFetchers) {
+        revalidatingFetchers.forEach((rf)=>{
+            let fetcher = state.fetchers.get(rf.key);
+            let revalidatingFetcher = getLoadingFetcher(undefined, fetcher ? fetcher.data : undefined);
+            state.fetchers.set(rf.key, revalidatingFetcher);
+        });
+        return new Map(state.fetchers);
     }
     // Trigger a fetcher load/submit for the given fetcher key
     function fetch(key, routeId, href, opts) {
@@ -32393,6 +32468,8 @@ const TRANSITIONS_STORAGE_KEY = "remix-router-transitions";
         let routesToUse = inFlightDataRoutes || dataRoutes;
         let normalizedPath = normalizeTo(state.location, state.matches, basename, future.v7_prependBasename, href, future.v7_relativeSplatPath, routeId, opts == null ? void 0 : opts.relative);
         let matches = matchRoutes(routesToUse, normalizedPath, basename);
+        let fogOfWar = checkFogOfWar(matches, routesToUse, normalizedPath);
+        if (fogOfWar.active && fogOfWar.matches) matches = fogOfWar.matches;
         if (!matches) {
             setFetcherError(key, routeId, getInternalRouterError(404, {
                 pathname: normalizedPath
@@ -32411,7 +32488,7 @@ const TRANSITIONS_STORAGE_KEY = "remix-router-transitions";
         let match = getTargetMatch(matches, path);
         pendingPreventScrollReset = (opts && opts.preventScrollReset) === true;
         if (submission && isMutationMethod(submission.formMethod)) {
-            handleFetcherAction(key, routeId, path, match, matches, flushSync, submission);
+            handleFetcherAction(key, routeId, path, match, matches, fogOfWar.active, flushSync, submission);
             return;
         }
         // Store off the match so we can call it's shouldRevalidate on subsequent
@@ -32420,32 +32497,58 @@ const TRANSITIONS_STORAGE_KEY = "remix-router-transitions";
             routeId,
             path
         });
-        handleFetcherLoader(key, routeId, path, match, matches, flushSync, submission);
+        handleFetcherLoader(key, routeId, path, match, matches, fogOfWar.active, flushSync, submission);
     }
     // Call the action for the matched fetcher.submit(), and then handle redirects,
     // errors, and revalidation
-    async function handleFetcherAction(key, routeId, path, match, requestMatches, flushSync, submission) {
+    async function handleFetcherAction(key, routeId, path, match, requestMatches, isFogOfWar, flushSync, submission) {
         interruptActiveLoads();
         fetchLoadMatches.delete(key);
-        if (!match.route.action && !match.route.lazy) {
-            let error = getInternalRouterError(405, {
-                method: submission.formMethod,
-                pathname: path,
-                routeId: routeId
-            });
-            setFetcherError(key, routeId, error, {
-                flushSync
-            });
-            return;
+        function detectAndHandle405Error(m) {
+            if (!m.route.action && !m.route.lazy) {
+                let error = getInternalRouterError(405, {
+                    method: submission.formMethod,
+                    pathname: path,
+                    routeId: routeId
+                });
+                setFetcherError(key, routeId, error, {
+                    flushSync
+                });
+                return true;
+            }
+            return false;
         }
+        if (!isFogOfWar && detectAndHandle405Error(match)) return;
         // Put this fetcher into it's submitting state
         let existingFetcher = state.fetchers.get(key);
         updateFetcherState(key, getSubmittingFetcher(submission, existingFetcher), {
             flushSync
         });
-        // Call the action for the fetcher
         let abortController = new AbortController();
         let fetchRequest = createClientSideRequest(init.history, path, abortController.signal, submission);
+        if (isFogOfWar) {
+            let discoverResult = await discoverRoutes(requestMatches, path, fetchRequest.signal);
+            if (discoverResult.type === "aborted") return;
+            else if (discoverResult.type === "error") {
+                let { error } = handleDiscoverRouteError(path, discoverResult);
+                setFetcherError(key, routeId, error, {
+                    flushSync
+                });
+                return;
+            } else if (!discoverResult.matches) {
+                setFetcherError(key, routeId, getInternalRouterError(404, {
+                    pathname: path
+                }), {
+                    flushSync
+                });
+                return;
+            } else {
+                requestMatches = discoverResult.matches;
+                match = getTargetMatch(requestMatches, path);
+                if (detectAndHandle405Error(match)) return;
+            }
+        }
+        // Call the action for the fetcher
         fetchControllers.set(key, abortController);
         let originatingLoadId = incrementingLoadId;
         let actionResults = await callDataStrategy("action", fetchRequest, [
@@ -32504,7 +32607,7 @@ const TRANSITIONS_STORAGE_KEY = "remix-router-transitions";
         fetchReloadIds.set(key, loadId);
         let loadFetcher = getLoadingFetcher(submission, actionResult.data);
         state.fetchers.set(key, loadFetcher);
-        let [matchesToLoad, revalidatingFetchers] = getMatchesToLoad(init.history, state, matches, submission, nextLocation, false, future.unstable_skipActionErrorRevalidation, isRevalidationRequired, cancelledDeferredRoutes, cancelledFetcherLoads, deletedFetchers, fetchLoadMatches, fetchRedirectIds, routesToUse, basename, [
+        let [matchesToLoad, revalidatingFetchers] = getMatchesToLoad(init.history, state, matches, submission, nextLocation, false, future.v7_skipActionErrorRevalidation, isRevalidationRequired, cancelledDeferredRoutes, cancelledFetcherLoads, deletedFetchers, fetchLoadMatches, fetchRedirectIds, routesToUse, basename, [
             match.route.id,
             actionResult
         ]);
@@ -32578,14 +32681,35 @@ const TRANSITIONS_STORAGE_KEY = "remix-router-transitions";
         }
     }
     // Call the matched loader for fetcher.load(), handling redirects, errors, etc.
-    async function handleFetcherLoader(key, routeId, path, match, matches, flushSync, submission) {
+    async function handleFetcherLoader(key, routeId, path, match, matches, isFogOfWar, flushSync, submission) {
         let existingFetcher = state.fetchers.get(key);
         updateFetcherState(key, getLoadingFetcher(submission, existingFetcher ? existingFetcher.data : undefined), {
             flushSync
         });
-        // Call the loader for this fetcher route match
         let abortController = new AbortController();
         let fetchRequest = createClientSideRequest(init.history, path, abortController.signal);
+        if (isFogOfWar) {
+            let discoverResult = await discoverRoutes(matches, path, fetchRequest.signal);
+            if (discoverResult.type === "aborted") return;
+            else if (discoverResult.type === "error") {
+                let { error } = handleDiscoverRouteError(path, discoverResult);
+                setFetcherError(key, routeId, error, {
+                    flushSync
+                });
+                return;
+            } else if (!discoverResult.matches) {
+                setFetcherError(key, routeId, getInternalRouterError(404, {
+                    pathname: path
+                }), {
+                    flushSync
+                });
+                return;
+            } else {
+                matches = discoverResult.matches;
+                match = getTargetMatch(matches, path);
+            }
+        }
+        // Call the loader for this fetcher route match
         fetchControllers.set(key, abortController);
         let originatingLoadId = incrementingLoadId;
         let results = await callDataStrategy("loader", fetchRequest, [
@@ -32906,6 +33030,30 @@ const TRANSITIONS_STORAGE_KEY = "remix-router-transitions";
             historyAction
         })) return blockerKey;
     }
+    function handleNavigational404(pathname) {
+        let error = getInternalRouterError(404, {
+            pathname
+        });
+        let routesToUse = inFlightDataRoutes || dataRoutes;
+        let { matches, route } = getShortCircuitMatches(routesToUse);
+        // Cancel all pending deferred on 404s since we don't keep any routes
+        cancelActiveDeferreds();
+        return {
+            notFoundMatches: matches,
+            route,
+            error
+        };
+    }
+    function handleDiscoverRouteError(pathname, discoverResult) {
+        return {
+            boundaryId: findNearestBoundary(discoverResult.partialMatches).route.id,
+            error: getInternalRouterError(400, {
+                type: "route-discovery",
+                pathname,
+                message: discoverResult.error != null && "message" in discoverResult.error ? discoverResult.error : String(discoverResult.error)
+            })
+        };
+    }
     function cancelActiveDeferreds(predicate) {
         let cancelledRouteIds = [];
         activeDeferreds.forEach((dfd, routeId)=>{
@@ -32963,9 +33111,118 @@ const TRANSITIONS_STORAGE_KEY = "remix-router-transitions";
         }
         return null;
     }
+    function checkFogOfWar(matches, routesToUse, pathname) {
+        if (patchRoutesOnMissImpl) {
+            if (!matches) {
+                let fogMatches = matchRoutesImpl(routesToUse, pathname, basename, true);
+                return {
+                    active: true,
+                    matches: fogMatches || []
+                };
+            } else {
+                let leafRoute = matches[matches.length - 1].route;
+                if (leafRoute.path && (leafRoute.path === "*" || leafRoute.path.endsWith("/*"))) {
+                    // If we matched a splat, it might only be because we haven't yet fetched
+                    // the children that would match with a higher score, so let's fetch
+                    // around and find out
+                    let partialMatches = matchRoutesImpl(routesToUse, pathname, basename, true);
+                    return {
+                        active: true,
+                        matches: partialMatches
+                    };
+                }
+            }
+        }
+        return {
+            active: false,
+            matches: null
+        };
+    }
+    async function discoverRoutes(matches, pathname, signal) {
+        let partialMatches = matches;
+        let route = partialMatches.length > 0 ? partialMatches[partialMatches.length - 1].route : null;
+        while(true){
+            let isNonHMR = inFlightDataRoutes == null;
+            let routesToUse = inFlightDataRoutes || dataRoutes;
+            try {
+                await loadLazyRouteChildren(patchRoutesOnMissImpl, pathname, partialMatches, routesToUse, manifest, mapRouteProperties, pendingPatchRoutes, signal);
+            } catch (e) {
+                return {
+                    type: "error",
+                    error: e,
+                    partialMatches
+                };
+            } finally{
+                // If we are not in the middle of an HMR revalidation and we changed the
+                // routes, provide a new identity so when we `updateState` at the end of
+                // this navigation/fetch `router.routes` will be a new identity and
+                // trigger a re-run of memoized `router.routes` dependencies.
+                // HMR will already update the identity and reflow when it lands
+                // `inFlightDataRoutes` in `completeNavigation`
+                if (isNonHMR) dataRoutes = [
+                    ...dataRoutes
+                ];
+            }
+            if (signal.aborted) return {
+                type: "aborted"
+            };
+            let newMatches = matchRoutes(routesToUse, pathname, basename);
+            let matchedSplat = false;
+            if (newMatches) {
+                let leafRoute = newMatches[newMatches.length - 1].route;
+                if (leafRoute.index) // If we found an index route, we can stop
+                return {
+                    type: "success",
+                    matches: newMatches
+                };
+                if (leafRoute.path && leafRoute.path.length > 0) {
+                    if (leafRoute.path === "*") // If we found a splat route, we can't be sure there's not a
+                    // higher-scoring route down some partial matches trail so we need
+                    // to check that out
+                    matchedSplat = true;
+                    else // If we found a non-splat route, we can stop
+                    return {
+                        type: "success",
+                        matches: newMatches
+                    };
+                }
+            }
+            let newPartialMatches = matchRoutesImpl(routesToUse, pathname, basename, true);
+            // If we are no longer partially matching anything, this was either a
+            // legit splat match above, or it's a 404.  Also avoid loops if the
+            // second pass results in the same partial matches
+            if (!newPartialMatches || partialMatches.map((m)=>m.route.id).join("-") === newPartialMatches.map((m)=>m.route.id).join("-")) return {
+                type: "success",
+                matches: matchedSplat ? newMatches : null
+            };
+            partialMatches = newPartialMatches;
+            route = partialMatches[partialMatches.length - 1].route;
+            if (route.path === "*") // The splat is still our most accurate partial, so run with it
+            return {
+                type: "success",
+                matches: partialMatches
+            };
+        }
+    }
     function _internalSetRoutes(newRoutes) {
         manifest = {};
         inFlightDataRoutes = convertRoutesToDataRoutes(newRoutes, mapRouteProperties, undefined, manifest);
+    }
+    function patchRoutes(routeId, children) {
+        let isNonHMR = inFlightDataRoutes == null;
+        let routesToUse = inFlightDataRoutes || dataRoutes;
+        patchRoutesImpl(routeId, children, routesToUse, manifest, mapRouteProperties);
+        // If we are not in the middle of an HMR revalidation and we changed the
+        // routes, provide a new identity and trigger a reflow via `updateState`
+        // to re-run memoized `router.routes` dependencies.
+        // HMR will already update the identity and reflow when it lands
+        // `inFlightDataRoutes` in `completeNavigation`
+        if (isNonHMR) {
+            dataRoutes = [
+                ...dataRoutes
+            ];
+            updateState({});
+        }
     }
     router = {
         get basename () {
@@ -32998,6 +33255,7 @@ const TRANSITIONS_STORAGE_KEY = "remix-router-transitions";
         dispose,
         getBlocker,
         deleteBlocker,
+        patchRoutes,
         _internalFetchControllers: fetchControllers,
         _internalActiveDeferreds: activeDeferreds,
         // TODO: Remove setRoutes, it's temporary to avoid dealing with
@@ -33581,7 +33839,7 @@ function getMatchesToLoad(history, state, matches, submission, location, isIniti
             nextParams: nextRouteMatch.params
         }, submission, {
             actionResult,
-            unstable_actionStatus: actionStatus,
+            actionStatus,
             defaultShouldRevalidate: shouldSkipRevalidation ? false : // Forced revalidation due to submission, useRevalidator, or X-Remix-Revalidate
             isRevalidationRequired || currentUrl.pathname + currentUrl.search === nextUrl.pathname + nextUrl.search || // Search params affect all loaders
             currentUrl.search !== nextUrl.search || isNewRouteInstance(currentRouteMatch, nextRouteMatch)
@@ -33635,7 +33893,7 @@ function getMatchesToLoad(history, state, matches, submission, location, isIniti
             nextParams: matches[matches.length - 1].params
         }, submission, {
             actionResult,
-            unstable_actionStatus: actionStatus,
+            actionStatus,
             defaultShouldRevalidate: shouldSkipRevalidation ? false : isRevalidationRequired
         }));
         if (shouldRevalidate) revalidatingFetchers.push({
@@ -33675,6 +33933,51 @@ function shouldRevalidateLoader(loaderMatch, arg) {
         if (typeof routeChoice === "boolean") return routeChoice;
     }
     return arg.defaultShouldRevalidate;
+}
+/**
+ * Idempotent utility to execute patchRoutesOnMiss() to lazily load route
+ * definitions and update the routes/routeManifest
+ */ async function loadLazyRouteChildren(patchRoutesOnMissImpl, path, matches, routes, manifest, mapRouteProperties, pendingRouteChildren, signal) {
+    let key = [
+        path,
+        ...matches.map((m)=>m.route.id)
+    ].join("-");
+    try {
+        let pending = pendingRouteChildren.get(key);
+        if (!pending) {
+            pending = patchRoutesOnMissImpl({
+                path,
+                matches,
+                patch: (routeId, children)=>{
+                    if (!signal.aborted) patchRoutesImpl(routeId, children, routes, manifest, mapRouteProperties);
+                }
+            });
+            pendingRouteChildren.set(key, pending);
+        }
+        if (pending && isPromise(pending)) await pending;
+    } finally{
+        pendingRouteChildren.delete(key);
+    }
+}
+function patchRoutesImpl(routeId, children, routesToUse, manifest, mapRouteProperties) {
+    if (routeId) {
+        var _route$children;
+        let route = manifest[routeId];
+        invariant(route, "No route found to patch children into: routeId = " + routeId);
+        let dataChildren = convertRoutesToDataRoutes(children, mapRouteProperties, [
+            routeId,
+            "patch",
+            String(((_route$children = route.children) == null ? void 0 : _route$children.length) || "0")
+        ], manifest);
+        if (route.children) route.children.push(...dataChildren);
+        else route.children = dataChildren;
+    } else {
+        let dataChildren = convertRoutesToDataRoutes(children, mapRouteProperties, [
+            "patch",
+            String(routesToUse.length || "0")
+        ], manifest);
+        routesToUse.push(...dataChildren);
+    }
 }
 /**
  * Execute route.lazy() methods to lazily load route modules (loader, action,
@@ -34123,12 +34426,13 @@ function getShortCircuitMatches(routes) {
     };
 }
 function getInternalRouterError(status, _temp5) {
-    let { pathname, routeId, method, type } = _temp5 === void 0 ? {} : _temp5;
+    let { pathname, routeId, method, type, message } = _temp5 === void 0 ? {} : _temp5;
     let statusText = "Unknown Server Error";
     let errorMessage = "Unknown @remix-run/router error";
     if (status === 400) {
         statusText = "Bad Request";
-        if (method && pathname && routeId) errorMessage = "You made a " + method + ' request to "' + pathname + '" but ' + ('did not provide a `loader` for route "' + routeId + '", ') + "so there is no way to handle the request.";
+        if (type === "route-discovery") errorMessage = 'Unable to match URL "' + pathname + '" - the `unstable_patchRoutesOnMiss()` ' + ("function threw the following error:\n" + message);
+        else if (method && pathname && routeId) errorMessage = "You made a " + method + ' request to "' + pathname + '" but ' + ('did not provide a `loader` for route "' + routeId + '", ') + "so there is no way to handle the request.";
         else if (type === "defer-action") errorMessage = "defer() is not supported in actions";
         else if (type === "invalid-body") errorMessage = "Unable to encode submission body";
     } else if (status === 403) {
@@ -34171,6 +34475,9 @@ function isHashChangeOnly(a, b) {
     // If the hash is removed the browser will re-perform a request to the server
     // /page#hash -> /page
     return false;
+}
+function isPromise(val) {
+    return typeof val === "object" && val != null && "then" in val;
 }
 function isHandlerResult(result) {
     return result != null && typeof result === "object" && "type" in result && "result" in result && (result.type === ResultType.data || result.type === ResultType.error);
@@ -34407,7 +34714,145 @@ function persistAppliedTransitions(_window, transitions) {
     }
 }
 
-},{"@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3"}],"8yaV8":[function(require,module,exports) {
+},{"@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3"}],"km3Ru":[function(require,module,exports) {
+"use strict";
+var Refresh = require("7422ead32dcc1e6b");
+function debounce(func, delay) {
+    {
+        let timeout = undefined;
+        let lastTime = 0;
+        return function(args) {
+            // Call immediately if last call was more than the delay ago.
+            // Otherwise, set a timeout. This means the first call is fast
+            // (for the common case of a single update), and subsequent updates
+            // are batched.
+            let now = Date.now();
+            if (now - lastTime > delay) {
+                lastTime = now;
+                func.call(null, args);
+            } else {
+                clearTimeout(timeout);
+                timeout = setTimeout(function() {
+                    timeout = undefined;
+                    lastTime = Date.now();
+                    func.call(null, args);
+                }, delay);
+            }
+        };
+    }
+}
+var enqueueUpdate = debounce(function() {
+    Refresh.performReactRefresh();
+}, 30);
+// Everthing below is either adapted or copied from
+// https://github.com/facebook/metro/blob/61de16bd1edd7e738dd0311c89555a644023ab2d/packages/metro/src/lib/polyfills/require.js
+// MIT License - Copyright (c) Facebook, Inc. and its affiliates.
+module.exports.prelude = function(module1) {
+    window.$RefreshReg$ = function(type, id) {
+        Refresh.register(type, module1.id + " " + id);
+    };
+    window.$RefreshSig$ = Refresh.createSignatureFunctionForTransform;
+};
+module.exports.postlude = function(module1) {
+    if (isReactRefreshBoundary(module1.exports)) {
+        registerExportsForReactRefresh(module1);
+        if (module1.hot) {
+            module1.hot.dispose(function(data) {
+                if (Refresh.hasUnrecoverableErrors()) window.location.reload();
+                data.prevExports = module1.exports;
+            });
+            module1.hot.accept(function(getParents) {
+                var prevExports = module1.hot.data.prevExports;
+                var nextExports = module1.exports;
+                // Since we just executed the code for it, it's possible
+                // that the new exports make it ineligible for being a boundary.
+                var isNoLongerABoundary = !isReactRefreshBoundary(nextExports);
+                // It can also become ineligible if its exports are incompatible
+                // with the previous exports.
+                // For example, if you add/remove/change exports, we'll want
+                // to re-execute the importing modules, and force those components
+                // to re-render. Similarly, if you convert a class component
+                // to a function, we want to invalidate the boundary.
+                var didInvalidate = shouldInvalidateReactRefreshBoundary(prevExports, nextExports);
+                if (isNoLongerABoundary || didInvalidate) {
+                    // We'll be conservative. The only case in which we won't do a full
+                    // reload is if all parent modules are also refresh boundaries.
+                    // In that case we'll add them to the current queue.
+                    var parents = getParents();
+                    if (parents.length === 0) {
+                        // Looks like we bubbled to the root. Can't recover from that.
+                        window.location.reload();
+                        return;
+                    }
+                    return parents;
+                }
+                enqueueUpdate();
+            });
+        }
+    }
+};
+function isReactRefreshBoundary(exports) {
+    if (Refresh.isLikelyComponentType(exports)) return true;
+    if (exports == null || typeof exports !== "object") // Exit if we can't iterate over exports.
+    return false;
+    var hasExports = false;
+    var areAllExportsComponents = true;
+    let isESM = "__esModule" in exports;
+    for(var key in exports){
+        hasExports = true;
+        if (key === "__esModule") continue;
+        var desc = Object.getOwnPropertyDescriptor(exports, key);
+        if (desc && desc.get && !isESM) // Don't invoke getters for CJS as they may have side effects.
+        return false;
+        var exportValue = exports[key];
+        if (!Refresh.isLikelyComponentType(exportValue)) areAllExportsComponents = false;
+    }
+    return hasExports && areAllExportsComponents;
+}
+function shouldInvalidateReactRefreshBoundary(prevExports, nextExports) {
+    var prevSignature = getRefreshBoundarySignature(prevExports);
+    var nextSignature = getRefreshBoundarySignature(nextExports);
+    if (prevSignature.length !== nextSignature.length) return true;
+    for(var i = 0; i < nextSignature.length; i++){
+        if (prevSignature[i] !== nextSignature[i]) return true;
+    }
+    return false;
+}
+// When this signature changes, it's unsafe to stop at this refresh boundary.
+function getRefreshBoundarySignature(exports) {
+    var signature = [];
+    signature.push(Refresh.getFamilyByType(exports));
+    if (exports == null || typeof exports !== "object") // Exit if we can't iterate over exports.
+    // (This is important for legacy environments.)
+    return signature;
+    let isESM = "__esModule" in exports;
+    for(var key in exports){
+        if (key === "__esModule") continue;
+        var desc = Object.getOwnPropertyDescriptor(exports, key);
+        if (desc && desc.get && !isESM) continue;
+        var exportValue = exports[key];
+        signature.push(key);
+        signature.push(Refresh.getFamilyByType(exportValue));
+    }
+    return signature;
+}
+function registerExportsForReactRefresh(module1) {
+    var exports = module1.exports, id = module1.id;
+    Refresh.register(exports, id + " %exports%");
+    if (exports == null || typeof exports !== "object") // Exit if we can't iterate over exports.
+    // (This is important for legacy environments.)
+    return;
+    let isESM = "__esModule" in exports;
+    for(var key in exports){
+        var desc = Object.getOwnPropertyDescriptor(exports, key);
+        if (desc && desc.get && !isESM) continue;
+        var exportValue = exports[key];
+        var typeID = id + " %exports% " + key;
+        Refresh.register(exportValue, typeID);
+    }
+}
+
+},{"7422ead32dcc1e6b":"786KC"}],"8yaV8":[function(require,module,exports) {
 var $parcel$ReactRefreshHelpers$0606 = require("@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js");
 var prevRefreshReg = window.$RefreshReg$;
 var prevRefreshSig = window.$RefreshSig$;
@@ -34430,35 +34875,66 @@ const Body = ()=>{
         fetchStudents();
     }, []);
     return /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
-        className: "container mx-auto px-4 py-8",
-        children: [
-            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("h1", {
-                className: "text-3xl font-bold mb-6",
-                children: "Our Students"
-            }, void 0, false, {
-                fileName: "src/components/Body.js",
-                lineNumber: 14,
-                columnNumber: 4
-            }, undefined),
-            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
-                className: "grid grid-cols-1 md:grid-cols-3 gap-6",
-                children: students.map((student)=>/*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _studentListDefault.default), {
-                        studentdata: student
-                    }, student.id, false, {
+        className: "container mx-auto px-4 py-12 bg-gray-100 min-h-screen",
+        children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+            className: "max-w-7xl mx-auto bg-white shadow-2xl rounded-lg overflow-hidden",
+            children: [
+                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                    className: "bg-gradient-to-r from-ngo-primary to-ngo-secondary p-8",
+                    children: [
+                        /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("h1", {
+                            className: "text-4xl font-extrabold text-white mb-2 font-heading",
+                            children: "Our Students"
+                        }, void 0, false, {
+                            fileName: "src/components/Body.js",
+                            lineNumber: 16,
+                            columnNumber: 11
+                        }, undefined),
+                        /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("p", {
+                            className: "text-ngo-accent text-lg",
+                            children: "Empowering the future, one student at a time"
+                        }, void 0, false, {
+                            fileName: "src/components/Body.js",
+                            lineNumber: 19,
+                            columnNumber: 11
+                        }, undefined)
+                    ]
+                }, void 0, true, {
+                    fileName: "src/components/Body.js",
+                    lineNumber: 15,
+                    columnNumber: 9
+                }, undefined),
+                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                    className: "p-8",
+                    children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                        className: "grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8",
+                        children: students.map((student)=>/*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _studentListDefault.default), {
+                                studentdata: student
+                            }, student.id, false, {
+                                fileName: "src/components/Body.js",
+                                lineNumber: 26,
+                                columnNumber: 15
+                            }, undefined))
+                    }, void 0, false, {
                         fileName: "src/components/Body.js",
-                        lineNumber: 17,
-                        columnNumber: 6
-                    }, undefined))
-            }, void 0, false, {
-                fileName: "src/components/Body.js",
-                lineNumber: 15,
-                columnNumber: 4
-            }, undefined)
-        ]
-    }, void 0, true, {
+                        lineNumber: 24,
+                        columnNumber: 11
+                    }, undefined)
+                }, void 0, false, {
+                    fileName: "src/components/Body.js",
+                    lineNumber: 23,
+                    columnNumber: 9
+                }, undefined)
+            ]
+        }, void 0, true, {
+            fileName: "src/components/Body.js",
+            lineNumber: 14,
+            columnNumber: 7
+        }, undefined)
+    }, void 0, false, {
         fileName: "src/components/Body.js",
         lineNumber: 13,
-        columnNumber: 3
+        columnNumber: 5
     }, undefined);
 };
 _s(Body, "/XcqxcP7wZjtnhikjaGmmPdNf6U=", false, function() {
@@ -34476,7 +34952,7 @@ $RefreshReg$(_c, "Body");
   window.$RefreshReg$ = prevRefreshReg;
   window.$RefreshSig$ = prevRefreshSig;
 }
-},{"react/jsx-dev-runtime":"iTorj","react":"21dqq","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"km3Ru","./StudentList":"b5q7J","../contexts/StudentContext":"76LUH"}],"b5q7J":[function(require,module,exports) {
+},{"react/jsx-dev-runtime":"iTorj","react":"21dqq","./StudentList":"b5q7J","../contexts/StudentContext":"76LUH","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"km3Ru"}],"b5q7J":[function(require,module,exports) {
 var $parcel$ReactRefreshHelpers$def3 = require("@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js");
 var prevRefreshReg = window.$RefreshReg$;
 var prevRefreshSig = window.$RefreshSig$;
@@ -34495,7 +34971,7 @@ const StudentList = ({ studentdata })=>{
         className: "bg-white rounded-lg shadow-md overflow-hidden transition-all duration-300 hover:shadow-xl hover:-translate-y-1",
         children: [
             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
-                className: "bg-ngo-primary h-40 flex items-center justify-center",
+                className: "bg-blue-600 h-40 flex items-center justify-center",
                 children: image ? /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("img", {
                     src: image,
                     alt: `${name}'s profile`,
@@ -34505,7 +34981,7 @@ const StudentList = ({ studentdata })=>{
                     lineNumber: 11,
                     columnNumber: 11
                 }, undefined) : /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
-                    className: "w-32 h-32 rounded-full bg-ngo-secondary flex items-center justify-center text-white text-4xl font-bold",
+                    className: "w-32 h-32 rounded-full bg-blue-400 flex items-center justify-center text-white text-4xl font-bold",
                     children: name[0]
                 }, void 0, false, {
                     fileName: "src/components/StudentList.js",
@@ -34521,7 +34997,7 @@ const StudentList = ({ studentdata })=>{
                 className: "p-6",
                 children: [
                     /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("h2", {
-                        className: "text-xl font-semibold text-center mb-2 text-gray-800",
+                        className: "text-2xl font-bold text-center mb-2 text-gray-800 font-serif",
                         children: name
                     }, void 0, false, {
                         fileName: "src/components/StudentList.js",
@@ -34529,7 +35005,7 @@ const StudentList = ({ studentdata })=>{
                         columnNumber: 9
                     }, undefined),
                     /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("p", {
-                        className: "text-center text-gray-600 mb-4",
+                        className: "text-center text-gray-600 mb-4 font-sans",
                         children: [
                             "Age: ",
                             age
@@ -34541,7 +35017,7 @@ const StudentList = ({ studentdata })=>{
                     }, undefined),
                     /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _reactRouterDom.Link), {
                         to: `/student/${id}`,
-                        className: "block w-full bg-ngo-accent hover:bg-ngo-secondary text-white font-bold py-2 px-4 rounded-full transition duration-300 text-center",
+                        className: "block w-full bg-blue-500 hover:bg-blue-600 text-white font-bold py-2 px-4 rounded-full transition duration-300 text-center font-sans",
                         children: "View Details"
                     }, void 0, false, {
                         fileName: "src/components/StudentList.js",
@@ -34571,7 +35047,7 @@ $RefreshReg$(_c, "StudentList");
   window.$RefreshReg$ = prevRefreshReg;
   window.$RefreshSig$ = prevRefreshSig;
 }
-},{"react/jsx-dev-runtime":"iTorj","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"km3Ru","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3","react":"21dqq","react-router-dom":"9xmpe"}],"76LUH":[function(require,module,exports) {
+},{"react/jsx-dev-runtime":"iTorj","react":"21dqq","react-router-dom":"9xmpe","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"km3Ru"}],"76LUH":[function(require,module,exports) {
 var $parcel$ReactRefreshHelpers$1dc9 = require("@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js");
 var prevRefreshReg = window.$RefreshReg$;
 var prevRefreshSig = window.$RefreshSig$;
@@ -39657,7 +40133,7 @@ $RefreshReg$(_c, "About");
   window.$RefreshReg$ = prevRefreshReg;
   window.$RefreshSig$ = prevRefreshSig;
 }
-},{"react/jsx-dev-runtime":"iTorj","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"km3Ru","react":"21dqq"}],"cgAOG":[function(require,module,exports) {
+},{"react/jsx-dev-runtime":"iTorj","react":"21dqq","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"km3Ru"}],"cgAOG":[function(require,module,exports) {
 var $parcel$ReactRefreshHelpers$ee46 = require("@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js");
 var prevRefreshReg = window.$RefreshReg$;
 var prevRefreshSig = window.$RefreshSig$;
@@ -39907,7 +40383,7 @@ $RefreshReg$(_c, "Contact");
   window.$RefreshReg$ = prevRefreshReg;
   window.$RefreshSig$ = prevRefreshSig;
 }
-},{"react/jsx-dev-runtime":"iTorj","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"km3Ru","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3","react":"21dqq"}],"aukjb":[function(require,module,exports) {
+},{"react/jsx-dev-runtime":"iTorj","react":"21dqq","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"km3Ru"}],"aukjb":[function(require,module,exports) {
 var $parcel$ReactRefreshHelpers$f468 = require("@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js");
 var prevRefreshReg = window.$RefreshReg$;
 var prevRefreshSig = window.$RefreshSig$;
@@ -40003,128 +40479,159 @@ const StudentDetails = ()=>{
     const { name, age, achievements, aboutUs, image } = studentData;
     const parsedAchievements = parseAchievements(achievements);
     return /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
-        className: "bg-gray-100 min-h-screen py-12 px-4 sm:px-6 lg:px-8",
+        className: "bg-gray-100 min-h-screen py-16 px-4 sm:px-6 lg:px-8",
         children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
-            className: "max-w-4xl mx-auto bg-white shadow-xl rounded-lg overflow-hidden",
+            className: "max-w-6xl mx-auto",
             children: [
                 /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
-                    className: "bg-ngo-primary px-6 py-8 md:flex md:items-center",
-                    children: [
-                        image && /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("img", {
-                            src: image,
-                            alt: `${name}'s profile`,
-                            className: "w-32 h-32 rounded-full object-cover mx-auto md:mx-0 md:mr-8 border-4 border-white shadow-lg"
-                        }, void 0, false, {
-                            fileName: "src/components/StudentDetails.js",
-                            lineNumber: 85,
-                            columnNumber: 13
-                        }, undefined),
-                        /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
-                            className: "mt-4 md:mt-0",
-                            children: [
-                                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("h1", {
-                                    className: "text-4xl font-bold text-white text-center md:text-left font-heading",
-                                    children: name
-                                }, void 0, false, {
-                                    fileName: "src/components/StudentDetails.js",
-                                    lineNumber: 92,
-                                    columnNumber: 13
-                                }, undefined),
-                                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("p", {
-                                    className: "text-ngo-accent mt-2 text-xl text-center md:text-left font-body",
-                                    children: [
-                                        "Age: ",
-                                        age
-                                    ]
-                                }, void 0, true, {
-                                    fileName: "src/components/StudentDetails.js",
-                                    lineNumber: 95,
-                                    columnNumber: 13
-                                }, undefined)
-                            ]
-                        }, void 0, true, {
-                            fileName: "src/components/StudentDetails.js",
-                            lineNumber: 91,
-                            columnNumber: 11
-                        }, undefined)
-                    ]
-                }, void 0, true, {
+                    className: "bg-gradient-to-r from-ngo-primary to-ngo-secondary rounded-t-lg overflow-hidden",
+                    children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                        className: "px-8 py-12 md:flex md:items-center",
+                        children: [
+                            image && /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("img", {
+                                src: image,
+                                alt: `${name}'s profile`,
+                                className: "w-48 h-48 rounded-full object-cover mx-auto md:mx-0 md:mr-10 border-4 border-white shadow-lg"
+                            }, void 0, false, {
+                                fileName: "src/components/StudentDetails.js",
+                                lineNumber: 86,
+                                columnNumber: 15
+                            }, undefined),
+                            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                                className: "mt-6 md:mt-0 text-center md:text-left",
+                                children: [
+                                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("h1", {
+                                        className: "text-5xl font-extrabold text-white mb-2 font-heading",
+                                        children: name
+                                    }, void 0, false, {
+                                        fileName: "src/components/StudentDetails.js",
+                                        lineNumber: 93,
+                                        columnNumber: 15
+                                    }, undefined),
+                                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("p", {
+                                        className: "text-ngo-accent text-2xl font-semibold",
+                                        children: [
+                                            "Age: ",
+                                            age
+                                        ]
+                                    }, void 0, true, {
+                                        fileName: "src/components/StudentDetails.js",
+                                        lineNumber: 96,
+                                        columnNumber: 15
+                                    }, undefined)
+                                ]
+                            }, void 0, true, {
+                                fileName: "src/components/StudentDetails.js",
+                                lineNumber: 92,
+                                columnNumber: 13
+                            }, undefined)
+                        ]
+                    }, void 0, true, {
+                        fileName: "src/components/StudentDetails.js",
+                        lineNumber: 84,
+                        columnNumber: 11
+                    }, undefined)
+                }, void 0, false, {
                     fileName: "src/components/StudentDetails.js",
                     lineNumber: 83,
                     columnNumber: 9
                 }, undefined),
                 /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
-                    className: "px-6 py-8",
+                    className: "bg-white shadow-xl p-8",
                     children: [
                         /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
-                            className: "mb-8",
+                            className: "mb-12",
                             children: [
                                 /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("h2", {
-                                    className: "text-2xl font-semibold text-gray-800 mb-4 font-heading",
+                                    className: "text-3xl font-bold text-gray-800 mb-6 font-heading",
                                     children: "Achievements"
                                 }, void 0, false, {
                                     fileName: "src/components/StudentDetails.js",
-                                    lineNumber: 102,
+                                    lineNumber: 105,
                                     columnNumber: 13
                                 }, undefined),
                                 /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
-                                    className: "bg-green-100 rounded-lg p-4",
+                                    className: "bg-green-100 rounded-lg p-6",
                                     children: parsedAchievements.length > 0 ? /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("ul", {
-                                        className: "list-disc list-inside text-gray-700 font-body",
+                                        className: "grid grid-cols-1 md:grid-cols-2 gap-4",
                                         children: parsedAchievements.map((achievement, index)=>/*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("li", {
-                                                className: "mb-2",
-                                                children: achievement
-                                            }, index, false, {
+                                                className: "flex items-start",
+                                                children: [
+                                                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("span", {
+                                                        className: "text-green-500 mr-2",
+                                                        children: "\u2713"
+                                                    }, void 0, false, {
+                                                        fileName: "src/components/StudentDetails.js",
+                                                        lineNumber: 113,
+                                                        columnNumber: 23
+                                                    }, undefined),
+                                                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("span", {
+                                                        className: "text-gray-700 font-body",
+                                                        children: achievement
+                                                    }, void 0, false, {
+                                                        fileName: "src/components/StudentDetails.js",
+                                                        lineNumber: 114,
+                                                        columnNumber: 23
+                                                    }, undefined)
+                                                ]
+                                            }, index, true, {
                                                 fileName: "src/components/StudentDetails.js",
-                                                lineNumber: 109,
+                                                lineNumber: 112,
                                                 columnNumber: 21
                                             }, undefined))
                                     }, void 0, false, {
                                         fileName: "src/components/StudentDetails.js",
-                                        lineNumber: 107,
+                                        lineNumber: 110,
                                         columnNumber: 17
                                     }, undefined) : /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("p", {
-                                        className: "text-gray-700 font-body",
-                                        children: "No achievements listed"
+                                        className: "text-gray-700 font-body italic",
+                                        children: "No achievements listed yet. Great things are coming!"
                                     }, void 0, false, {
                                         fileName: "src/components/StudentDetails.js",
-                                        lineNumber: 115,
+                                        lineNumber: 121,
                                         columnNumber: 17
                                     }, undefined)
                                 }, void 0, false, {
                                     fileName: "src/components/StudentDetails.js",
-                                    lineNumber: 105,
+                                    lineNumber: 108,
                                     columnNumber: 13
                                 }, undefined)
                             ]
                         }, void 0, true, {
                             fileName: "src/components/StudentDetails.js",
-                            lineNumber: 101,
+                            lineNumber: 104,
                             columnNumber: 11
                         }, undefined),
                         /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("h2", {
-                            className: "text-2xl font-semibold text-gray-800 mb-4 font-heading",
+                            className: "text-3xl font-bold text-gray-800 mb-6 font-heading",
                             children: [
                                 "About ",
                                 name
                             ]
                         }, void 0, true, {
                             fileName: "src/components/StudentDetails.js",
-                            lineNumber: 121,
+                            lineNumber: 128,
                             columnNumber: 11
                         }, undefined),
-                        /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("p", {
-                            className: "text-gray-600 leading-relaxed bg-gray-100 p-4 rounded-lg font-body",
-                            children: aboutUs || "No information provided."
+                        /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                            className: "bg-gray-100 p-6 rounded-lg",
+                            children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("p", {
+                                className: "text-gray-600 leading-relaxed font-body text-lg",
+                                children: aboutUs || "No information provided."
+                            }, void 0, false, {
+                                fileName: "src/components/StudentDetails.js",
+                                lineNumber: 132,
+                                columnNumber: 13
+                            }, undefined)
                         }, void 0, false, {
                             fileName: "src/components/StudentDetails.js",
-                            lineNumber: 124,
+                            lineNumber: 131,
                             columnNumber: 11
                         }, undefined)
                     ]
                 }, void 0, true, {
                     fileName: "src/components/StudentDetails.js",
-                    lineNumber: 100,
+                    lineNumber: 103,
                     columnNumber: 9
                 }, undefined)
             ]
@@ -40154,7 +40661,7 @@ $RefreshReg$(_c, "StudentDetails");
   window.$RefreshReg$ = prevRefreshReg;
   window.$RefreshSig$ = prevRefreshSig;
 }
-},{"react/jsx-dev-runtime":"iTorj","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"km3Ru","react-router-dom":"9xmpe","react":"21dqq"}],"f7Rc0":[function(require,module,exports) {
+},{"react/jsx-dev-runtime":"iTorj","react":"21dqq","react-router-dom":"9xmpe","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"km3Ru"}],"f7Rc0":[function(require,module,exports) {
 var $parcel$ReactRefreshHelpers$4bcf = require("@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js");
 var prevRefreshReg = window.$RefreshReg$;
 var prevRefreshSig = window.$RefreshSig$;
@@ -40186,146 +40693,140 @@ const HomePage = ()=>{
     ];
     const studentCount = 150;
     return /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
-        className: "bg-gray-100 min-h-screen",
+        className: "bg-gray-100",
         children: [
-            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("header", {
-                className: "bg-white shadow-md sticky top-0 z-50"
-            }, void 0, false, {
-                fileName: "src/components/Homepage.js",
-                lineNumber: 16,
-                columnNumber: 7
-            }, undefined),
-            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
-                className: "hero-section bg-cover bg-center h-screen flex items-center justify-center relative",
-                style: {
-                    backgroundImage: "url('/path-to-hero-image.jpg')"
-                },
+            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("section", {
+                className: "relative",
                 children: [
-                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
-                        className: "text-center text-white z-10",
-                        children: [
-                            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("h1", {
-                                className: "text-5xl md:text-6xl font-bold mb-4 font-heading",
-                                children: "Welcome to NGO"
-                            }, void 0, false, {
-                                fileName: "src/components/Homepage.js",
-                                lineNumber: 25,
-                                columnNumber: 11
-                            }, undefined),
-                            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("p", {
-                                className: "text-xl md:text-2xl mb-8 font-body",
-                                children: "Empowering communities and changing lives"
-                            }, void 0, false, {
-                                fileName: "src/components/Homepage.js",
-                                lineNumber: 28,
-                                columnNumber: 11
-                            }, undefined),
-                            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _reactRouterDom.Link), {
-                                to: "/donate",
-                                className: "bg-ngo-accent hover:bg-ngo-secondary text-white font-bold py-3 px-8 rounded-full transition duration-300 text-lg",
-                                children: "Donate Now"
-                            }, void 0, false, {
-                                fileName: "src/components/Homepage.js",
-                                lineNumber: 31,
-                                columnNumber: 11
-                            }, undefined)
-                        ]
-                    }, void 0, true, {
+                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _imageCarauselDefault.default), {
+                        images: carouselImages
+                    }, void 0, false, {
                         fileName: "src/components/Homepage.js",
-                        lineNumber: 24,
+                        lineNumber: 17,
                         columnNumber: 9
                     }, undefined),
                     /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
-                        className: "absolute inset-0 bg-black opacity-50"
+                        className: "absolute inset-0 bg-black bg-opacity-50 flex items-center justify-center",
+                        children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                            className: "text-center text-white z-10 max-w-3xl mx-auto px-4",
+                            children: [
+                                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("h1", {
+                                    className: "text-5xl md:text-7xl font-extrabold mb-6 leading-tight",
+                                    children: [
+                                        "Welcome to ",
+                                        /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("span", {
+                                            className: "text-yellow-400",
+                                            children: "NGO"
+                                        }, void 0, false, {
+                                            fileName: "src/components/Homepage.js",
+                                            lineNumber: 21,
+                                            columnNumber: 26
+                                        }, undefined)
+                                    ]
+                                }, void 0, true, {
+                                    fileName: "src/components/Homepage.js",
+                                    lineNumber: 20,
+                                    columnNumber: 13
+                                }, undefined),
+                                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("p", {
+                                    className: "text-xl md:text-2xl mb-10",
+                                    children: "Empowering communities and changing lives, one step at a time"
+                                }, void 0, false, {
+                                    fileName: "src/components/Homepage.js",
+                                    lineNumber: 23,
+                                    columnNumber: 13
+                                }, undefined),
+                                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _reactRouterDom.Link), {
+                                    to: "/donate",
+                                    className: "bg-blue-600 hover:bg-blue-700 text-white font-bold py-4 px-10 rounded-full transition duration-300 text-lg inline-block",
+                                    children: "Donate Now"
+                                }, void 0, false, {
+                                    fileName: "src/components/Homepage.js",
+                                    lineNumber: 26,
+                                    columnNumber: 13
+                                }, undefined)
+                            ]
+                        }, void 0, true, {
+                            fileName: "src/components/Homepage.js",
+                            lineNumber: 19,
+                            columnNumber: 11
+                        }, undefined)
                     }, void 0, false, {
                         fileName: "src/components/Homepage.js",
-                        lineNumber: 38,
+                        lineNumber: 18,
                         columnNumber: 9
                     }, undefined)
                 ]
             }, void 0, true, {
                 fileName: "src/components/Homepage.js",
-                lineNumber: 20,
+                lineNumber: 16,
                 columnNumber: 7
             }, undefined),
             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
-                className: "max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12",
+                className: "max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-16",
                 children: [
                     /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
-                        className: "mb-16",
-                        children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _imageCarauselDefault.default), {
-                            images: carouselImages
-                        }, void 0, false, {
-                            fileName: "src/components/Homepage.js",
-                            lineNumber: 43,
-                            columnNumber: 11
-                        }, undefined)
-                    }, void 0, false, {
-                        fileName: "src/components/Homepage.js",
-                        lineNumber: 42,
-                        columnNumber: 9
-                    }, undefined),
-                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
-                        className: "bg-ngo-primary text-white shadow-lg rounded-lg p-8 mb-16",
+                        className: "bg-gradient-to-r from-blue-500 to-blue-700 text-white shadow-2xl rounded-lg p-10 mb-20",
                         children: [
                             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("h2", {
-                                className: "text-3xl font-bold mb-4 font-heading",
+                                className: "text-4xl font-bold mb-6",
                                 children: "Our Impact"
                             }, void 0, false, {
                                 fileName: "src/components/Homepage.js",
-                                lineNumber: 47,
+                                lineNumber: 38,
                                 columnNumber: 11
                             }, undefined),
                             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
-                                className: "flex items-center justify-between",
+                                className: "flex flex-col md:flex-row items-center justify-between",
                                 children: [
                                     /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                                        className: "text-center md:text-left mb-6 md:mb-0",
                                         children: [
                                             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("p", {
-                                                className: "text-5xl font-bold",
+                                                className: "text-6xl font-bold mb-2",
                                                 children: studentCount
                                             }, void 0, false, {
                                                 fileName: "src/components/Homepage.js",
-                                                lineNumber: 50,
+                                                lineNumber: 41,
                                                 columnNumber: 15
                                             }, undefined),
                                             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("p", {
-                                                className: "text-xl",
+                                                className: "text-2xl",
                                                 children: "Students Supported"
                                             }, void 0, false, {
                                                 fileName: "src/components/Homepage.js",
-                                                lineNumber: 51,
+                                                lineNumber: 42,
                                                 columnNumber: 15
                                             }, undefined)
                                         ]
                                     }, void 0, true, {
                                         fileName: "src/components/Homepage.js",
-                                        lineNumber: 49,
+                                        lineNumber: 40,
                                         columnNumber: 13
                                     }, undefined),
                                     /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _reactRouterDom.Link), {
                                         to: "/our-students",
-                                        className: "bg-white text-ngo-primary hover:bg-ngo-secondary hover:text-white font-bold py-3 px-6 rounded-full transition duration-300",
+                                        className: "bg-white text-blue-600 hover:bg-yellow-400 hover:text-blue-800 font-bold py-3 px-8 rounded-full transition duration-300 text-lg",
                                         children: "Meet Our Students"
                                     }, void 0, false, {
                                         fileName: "src/components/Homepage.js",
-                                        lineNumber: 53,
+                                        lineNumber: 44,
                                         columnNumber: 13
                                     }, undefined)
                                 ]
                             }, void 0, true, {
                                 fileName: "src/components/Homepage.js",
-                                lineNumber: 48,
+                                lineNumber: 39,
                                 columnNumber: 11
                             }, undefined)
                         ]
                     }, void 0, true, {
                         fileName: "src/components/Homepage.js",
-                        lineNumber: 46,
+                        lineNumber: 37,
                         columnNumber: 9
                     }, undefined),
                     /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
-                        className: "grid grid-cols-1 md:grid-cols-3 gap-8 mb-16",
+                        className: "grid grid-cols-1 md:grid-cols-3 gap-8 mb-20",
                         children: [
                             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)(FeatureCard, {
                                 icon: "\uD83E\uDD1D",
@@ -40333,7 +40834,7 @@ const HomePage = ()=>{
                                 description: "We strive to create lasting change by addressing poverty, inequality, and social injustice."
                             }, void 0, false, {
                                 fileName: "src/components/Homepage.js",
-                                lineNumber: 63,
+                                lineNumber: 54,
                                 columnNumber: 11
                             }, undefined),
                             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)(FeatureCard, {
@@ -40342,7 +40843,7 @@ const HomePage = ()=>{
                                 description: "From education to healthcare, we run diverse programs to support communities in need."
                             }, void 0, false, {
                                 fileName: "src/components/Homepage.js",
-                                lineNumber: 68,
+                                lineNumber: 59,
                                 columnNumber: 11
                             }, undefined),
                             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)(FeatureCard, {
@@ -40351,24 +40852,24 @@ const HomePage = ()=>{
                                 description: "Join us as a volunteer, donor, or partner to make a difference in people's lives."
                             }, void 0, false, {
                                 fileName: "src/components/Homepage.js",
-                                lineNumber: 73,
+                                lineNumber: 64,
                                 columnNumber: 11
                             }, undefined)
                         ]
                     }, void 0, true, {
                         fileName: "src/components/Homepage.js",
-                        lineNumber: 62,
+                        lineNumber: 53,
                         columnNumber: 9
                     }, undefined),
                     /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
-                        className: "mb-16",
+                        className: "mb-20",
                         children: [
                             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("h2", {
-                                className: "text-3xl font-bold mb-8 text-center font-heading",
+                                className: "text-4xl font-bold mb-10 text-center text-gray-800",
                                 children: "How You Can Help"
                             }, void 0, false, {
                                 fileName: "src/components/Homepage.js",
-                                lineNumber: 81,
+                                lineNumber: 72,
                                 columnNumber: 11
                             }, undefined),
                             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
@@ -40381,50 +40882,50 @@ const HomePage = ()=>{
                                         link: "/donate"
                                     }, void 0, false, {
                                         fileName: "src/components/Homepage.js",
-                                        lineNumber: 85,
+                                        lineNumber: 76,
                                         columnNumber: 13
                                     }, undefined),
                                     /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)(HelpCard, {
                                         title: "Volunteer",
                                         description: "Give your time and skills to make a difference.",
                                         action: "Join Us",
-                                        link: "/volunteer"
+                                        link: "/contact"
                                     }, void 0, false, {
                                         fileName: "src/components/Homepage.js",
-                                        lineNumber: 91,
+                                        lineNumber: 82,
                                         columnNumber: 13
                                     }, undefined),
                                     /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)(HelpCard, {
                                         title: "Spread the Word",
                                         description: "Share our mission with your network.",
-                                        action: "Share",
-                                        link: "#"
+                                        action: "Learn More",
+                                        link: "/about"
                                     }, void 0, false, {
                                         fileName: "src/components/Homepage.js",
-                                        lineNumber: 97,
+                                        lineNumber: 88,
                                         columnNumber: 13
                                     }, undefined)
                                 ]
                             }, void 0, true, {
                                 fileName: "src/components/Homepage.js",
-                                lineNumber: 84,
+                                lineNumber: 75,
                                 columnNumber: 11
                             }, undefined)
                         ]
                     }, void 0, true, {
                         fileName: "src/components/Homepage.js",
-                        lineNumber: 80,
+                        lineNumber: 71,
                         columnNumber: 9
                     }, undefined),
                     /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
-                        className: "mb-16",
+                        className: "mb-20",
                         children: [
                             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("h2", {
-                                className: "text-3xl font-bold mb-8 text-center font-heading",
+                                className: "text-4xl font-bold mb-10 text-center text-gray-800",
                                 children: "What People Say"
                             }, void 0, false, {
                                 fileName: "src/components/Homepage.js",
-                                lineNumber: 107,
+                                lineNumber: 98,
                                 columnNumber: 11
                             }, undefined),
                             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
@@ -40435,7 +40936,7 @@ const HomePage = ()=>{
                                         author: "Sarah, Student"
                                     }, void 0, false, {
                                         fileName: "src/components/Homepage.js",
-                                        lineNumber: 111,
+                                        lineNumber: 102,
                                         columnNumber: 13
                                     }, undefined),
                                     /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)(Testimonial, {
@@ -40443,25 +40944,25 @@ const HomePage = ()=>{
                                         author: "John, Donor"
                                     }, void 0, false, {
                                         fileName: "src/components/Homepage.js",
-                                        lineNumber: 115,
+                                        lineNumber: 106,
                                         columnNumber: 13
                                     }, undefined)
                                 ]
                             }, void 0, true, {
                                 fileName: "src/components/Homepage.js",
-                                lineNumber: 110,
+                                lineNumber: 101,
                                 columnNumber: 11
                             }, undefined)
                         ]
                     }, void 0, true, {
                         fileName: "src/components/Homepage.js",
-                        lineNumber: 106,
+                        lineNumber: 97,
                         columnNumber: 9
                     }, undefined)
                 ]
             }, void 0, true, {
                 fileName: "src/components/Homepage.js",
-                lineNumber: 41,
+                lineNumber: 36,
                 columnNumber: 7
             }, undefined)
         ]
@@ -40473,79 +40974,79 @@ const HomePage = ()=>{
 };
 _c = HomePage;
 const FeatureCard = ({ icon, title, description })=>/*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
-        className: "bg-white rounded-lg shadow-md p-6 hover:shadow-lg transition duration-300 border-t-4 border-ngo-secondary",
+        className: "bg-white rounded-lg shadow-lg p-8 hover:shadow-xl transition duration-300 border-t-4 border-blue-500 transform hover:-translate-y-1",
         children: [
             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
-                className: "text-5xl mb-4 text-ngo-primary",
+                className: "text-5xl mb-4 text-blue-600",
                 children: icon
+            }, void 0, false, {
+                fileName: "src/components/Homepage.js",
+                lineNumber: 119,
+                columnNumber: 5
+            }, undefined),
+            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("h2", {
+                className: "text-2xl font-semibold text-gray-800 mb-4",
+                children: title
+            }, void 0, false, {
+                fileName: "src/components/Homepage.js",
+                lineNumber: 120,
+                columnNumber: 5
+            }, undefined),
+            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("p", {
+                className: "text-gray-600 leading-relaxed",
+                children: description
+            }, void 0, false, {
+                fileName: "src/components/Homepage.js",
+                lineNumber: 121,
+                columnNumber: 5
+            }, undefined)
+        ]
+    }, void 0, true, {
+        fileName: "src/components/Homepage.js",
+        lineNumber: 118,
+        columnNumber: 3
+    }, undefined);
+_c1 = FeatureCard;
+const HelpCard = ({ title, description, action, link })=>/*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+        className: "bg-white rounded-lg shadow-lg p-8 text-center hover:shadow-xl transition duration-300",
+        children: [
+            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("h3", {
+                className: "text-2xl font-semibold mb-4 text-gray-800",
+                children: title
+            }, void 0, false, {
+                fileName: "src/components/Homepage.js",
+                lineNumber: 127,
+                columnNumber: 5
+            }, undefined),
+            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("p", {
+                className: "text-gray-600 mb-6",
+                children: description
             }, void 0, false, {
                 fileName: "src/components/Homepage.js",
                 lineNumber: 128,
                 columnNumber: 5
             }, undefined),
-            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("h2", {
-                className: "text-2xl font-semibold text-gray-800 mb-3 font-heading",
-                children: title
+            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _reactRouterDom.Link), {
+                to: link,
+                className: "bg-blue-600 text-white px-6 py-3 rounded-full inline-block hover:bg-blue-700 transition duration-300 font-bold",
+                children: action
             }, void 0, false, {
                 fileName: "src/components/Homepage.js",
                 lineNumber: 129,
                 columnNumber: 5
-            }, undefined),
-            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("p", {
-                className: "text-gray-600 leading-relaxed font-body",
-                children: description
-            }, void 0, false, {
-                fileName: "src/components/Homepage.js",
-                lineNumber: 132,
-                columnNumber: 5
             }, undefined)
         ]
     }, void 0, true, {
         fileName: "src/components/Homepage.js",
-        lineNumber: 127,
-        columnNumber: 3
-    }, undefined);
-_c1 = FeatureCard;
-const HelpCard = ({ title, description, action, link })=>/*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
-        className: "bg-white rounded-lg shadow-md p-6 text-center",
-        children: [
-            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("h3", {
-                className: "text-xl font-semibold mb-3 font-heading",
-                children: title
-            }, void 0, false, {
-                fileName: "src/components/Homepage.js",
-                lineNumber: 138,
-                columnNumber: 5
-            }, undefined),
-            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("p", {
-                className: "text-gray-600 mb-4 font-body",
-                children: description
-            }, void 0, false, {
-                fileName: "src/components/Homepage.js",
-                lineNumber: 139,
-                columnNumber: 5
-            }, undefined),
-            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _reactRouterDom.Link), {
-                to: link,
-                className: "bg-ngo-primary text-white px-4 py-2 rounded-full inline-block hover:bg-ngo-secondary transition duration-300",
-                children: action
-            }, void 0, false, {
-                fileName: "src/components/Homepage.js",
-                lineNumber: 140,
-                columnNumber: 5
-            }, undefined)
-        ]
-    }, void 0, true, {
-        fileName: "src/components/Homepage.js",
-        lineNumber: 137,
+        lineNumber: 126,
         columnNumber: 3
     }, undefined);
 _c2 = HelpCard;
 const Testimonial = ({ quote, author })=>/*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
-        className: "bg-white rounded-lg shadow-md p-6",
+        className: "bg-white rounded-lg shadow-lg p-8 hover:shadow-xl transition duration-300",
         children: [
             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("p", {
-                className: "text-gray-600 italic mb-4 font-body",
+                className: "text-gray-600 italic mb-6 text-lg",
                 children: [
                     '"',
                     quote,
@@ -40553,24 +41054,24 @@ const Testimonial = ({ quote, author })=>/*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV
                 ]
             }, void 0, true, {
                 fileName: "src/components/Homepage.js",
-                lineNumber: 151,
+                lineNumber: 140,
                 columnNumber: 5
             }, undefined),
             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("p", {
-                className: "text-right font-semibold font-heading",
+                className: "text-right font-semibold text-blue-600",
                 children: [
                     "- ",
                     author
                 ]
             }, void 0, true, {
                 fileName: "src/components/Homepage.js",
-                lineNumber: 152,
+                lineNumber: 141,
                 columnNumber: 5
             }, undefined)
         ]
     }, void 0, true, {
         fileName: "src/components/Homepage.js",
-        lineNumber: 150,
+        lineNumber: 139,
         columnNumber: 3
     }, undefined);
 _c3 = Testimonial;
@@ -40586,51 +41087,7 @@ $RefreshReg$(_c3, "Testimonial");
   window.$RefreshReg$ = prevRefreshReg;
   window.$RefreshSig$ = prevRefreshSig;
 }
-},{"react/jsx-dev-runtime":"iTorj","react":"21dqq","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"km3Ru","ba68326f93f59d1f":"2cgtE","c62f44a24c86bc3d":"dESEY","e838e9d2f5d72a7":"cTSV6","react-router-dom":"9xmpe","./ImageCarausel":"5bK91"}],"2cgtE":[function(require,module,exports) {
-module.exports = require("85183299eda5f06f").getBundleURL("aXMci") + "img1.38381241.jpg" + "?" + Date.now();
-
-},{"85183299eda5f06f":"lgJ39"}],"lgJ39":[function(require,module,exports) {
-"use strict";
-var bundleURL = {};
-function getBundleURLCached(id) {
-    var value = bundleURL[id];
-    if (!value) {
-        value = getBundleURL();
-        bundleURL[id] = value;
-    }
-    return value;
-}
-function getBundleURL() {
-    try {
-        throw new Error();
-    } catch (err) {
-        var matches = ("" + err.stack).match(/(https?|file|ftp|(chrome|moz|safari-web)-extension):\/\/[^)\n]+/g);
-        if (matches) // The first two stack frames will be this function and getBundleURLCached.
-        // Use the 3rd one, which will be a runtime in the original bundle.
-        return getBaseURL(matches[2]);
-    }
-    return "/";
-}
-function getBaseURL(url) {
-    return ("" + url).replace(/^((?:https?|file|ftp|(chrome|moz|safari-web)-extension):\/\/.+)\/[^/]+$/, "$1") + "/";
-}
-// TODO: Replace uses with `new URL(url).origin` when ie11 is no longer supported.
-function getOrigin(url) {
-    var matches = ("" + url).match(/(https?|file|ftp|(chrome|moz|safari-web)-extension):\/\/[^/]+/);
-    if (!matches) throw new Error("Origin not found");
-    return matches[0];
-}
-exports.getBundleURL = getBundleURLCached;
-exports.getBaseURL = getBaseURL;
-exports.getOrigin = getOrigin;
-
-},{}],"dESEY":[function(require,module,exports) {
-module.exports = require("e8b6a2bd235e78f1").getBundleURL("aXMci") + "img2.f53bee19.jpg" + "?" + Date.now();
-
-},{"e8b6a2bd235e78f1":"lgJ39"}],"cTSV6":[function(require,module,exports) {
-module.exports = require("d8a0ff66eab624b3").getBundleURL("aXMci") + "img3.5a2e49a4.jpg" + "?" + Date.now();
-
-},{"d8a0ff66eab624b3":"lgJ39"}],"5bK91":[function(require,module,exports) {
+},{"react/jsx-dev-runtime":"iTorj","react":"21dqq","react-router-dom":"9xmpe","./ImageCarausel":"5bK91","ba68326f93f59d1f":"2cgtE","c62f44a24c86bc3d":"dESEY","e838e9d2f5d72a7":"cTSV6","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"km3Ru"}],"5bK91":[function(require,module,exports) {
 var $parcel$ReactRefreshHelpers$1928 = require("@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js");
 var prevRefreshReg = window.$RefreshReg$;
 var prevRefreshSig = window.$RefreshSig$;
@@ -40658,7 +41115,7 @@ const ImageCarousel = ({ images })=>{
         fade: true
     };
     return /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
-        className: "relative rounded-lg overflow-hidden shadow-xl",
+        className: "relative rounded-lg overflow-hidden shadow-2xl",
         children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _reactSlickDefault.default), {
             ...settings,
             children: images.map((image, index)=>/*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
@@ -40667,16 +41124,16 @@ const ImageCarousel = ({ images })=>{
                         /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("img", {
                             src: image.src,
                             alt: image.alt,
-                            className: "w-full h-[500px] object-cover transform transition-transform duration-300 hover:scale-105"
+                            className: "w-full h-[600px] object-cover"
                         }, void 0, false, {
                             fileName: "src/components/ImageCarausel.js",
                             lineNumber: 23,
                             columnNumber: 13
                         }, undefined),
                         /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
-                            className: "absolute inset-0 bg-black bg-opacity-40 flex items-center justify-center",
+                            className: "absolute inset-0 bg-gradient-to-t from-black to-transparent flex items-end justify-start p-10",
                             children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("h2", {
-                                className: "text-white text-3xl font-bold font-heading",
+                                className: "text-white text-4xl font-bold font-heading max-w-lg leading-tight",
                                 children: image.alt
                             }, void 0, false, {
                                 fileName: "src/components/ImageCarausel.js",
@@ -44838,7 +45295,51 @@ module.exports = {
     each: each
 };
 
-},{}],"gyhyx":[function() {},{}],"eyap3":[function() {},{}],"8pPOA":[function(require,module,exports) {
+},{}],"gyhyx":[function() {},{}],"eyap3":[function() {},{}],"2cgtE":[function(require,module,exports) {
+module.exports = require("85183299eda5f06f").getBundleURL("aXMci") + "img1.38381241.jpg" + "?" + Date.now();
+
+},{"85183299eda5f06f":"lgJ39"}],"lgJ39":[function(require,module,exports) {
+"use strict";
+var bundleURL = {};
+function getBundleURLCached(id) {
+    var value = bundleURL[id];
+    if (!value) {
+        value = getBundleURL();
+        bundleURL[id] = value;
+    }
+    return value;
+}
+function getBundleURL() {
+    try {
+        throw new Error();
+    } catch (err) {
+        var matches = ("" + err.stack).match(/(https?|file|ftp|(chrome|moz|safari-web)-extension):\/\/[^)\n]+/g);
+        if (matches) // The first two stack frames will be this function and getBundleURLCached.
+        // Use the 3rd one, which will be a runtime in the original bundle.
+        return getBaseURL(matches[2]);
+    }
+    return "/";
+}
+function getBaseURL(url) {
+    return ("" + url).replace(/^((?:https?|file|ftp|(chrome|moz|safari-web)-extension):\/\/.+)\/[^/]+$/, "$1") + "/";
+}
+// TODO: Replace uses with `new URL(url).origin` when ie11 is no longer supported.
+function getOrigin(url) {
+    var matches = ("" + url).match(/(https?|file|ftp|(chrome|moz|safari-web)-extension):\/\/[^/]+/);
+    if (!matches) throw new Error("Origin not found");
+    return matches[0];
+}
+exports.getBundleURL = getBundleURLCached;
+exports.getBaseURL = getBaseURL;
+exports.getOrigin = getOrigin;
+
+},{}],"dESEY":[function(require,module,exports) {
+module.exports = require("e8b6a2bd235e78f1").getBundleURL("aXMci") + "img2.f53bee19.jpg" + "?" + Date.now();
+
+},{"e8b6a2bd235e78f1":"lgJ39"}],"cTSV6":[function(require,module,exports) {
+module.exports = require("d8a0ff66eab624b3").getBundleURL("aXMci") + "img3.5a2e49a4.jpg" + "?" + Date.now();
+
+},{"d8a0ff66eab624b3":"lgJ39"}],"8pPOA":[function(require,module,exports) {
 var $parcel$ReactRefreshHelpers$bc7c = require("@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js");
 var prevRefreshReg = window.$RefreshReg$;
 var prevRefreshSig = window.$RefreshSig$;
@@ -45362,11 +45863,150 @@ $RefreshReg$(_c1, "InfoItem");
   window.$RefreshReg$ = prevRefreshReg;
   window.$RefreshSig$ = prevRefreshSig;
 }
-},{"react/jsx-dev-runtime":"iTorj","react":"21dqq","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"km3Ru"}],"291yY":[function(require,module,exports) {
-var $parcel$ReactRefreshHelpers$eb92 = require("@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js");
+},{"react/jsx-dev-runtime":"iTorj","react":"21dqq","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"km3Ru"}],"hL10n":[function(require,module,exports) {
+var $parcel$ReactRefreshHelpers$4efa = require("@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js");
 var prevRefreshReg = window.$RefreshReg$;
 var prevRefreshSig = window.$RefreshSig$;
-$parcel$ReactRefreshHelpers$eb92.prelude(module);
+$parcel$ReactRefreshHelpers$4efa.prelude(module);
+
+try {
+var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
+parcelHelpers.defineInteropFlag(exports);
+parcelHelpers.export(exports, "useAdmin", ()=>useAdmin);
+parcelHelpers.export(exports, "AdminProvider", ()=>AdminProvider);
+var _jsxDevRuntime = require("react/jsx-dev-runtime");
+var _react = require("react");
+var _reactDefault = parcelHelpers.interopDefault(_react);
+var _axios = require("axios");
+var _axiosDefault = parcelHelpers.interopDefault(_axios);
+var _s = $RefreshSig$(), _s1 = $RefreshSig$();
+const AdminContext = /*#__PURE__*/ (0, _react.createContext)();
+const useAdmin = ()=>{
+    _s();
+    return (0, _react.useContext)(AdminContext);
+};
+_s(useAdmin, "gDsCjeeItUuvgOWf1v4qoK9RF6k=");
+const AdminProvider = ({ children })=>{
+    _s1();
+    const [adminToken, setAdminToken] = (0, _react.useState)(localStorage.getItem("adminToken"));
+    const login = async (username, password)=>{
+        try {
+            const response = await (0, _axiosDefault.default).post("http://localhost:8000/api/admin/login/", {
+                username,
+                password
+            });
+            const token = response.data.token;
+            setAdminToken(token);
+            localStorage.setItem("adminToken", token);
+            return true;
+        } catch (error) {
+            console.error("Login failed:", error);
+            return false;
+        }
+    };
+    const logout = ()=>{
+        setAdminToken(null);
+        localStorage.removeItem("adminToken");
+    };
+    const fetchStudents = async ()=>{
+        try {
+            const response = await (0, _axiosDefault.default).get("http://localhost:8000/api/students/", {
+                headers: {
+                    Authorization: `Bearer ${adminToken}`
+                }
+            });
+            return response.data;
+        } catch (error) {
+            console.error("Error fetching students:", error);
+            throw error;
+        }
+    };
+    const fetchStudent = async (id)=>{
+        try {
+            const response = await (0, _axiosDefault.default).get(`http://localhost:8000/api/students/${id}/`, {
+                headers: {
+                    Authorization: `Bearer ${adminToken}`
+                }
+            });
+            return response.data;
+        } catch (error) {
+            console.error("Error fetching student:", error);
+            throw error;
+        }
+    };
+    const updateStudent = async (id, data)=>{
+        try {
+            const response = await (0, _axiosDefault.default).put(`http://localhost:8000/api/students/${id}/`, data, {
+                headers: {
+                    Authorization: `Bearer ${adminToken}`,
+                    "Content-Type": "multipart/form-data"
+                }
+            });
+            return response.data;
+        } catch (error) {
+            console.error("Error updating student:", error);
+            throw error;
+        }
+    };
+    const deleteStudent = async (id)=>{
+        try {
+            await (0, _axiosDefault.default).delete(`http://localhost:8000/api/students/${id}/`, {
+                headers: {
+                    Authorization: `Bearer ${adminToken}`
+                }
+            });
+        } catch (error) {
+            console.error("Error deleting student:", error);
+            throw error;
+        }
+    };
+    const addStudent = async (data)=>{
+        try {
+            const response = await (0, _axiosDefault.default).post("http://localhost:8000/api/students/", data, {
+                headers: {
+                    Authorization: `Bearer ${adminToken}`,
+                    "Content-Type": "multipart/form-data"
+                }
+            });
+            return response.data;
+        } catch (error) {
+            console.error("Error adding student:", error);
+            throw error;
+        }
+    };
+    return /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)(AdminContext.Provider, {
+        value: {
+            adminToken,
+            login,
+            logout,
+            fetchStudents,
+            fetchStudent,
+            updateStudent,
+            deleteStudent,
+            addStudent
+        },
+        children: children
+    }, void 0, false, {
+        fileName: "src/admin/contexts/AdminContext.js",
+        lineNumber: 111,
+        columnNumber: 5
+    }, undefined);
+};
+_s1(AdminProvider, "ILoSvbMmiZ0EcxcPfZr0cBnfkuY=");
+_c = AdminProvider;
+var _c;
+$RefreshReg$(_c, "AdminProvider");
+
+  $parcel$ReactRefreshHelpers$4efa.postlude(module);
+} finally {
+  window.$RefreshReg$ = prevRefreshReg;
+  window.$RefreshSig$ = prevRefreshSig;
+}
+},{"react/jsx-dev-runtime":"iTorj","react":"21dqq","axios":"jo6P5","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"km3Ru"}],"jTg1i":[function(require,module,exports) {
+var $parcel$ReactRefreshHelpers$95a1 = require("@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js");
+var prevRefreshReg = window.$RefreshReg$;
+var prevRefreshSig = window.$RefreshSig$;
+$parcel$ReactRefreshHelpers$95a1.prelude(module);
 
 try {
 var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
@@ -45374,11 +46014,738 @@ parcelHelpers.defineInteropFlag(exports);
 var _jsxDevRuntime = require("react/jsx-dev-runtime");
 var _react = require("react");
 var _reactDefault = parcelHelpers.interopDefault(_react);
-var _studentContext = require("../contexts/StudentContext");
+var _reactRouterDom = require("react-router-dom");
+var _adminContext = require("../contexts/AdminContext");
+var _s = $RefreshSig$();
+const AdminLogin = ()=>{
+    _s();
+    const [username, setUsername] = (0, _react.useState)("");
+    const [password, setPassword] = (0, _react.useState)("");
+    const [error, setError] = (0, _react.useState)("");
+    const navigate = (0, _reactRouterDom.useNavigate)();
+    const { login } = (0, _adminContext.useAdmin)();
+    const handleSubmit = async (e)=>{
+        e.preventDefault();
+        const success = await login(username, password);
+        if (success) navigate("/admin/dashboard");
+        else setError("Invalid credentials");
+    };
+    return /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+        className: "min-h-screen flex items-center justify-center bg-gray-50 py-12 px-4 sm:px-6 lg:px-8",
+        children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+            className: "max-w-md w-full space-y-8",
+            children: [
+                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                    children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("h2", {
+                        className: "mt-6 text-center text-3xl font-extrabold text-gray-900",
+                        children: "Admin Login"
+                    }, void 0, false, {
+                        fileName: "src/admin/components/AdminLogin.js",
+                        lineNumber: 26,
+                        columnNumber: 11
+                    }, undefined)
+                }, void 0, false, {
+                    fileName: "src/admin/components/AdminLogin.js",
+                    lineNumber: 25,
+                    columnNumber: 9
+                }, undefined),
+                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("form", {
+                    className: "mt-8 space-y-6",
+                    onSubmit: handleSubmit,
+                    children: [
+                        /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("input", {
+                            type: "hidden",
+                            name: "remember",
+                            value: "true"
+                        }, void 0, false, {
+                            fileName: "src/admin/components/AdminLogin.js",
+                            lineNumber: 31,
+                            columnNumber: 11
+                        }, undefined),
+                        /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                            className: "rounded-md shadow-sm -space-y-px",
+                            children: [
+                                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                                    children: [
+                                        /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("label", {
+                                            htmlFor: "username",
+                                            className: "sr-only",
+                                            children: "Username"
+                                        }, void 0, false, {
+                                            fileName: "src/admin/components/AdminLogin.js",
+                                            lineNumber: 34,
+                                            columnNumber: 15
+                                        }, undefined),
+                                        /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("input", {
+                                            id: "username",
+                                            name: "username",
+                                            type: "text",
+                                            required: true,
+                                            className: "appearance-none rounded-none relative block w-full px-3 py-2 border border-gray-300 placeholder-gray-500 text-gray-900 rounded-t-md focus:outline-none focus:ring-indigo-500 focus:border-indigo-500 focus:z-10 sm:text-sm",
+                                            placeholder: "Username",
+                                            value: username,
+                                            onChange: (e)=>setUsername(e.target.value)
+                                        }, void 0, false, {
+                                            fileName: "src/admin/components/AdminLogin.js",
+                                            lineNumber: 37,
+                                            columnNumber: 15
+                                        }, undefined)
+                                    ]
+                                }, void 0, true, {
+                                    fileName: "src/admin/components/AdminLogin.js",
+                                    lineNumber: 33,
+                                    columnNumber: 13
+                                }, undefined),
+                                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                                    children: [
+                                        /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("label", {
+                                            htmlFor: "password",
+                                            className: "sr-only",
+                                            children: "Password"
+                                        }, void 0, false, {
+                                            fileName: "src/admin/components/AdminLogin.js",
+                                            lineNumber: 49,
+                                            columnNumber: 15
+                                        }, undefined),
+                                        /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("input", {
+                                            id: "password",
+                                            name: "password",
+                                            type: "password",
+                                            required: true,
+                                            className: "appearance-none rounded-none relative block w-full px-3 py-2 border border-gray-300 placeholder-gray-500 text-gray-900 rounded-b-md focus:outline-none focus:ring-indigo-500 focus:border-indigo-500 focus:z-10 sm:text-sm",
+                                            placeholder: "Password",
+                                            value: password,
+                                            onChange: (e)=>setPassword(e.target.value)
+                                        }, void 0, false, {
+                                            fileName: "src/admin/components/AdminLogin.js",
+                                            lineNumber: 52,
+                                            columnNumber: 15
+                                        }, undefined)
+                                    ]
+                                }, void 0, true, {
+                                    fileName: "src/admin/components/AdminLogin.js",
+                                    lineNumber: 48,
+                                    columnNumber: 13
+                                }, undefined)
+                            ]
+                        }, void 0, true, {
+                            fileName: "src/admin/components/AdminLogin.js",
+                            lineNumber: 32,
+                            columnNumber: 11
+                        }, undefined),
+                        error && /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                            className: "text-red-500 text-sm",
+                            children: error
+                        }, void 0, false, {
+                            fileName: "src/admin/components/AdminLogin.js",
+                            lineNumber: 65,
+                            columnNumber: 21
+                        }, undefined),
+                        /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                            children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("button", {
+                                type: "submit",
+                                className: "group relative w-full flex justify-center py-2 px-4 border border-transparent text-sm font-medium rounded-md text-white bg-indigo-600 hover:bg-indigo-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500",
+                                children: "Sign in"
+                            }, void 0, false, {
+                                fileName: "src/admin/components/AdminLogin.js",
+                                lineNumber: 68,
+                                columnNumber: 13
+                            }, undefined)
+                        }, void 0, false, {
+                            fileName: "src/admin/components/AdminLogin.js",
+                            lineNumber: 67,
+                            columnNumber: 11
+                        }, undefined)
+                    ]
+                }, void 0, true, {
+                    fileName: "src/admin/components/AdminLogin.js",
+                    lineNumber: 30,
+                    columnNumber: 9
+                }, undefined)
+            ]
+        }, void 0, true, {
+            fileName: "src/admin/components/AdminLogin.js",
+            lineNumber: 24,
+            columnNumber: 7
+        }, undefined)
+    }, void 0, false, {
+        fileName: "src/admin/components/AdminLogin.js",
+        lineNumber: 23,
+        columnNumber: 5
+    }, undefined);
+};
+_s(AdminLogin, "9ZECp20vOWiS5sEI84O+D0q9Ge0=", false, function() {
+    return [
+        (0, _reactRouterDom.useNavigate),
+        (0, _adminContext.useAdmin)
+    ];
+});
+_c = AdminLogin;
+exports.default = AdminLogin;
+var _c;
+$RefreshReg$(_c, "AdminLogin");
+
+  $parcel$ReactRefreshHelpers$95a1.postlude(module);
+} finally {
+  window.$RefreshReg$ = prevRefreshReg;
+  window.$RefreshSig$ = prevRefreshSig;
+}
+},{"react/jsx-dev-runtime":"iTorj","react":"21dqq","react-router-dom":"9xmpe","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"km3Ru","../contexts/AdminContext":"hL10n"}],"fWUgN":[function(require,module,exports) {
+var $parcel$ReactRefreshHelpers$aa19 = require("@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js");
+var prevRefreshReg = window.$RefreshReg$;
+var prevRefreshSig = window.$RefreshSig$;
+$parcel$ReactRefreshHelpers$aa19.prelude(module);
+
+try {
+var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
+parcelHelpers.defineInteropFlag(exports);
+var _jsxDevRuntime = require("react/jsx-dev-runtime");
+var _react = require("react");
+var _reactDefault = parcelHelpers.interopDefault(_react);
+var _reactRouterDom = require("react-router-dom");
+var _adminStudentList = require("./AdminStudentList");
+var _adminStudentListDefault = parcelHelpers.interopDefault(_adminStudentList);
+const AdminDashboard = ()=>{
+    return /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+        className: "container mx-auto px-4 py-8",
+        children: [
+            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("h1", {
+                className: "text-3xl font-bold mb-6",
+                children: "Admin Dashboard"
+            }, void 0, false, {
+                fileName: "src/admin/components/AdminDashboard.js",
+                lineNumber: 8,
+                columnNumber: 7
+            }, undefined),
+            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                className: "mb-6",
+                children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _reactRouterDom.Link), {
+                    to: "/admin/student/add",
+                    className: "bg-green-500 hover:bg-green-600 text-white font-bold py-2 px-4 rounded",
+                    children: "Add New Student"
+                }, void 0, false, {
+                    fileName: "src/admin/components/AdminDashboard.js",
+                    lineNumber: 10,
+                    columnNumber: 9
+                }, undefined)
+            }, void 0, false, {
+                fileName: "src/admin/components/AdminDashboard.js",
+                lineNumber: 9,
+                columnNumber: 7
+            }, undefined),
+            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _adminStudentListDefault.default), {}, void 0, false, {
+                fileName: "src/admin/components/AdminDashboard.js",
+                lineNumber: 17,
+                columnNumber: 7
+            }, undefined)
+        ]
+    }, void 0, true, {
+        fileName: "src/admin/components/AdminDashboard.js",
+        lineNumber: 7,
+        columnNumber: 5
+    }, undefined);
+};
+_c = AdminDashboard;
+exports.default = AdminDashboard;
+var _c;
+$RefreshReg$(_c, "AdminDashboard");
+
+  $parcel$ReactRefreshHelpers$aa19.postlude(module);
+} finally {
+  window.$RefreshReg$ = prevRefreshReg;
+  window.$RefreshSig$ = prevRefreshSig;
+}
+},{"react/jsx-dev-runtime":"iTorj","react":"21dqq","react-router-dom":"9xmpe","./AdminStudentList":"bLOF7","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"km3Ru"}],"bLOF7":[function(require,module,exports) {
+var $parcel$ReactRefreshHelpers$4e1b = require("@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js");
+var prevRefreshReg = window.$RefreshReg$;
+var prevRefreshSig = window.$RefreshSig$;
+$parcel$ReactRefreshHelpers$4e1b.prelude(module);
+
+try {
+var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
+parcelHelpers.defineInteropFlag(exports);
+var _jsxDevRuntime = require("react/jsx-dev-runtime");
+var _react = require("react");
+var _reactDefault = parcelHelpers.interopDefault(_react);
+var _reactRouterDom = require("react-router-dom");
+var _adminContext = require("../contexts/AdminContext");
+var _s = $RefreshSig$();
+const AdminStudentList = ()=>{
+    _s();
+    const { fetchStudents, deleteStudent } = (0, _adminContext.useAdmin)();
+    const [students, setStudents] = (0, _react.useState)([]);
+    const [loading, setLoading] = (0, _react.useState)(true);
+    const [error, setError] = (0, _react.useState)(null);
+    (0, _react.useEffect)(()=>{
+        const loadStudents = async ()=>{
+            try {
+                const data = await fetchStudents();
+                setStudents(data);
+                setLoading(false);
+            } catch (err) {
+                setError("Failed to load students");
+                setLoading(false);
+            }
+        };
+        loadStudents();
+    }, [
+        fetchStudents
+    ]);
+    const handleDelete = async (id)=>{
+        if (window.confirm("Are you sure you want to delete this student?")) try {
+            await deleteStudent(id);
+            setStudents(students.filter((student)=>student.id !== id));
+        } catch (err) {
+            setError("Failed to delete student");
+        }
+    };
+    if (loading) return /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+        children: "Loading..."
+    }, void 0, false, {
+        fileName: "src/admin/components/AdminStudentList.js",
+        lineNumber: 36,
+        columnNumber: 23
+    }, undefined);
+    if (error) return /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+        className: "text-red-500",
+        children: error
+    }, void 0, false, {
+        fileName: "src/admin/components/AdminStudentList.js",
+        lineNumber: 37,
+        columnNumber: 21
+    }, undefined);
+    return /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+        className: "overflow-x-auto",
+        children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("table", {
+            className: "min-w-full bg-white",
+            children: [
+                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("thead", {
+                    children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("tr", {
+                        children: [
+                            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("th", {
+                                className: "px-6 py-3 border-b-2 border-gray-300 text-left text-xs font-semibold text-gray-600 uppercase tracking-wider",
+                                children: "Name"
+                            }, void 0, false, {
+                                fileName: "src/admin/components/AdminStudentList.js",
+                                lineNumber: 44,
+                                columnNumber: 13
+                            }, undefined),
+                            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("th", {
+                                className: "px-6 py-3 border-b-2 border-gray-300 text-left text-xs font-semibold text-gray-600 uppercase tracking-wider",
+                                children: "Age"
+                            }, void 0, false, {
+                                fileName: "src/admin/components/AdminStudentList.js",
+                                lineNumber: 47,
+                                columnNumber: 13
+                            }, undefined),
+                            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("th", {
+                                className: "px-6 py-3 border-b-2 border-gray-300 text-left text-xs font-semibold text-gray-600 uppercase tracking-wider",
+                                children: "Actions"
+                            }, void 0, false, {
+                                fileName: "src/admin/components/AdminStudentList.js",
+                                lineNumber: 50,
+                                columnNumber: 13
+                            }, undefined)
+                        ]
+                    }, void 0, true, {
+                        fileName: "src/admin/components/AdminStudentList.js",
+                        lineNumber: 43,
+                        columnNumber: 11
+                    }, undefined)
+                }, void 0, false, {
+                    fileName: "src/admin/components/AdminStudentList.js",
+                    lineNumber: 42,
+                    columnNumber: 9
+                }, undefined),
+                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("tbody", {
+                    children: students.map((student)=>/*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("tr", {
+                            children: [
+                                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("td", {
+                                    className: "px-6 py-4 whitespace-nowrap",
+                                    children: student.name
+                                }, void 0, false, {
+                                    fileName: "src/admin/components/AdminStudentList.js",
+                                    lineNumber: 58,
+                                    columnNumber: 15
+                                }, undefined),
+                                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("td", {
+                                    className: "px-6 py-4 whitespace-nowrap",
+                                    children: student.age
+                                }, void 0, false, {
+                                    fileName: "src/admin/components/AdminStudentList.js",
+                                    lineNumber: 59,
+                                    columnNumber: 15
+                                }, undefined),
+                                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("td", {
+                                    className: "px-6 py-4 whitespace-nowrap",
+                                    children: [
+                                        /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _reactRouterDom.Link), {
+                                            to: `/admin/student/${student.id}/edit`,
+                                            className: "text-indigo-600 hover:text-indigo-900 mr-4",
+                                            children: "Edit"
+                                        }, void 0, false, {
+                                            fileName: "src/admin/components/AdminStudentList.js",
+                                            lineNumber: 61,
+                                            columnNumber: 17
+                                        }, undefined),
+                                        /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("button", {
+                                            onClick: ()=>handleDelete(student.id),
+                                            className: "text-red-600 hover:text-red-900",
+                                            children: "Delete"
+                                        }, void 0, false, {
+                                            fileName: "src/admin/components/AdminStudentList.js",
+                                            lineNumber: 67,
+                                            columnNumber: 17
+                                        }, undefined)
+                                    ]
+                                }, void 0, true, {
+                                    fileName: "src/admin/components/AdminStudentList.js",
+                                    lineNumber: 60,
+                                    columnNumber: 15
+                                }, undefined)
+                            ]
+                        }, student.id, true, {
+                            fileName: "src/admin/components/AdminStudentList.js",
+                            lineNumber: 57,
+                            columnNumber: 13
+                        }, undefined))
+                }, void 0, false, {
+                    fileName: "src/admin/components/AdminStudentList.js",
+                    lineNumber: 55,
+                    columnNumber: 9
+                }, undefined)
+            ]
+        }, void 0, true, {
+            fileName: "src/admin/components/AdminStudentList.js",
+            lineNumber: 41,
+            columnNumber: 7
+        }, undefined)
+    }, void 0, false, {
+        fileName: "src/admin/components/AdminStudentList.js",
+        lineNumber: 40,
+        columnNumber: 5
+    }, undefined);
+};
+_s(AdminStudentList, "xyUHMc8Eq6yv3haR1Ld6wa1/O5E=", false, function() {
+    return [
+        (0, _adminContext.useAdmin)
+    ];
+});
+_c = AdminStudentList;
+exports.default = AdminStudentList;
+var _c;
+$RefreshReg$(_c, "AdminStudentList");
+
+  $parcel$ReactRefreshHelpers$4e1b.postlude(module);
+} finally {
+  window.$RefreshReg$ = prevRefreshReg;
+  window.$RefreshSig$ = prevRefreshSig;
+}
+},{"react/jsx-dev-runtime":"iTorj","react":"21dqq","react-router-dom":"9xmpe","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"km3Ru","../contexts/AdminContext":"hL10n"}],"5J0LL":[function(require,module,exports) {
+var $parcel$ReactRefreshHelpers$3861 = require("@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js");
+var prevRefreshReg = window.$RefreshReg$;
+var prevRefreshSig = window.$RefreshSig$;
+$parcel$ReactRefreshHelpers$3861.prelude(module);
+
+try {
+var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
+parcelHelpers.defineInteropFlag(exports);
+var _jsxDevRuntime = require("react/jsx-dev-runtime");
+var _react = require("react");
+var _reactDefault = parcelHelpers.interopDefault(_react);
+var _reactRouterDom = require("react-router-dom");
+var _adminContext = require("../contexts/AdminContext");
+var _s = $RefreshSig$();
+const AdminStudentEdit = ()=>{
+    _s();
+    const { id } = (0, _reactRouterDom.useParams)();
+    const navigate = (0, _reactRouterDom.useNavigate)();
+    const { fetchStudent, updateStudent } = (0, _adminContext.useAdmin)();
+    const [student, setStudent] = (0, _react.useState)({
+        name: "",
+        age: "",
+        achievements: "",
+        aboutUs: "",
+        image: null
+    });
+    const [loading, setLoading] = (0, _react.useState)(true);
+    const [error, setError] = (0, _react.useState)(null);
+    (0, _react.useEffect)(()=>{
+        const loadStudent = async ()=>{
+            try {
+                const data = await fetchStudent(id);
+                setStudent({
+                    ...data,
+                    achievements: Array.isArray(data.achievements) ? data.achievements.join(", ") : data.achievements
+                });
+                setLoading(false);
+            } catch (err) {
+                setError("Failed to load student");
+                setLoading(false);
+            }
+        };
+        loadStudent();
+    }, [
+        id,
+        fetchStudent
+    ]);
+    const handleChange = (e)=>{
+        const { name, value, files } = e.target;
+        setStudent((prev)=>({
+                ...prev,
+                [name]: files ? files[0] : value
+            }));
+    };
+    const handleSubmit = async (e)=>{
+        e.preventDefault();
+        try {
+            const formData = new FormData();
+            for(const key in student)if (key === "achievements") formData.append(key, JSON.stringify(student[key].split(",").map((item)=>item.trim())));
+            else formData.append(key, student[key]);
+            await updateStudent(id, formData);
+            navigate("/admin/dashboard");
+        } catch (err) {
+            setError("Failed to update student");
+        }
+    };
+    if (loading) return /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+        children: "Loading..."
+    }, void 0, false, {
+        fileName: "src/admin/components/AdminStudentEdit.js",
+        lineNumber: 67,
+        columnNumber: 23
+    }, undefined);
+    if (error) return /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+        className: "text-red-500",
+        children: error
+    }, void 0, false, {
+        fileName: "src/admin/components/AdminStudentEdit.js",
+        lineNumber: 68,
+        columnNumber: 21
+    }, undefined);
+    return /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+        className: "max-w-4xl mx-auto mt-8 p-6 bg-white shadow-lg rounded-lg",
+        children: [
+            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("h2", {
+                className: "text-2xl font-bold mb-6",
+                children: "Edit Student"
+            }, void 0, false, {
+                fileName: "src/admin/components/AdminStudentEdit.js",
+                lineNumber: 72,
+                columnNumber: 7
+            }, undefined),
+            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("form", {
+                onSubmit: handleSubmit,
+                children: [
+                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                        className: "mb-4",
+                        children: [
+                            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("label", {
+                                htmlFor: "name",
+                                className: "block text-gray-700 font-bold mb-2",
+                                children: "Name"
+                            }, void 0, false, {
+                                fileName: "src/admin/components/AdminStudentEdit.js",
+                                lineNumber: 75,
+                                columnNumber: 11
+                            }, undefined),
+                            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("input", {
+                                type: "text",
+                                id: "name",
+                                name: "name",
+                                value: student.name,
+                                onChange: handleChange,
+                                className: "w-full px-3 py-2 border rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500",
+                                required: true
+                            }, void 0, false, {
+                                fileName: "src/admin/components/AdminStudentEdit.js",
+                                lineNumber: 78,
+                                columnNumber: 11
+                            }, undefined)
+                        ]
+                    }, void 0, true, {
+                        fileName: "src/admin/components/AdminStudentEdit.js",
+                        lineNumber: 74,
+                        columnNumber: 9
+                    }, undefined),
+                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                        className: "mb-4",
+                        children: [
+                            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("label", {
+                                htmlFor: "age",
+                                className: "block text-gray-700 font-bold mb-2",
+                                children: "Age"
+                            }, void 0, false, {
+                                fileName: "src/admin/components/AdminStudentEdit.js",
+                                lineNumber: 89,
+                                columnNumber: 11
+                            }, undefined),
+                            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("input", {
+                                type: "number",
+                                id: "age",
+                                name: "age",
+                                value: student.age,
+                                onChange: handleChange,
+                                className: "w-full px-3 py-2 border rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500",
+                                required: true
+                            }, void 0, false, {
+                                fileName: "src/admin/components/AdminStudentEdit.js",
+                                lineNumber: 92,
+                                columnNumber: 11
+                            }, undefined)
+                        ]
+                    }, void 0, true, {
+                        fileName: "src/admin/components/AdminStudentEdit.js",
+                        lineNumber: 88,
+                        columnNumber: 9
+                    }, undefined),
+                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                        className: "mb-4",
+                        children: [
+                            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("label", {
+                                htmlFor: "achievements",
+                                className: "block text-gray-700 font-bold mb-2",
+                                children: "Achievements"
+                            }, void 0, false, {
+                                fileName: "src/admin/components/AdminStudentEdit.js",
+                                lineNumber: 103,
+                                columnNumber: 11
+                            }, undefined),
+                            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("input", {
+                                type: "text",
+                                id: "achievements",
+                                name: "achievements",
+                                value: student.achievements,
+                                onChange: handleChange,
+                                className: "w-full px-3 py-2 border rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500"
+                            }, void 0, false, {
+                                fileName: "src/admin/components/AdminStudentEdit.js",
+                                lineNumber: 109,
+                                columnNumber: 11
+                            }, undefined)
+                        ]
+                    }, void 0, true, {
+                        fileName: "src/admin/components/AdminStudentEdit.js",
+                        lineNumber: 102,
+                        columnNumber: 9
+                    }, undefined),
+                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                        className: "mb-4",
+                        children: [
+                            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("label", {
+                                htmlFor: "aboutUs",
+                                className: "block text-gray-700 font-bold mb-2",
+                                children: "About the student"
+                            }, void 0, false, {
+                                fileName: "src/admin/components/AdminStudentEdit.js",
+                                lineNumber: 119,
+                                columnNumber: 11
+                            }, undefined),
+                            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("textarea", {
+                                id: "aboutUs",
+                                name: "aboutUs",
+                                value: student.aboutUs,
+                                onChange: handleChange,
+                                className: "w-full px-3 py-2 border rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500",
+                                rows: "4"
+                            }, void 0, false, {
+                                fileName: "src/admin/components/AdminStudentEdit.js",
+                                lineNumber: 125,
+                                columnNumber: 11
+                            }, undefined)
+                        ]
+                    }, void 0, true, {
+                        fileName: "src/admin/components/AdminStudentEdit.js",
+                        lineNumber: 118,
+                        columnNumber: 9
+                    }, undefined),
+                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                        className: "mb-4",
+                        children: [
+                            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("label", {
+                                htmlFor: "image",
+                                className: "block text-gray-700 font-bold mb-2",
+                                children: "Student Image"
+                            }, void 0, false, {
+                                fileName: "src/admin/components/AdminStudentEdit.js",
+                                lineNumber: 135,
+                                columnNumber: 11
+                            }, undefined),
+                            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("input", {
+                                type: "file",
+                                id: "image",
+                                name: "image",
+                                onChange: handleChange,
+                                className: "w-full px-3 py-2 border rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500"
+                            }, void 0, false, {
+                                fileName: "src/admin/components/AdminStudentEdit.js",
+                                lineNumber: 138,
+                                columnNumber: 11
+                            }, undefined)
+                        ]
+                    }, void 0, true, {
+                        fileName: "src/admin/components/AdminStudentEdit.js",
+                        lineNumber: 134,
+                        columnNumber: 9
+                    }, undefined),
+                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("button", {
+                        type: "submit",
+                        className: "bg-blue-500 hover:bg-blue-600 text-white font-bold py-2 px-4 rounded-lg transition duration-300",
+                        children: "Update Student"
+                    }, void 0, false, {
+                        fileName: "src/admin/components/AdminStudentEdit.js",
+                        lineNumber: 146,
+                        columnNumber: 9
+                    }, undefined)
+                ]
+            }, void 0, true, {
+                fileName: "src/admin/components/AdminStudentEdit.js",
+                lineNumber: 73,
+                columnNumber: 7
+            }, undefined)
+        ]
+    }, void 0, true, {
+        fileName: "src/admin/components/AdminStudentEdit.js",
+        lineNumber: 71,
+        columnNumber: 5
+    }, undefined);
+};
+_s(AdminStudentEdit, "zubjLFDmawjY4O8TvseTzt991uc=", false, function() {
+    return [
+        (0, _reactRouterDom.useParams),
+        (0, _reactRouterDom.useNavigate),
+        (0, _adminContext.useAdmin)
+    ];
+});
+_c = AdminStudentEdit;
+exports.default = AdminStudentEdit;
+var _c;
+$RefreshReg$(_c, "AdminStudentEdit");
+
+  $parcel$ReactRefreshHelpers$3861.postlude(module);
+} finally {
+  window.$RefreshReg$ = prevRefreshReg;
+  window.$RefreshSig$ = prevRefreshSig;
+}
+},{"react/jsx-dev-runtime":"iTorj","react":"21dqq","react-router-dom":"9xmpe","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"km3Ru","../contexts/AdminContext":"hL10n"}],"8k8BT":[function(require,module,exports) {
+var $parcel$ReactRefreshHelpers$b18c = require("@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js");
+var prevRefreshReg = window.$RefreshReg$;
+var prevRefreshSig = window.$RefreshSig$;
+$parcel$ReactRefreshHelpers$b18c.prelude(module);
+
+try {
+var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
+parcelHelpers.defineInteropFlag(exports);
+var _jsxDevRuntime = require("react/jsx-dev-runtime");
+var _react = require("react");
+var _reactDefault = parcelHelpers.interopDefault(_react);
+var _adminContext = require("../contexts/AdminContext");
+var _reactRouterDom = require("react-router-dom");
 var _s = $RefreshSig$();
 const AdminStudentForm = ()=>{
     _s();
-    const { addStudent } = (0, _studentContext.useStudents)();
+    const { addStudent } = (0, _adminContext.useAdmin)();
+    const navigate = (0, _reactRouterDom.useNavigate)();
     const [formData, setFormData] = (0, _react.useState)({
         name: "",
         age: "",
@@ -45387,6 +46754,7 @@ const AdminStudentForm = ()=>{
         image: null
     });
     const [message, setMessage] = (0, _react.useState)("");
+    const [error, setError] = (0, _react.useState)("");
     const handleChange = (e)=>{
         if (e.target.name === "image") setFormData({
             ...formData,
@@ -45399,13 +46767,17 @@ const AdminStudentForm = ()=>{
     };
     const handleSubmit = async (e)=>{
         e.preventDefault();
+        setMessage("");
+        setError("");
         try {
             const achievementsArray = formData.achievements.split(",").map((item)=>item.trim()).filter((item)=>item !== "");
-            const dataToSend = {
-                ...formData,
-                achievements: JSON.stringify(achievementsArray)
-            };
-            const result = await addStudent(dataToSend);
+            const formDataToSend = new FormData();
+            formDataToSend.append("name", formData.name);
+            formDataToSend.append("age", formData.age);
+            formDataToSend.append("achievements", JSON.stringify(achievementsArray));
+            formDataToSend.append("aboutUs", formData.aboutUs);
+            if (formData.image) formDataToSend.append("image", formData.image);
+            const result = await addStudent(formDataToSend);
             console.log("Add student result:", result);
             setMessage("Student added successfully!");
             setFormData({
@@ -45415,8 +46787,10 @@ const AdminStudentForm = ()=>{
                 aboutUs: "",
                 image: null
             });
+        // Optionally, redirect to the admin dashboard after successful addition
+        // navigate('/admin/dashboard');
         } catch (error) {
-            setMessage("Error adding student. Please try again.");
+            setError("Error adding student. Please try again.");
             console.error("Error adding student:", error);
         }
     };
@@ -45435,8 +46809,8 @@ const AdminStudentForm = ()=>{
                                 className: "block text-gray-700 font-semibold mb-2",
                                 children: "Name"
                             }, void 0, false, {
-                                fileName: "src/components/AdminStudentForm.js",
-                                lineNumber: 57,
+                                fileName: "src/admin/components/AdminStudentForm.js",
+                                lineNumber: 70,
                                 columnNumber: 11
                             }, undefined),
                             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
@@ -45452,8 +46826,8 @@ const AdminStudentForm = ()=>{
                                         required: true,
                                         className: "w-full px-3 py-2 pl-10 border rounded-lg focus:outline-none focus:ring-2 focus:ring-ngo-primary"
                                     }, void 0, false, {
-                                        fileName: "src/components/AdminStudentForm.js",
-                                        lineNumber: 64,
+                                        fileName: "src/admin/components/AdminStudentForm.js",
+                                        lineNumber: 77,
                                         columnNumber: 13
                                     }, undefined),
                                     /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("span", {
@@ -45468,30 +46842,30 @@ const AdminStudentForm = ()=>{
                                                 d: "M10 9a3 3 0 100-6 3 3 0 000 6zm-7 9a7 7 0 1114 0H3z",
                                                 clipRule: "evenodd"
                                             }, void 0, false, {
-                                                fileName: "src/components/AdminStudentForm.js",
-                                                lineNumber: 81,
+                                                fileName: "src/admin/components/AdminStudentForm.js",
+                                                lineNumber: 94,
                                                 columnNumber: 17
                                             }, undefined)
                                         }, void 0, false, {
-                                            fileName: "src/components/AdminStudentForm.js",
-                                            lineNumber: 75,
+                                            fileName: "src/admin/components/AdminStudentForm.js",
+                                            lineNumber: 88,
                                             columnNumber: 15
                                         }, undefined)
                                     }, void 0, false, {
-                                        fileName: "src/components/AdminStudentForm.js",
-                                        lineNumber: 74,
+                                        fileName: "src/admin/components/AdminStudentForm.js",
+                                        lineNumber: 87,
                                         columnNumber: 13
                                     }, undefined)
                                 ]
                             }, void 0, true, {
-                                fileName: "src/components/AdminStudentForm.js",
-                                lineNumber: 63,
+                                fileName: "src/admin/components/AdminStudentForm.js",
+                                lineNumber: 76,
                                 columnNumber: 11
                             }, undefined)
                         ]
                     }, void 0, true, {
-                        fileName: "src/components/AdminStudentForm.js",
-                        lineNumber: 56,
+                        fileName: "src/admin/components/AdminStudentForm.js",
+                        lineNumber: 69,
                         columnNumber: 9
                     }, undefined),
                     /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
@@ -45502,8 +46876,8 @@ const AdminStudentForm = ()=>{
                                 className: "block text-gray-700 font-semibold mb-2",
                                 children: "Age"
                             }, void 0, false, {
-                                fileName: "src/components/AdminStudentForm.js",
-                                lineNumber: 91,
+                                fileName: "src/admin/components/AdminStudentForm.js",
+                                lineNumber: 104,
                                 columnNumber: 11
                             }, undefined),
                             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
@@ -45519,8 +46893,8 @@ const AdminStudentForm = ()=>{
                                         required: true,
                                         className: "w-full px-3 py-2 pl-10 border rounded-lg focus:outline-none focus:ring-2 focus:ring-ngo-primary"
                                     }, void 0, false, {
-                                        fileName: "src/components/AdminStudentForm.js",
-                                        lineNumber: 98,
+                                        fileName: "src/admin/components/AdminStudentForm.js",
+                                        lineNumber: 111,
                                         columnNumber: 13
                                     }, undefined),
                                     /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("span", {
@@ -45535,36 +46909,36 @@ const AdminStudentForm = ()=>{
                                                 d: "M6 2a1 1 0 00-1 1v1H4a2 2 0 00-2 2v10a2 2 0 002 2h12a2 2 0 002-2V6a2 2 0 00-2-2h-1V3a1 1 0 10-2 0v1H7V3a1 1 0 00-1-1zm0 5a1 1 0 000 2h8a1 1 0 100-2H6z",
                                                 clipRule: "evenodd"
                                             }, void 0, false, {
-                                                fileName: "src/components/AdminStudentForm.js",
-                                                lineNumber: 115,
+                                                fileName: "src/admin/components/AdminStudentForm.js",
+                                                lineNumber: 128,
                                                 columnNumber: 17
                                             }, undefined)
                                         }, void 0, false, {
-                                            fileName: "src/components/AdminStudentForm.js",
-                                            lineNumber: 109,
+                                            fileName: "src/admin/components/AdminStudentForm.js",
+                                            lineNumber: 122,
                                             columnNumber: 15
                                         }, undefined)
                                     }, void 0, false, {
-                                        fileName: "src/components/AdminStudentForm.js",
-                                        lineNumber: 108,
+                                        fileName: "src/admin/components/AdminStudentForm.js",
+                                        lineNumber: 121,
                                         columnNumber: 13
                                     }, undefined)
                                 ]
                             }, void 0, true, {
-                                fileName: "src/components/AdminStudentForm.js",
-                                lineNumber: 97,
+                                fileName: "src/admin/components/AdminStudentForm.js",
+                                lineNumber: 110,
                                 columnNumber: 11
                             }, undefined)
                         ]
                     }, void 0, true, {
-                        fileName: "src/components/AdminStudentForm.js",
-                        lineNumber: 90,
+                        fileName: "src/admin/components/AdminStudentForm.js",
+                        lineNumber: 103,
                         columnNumber: 9
                     }, undefined)
                 ]
             }, void 0, true, {
-                fileName: "src/components/AdminStudentForm.js",
-                lineNumber: 55,
+                fileName: "src/admin/components/AdminStudentForm.js",
+                lineNumber: 68,
                 columnNumber: 7
             }, undefined),
             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
@@ -45575,8 +46949,8 @@ const AdminStudentForm = ()=>{
                         className: "block text-gray-700 font-semibold mb-2",
                         children: "Achievements"
                     }, void 0, false, {
-                        fileName: "src/components/AdminStudentForm.js",
-                        lineNumber: 126,
+                        fileName: "src/admin/components/AdminStudentForm.js",
+                        lineNumber: 139,
                         columnNumber: 9
                     }, undefined),
                     /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("input", {
@@ -45588,14 +46962,14 @@ const AdminStudentForm = ()=>{
                         placeholder: "Achievements (comma-separated)",
                         className: "w-full px-3 py-2 border rounded-lg focus:outline-none focus:ring-2 focus:ring-ngo-primary"
                     }, void 0, false, {
-                        fileName: "src/components/AdminStudentForm.js",
-                        lineNumber: 132,
+                        fileName: "src/admin/components/AdminStudentForm.js",
+                        lineNumber: 145,
                         columnNumber: 9
                     }, undefined)
                 ]
             }, void 0, true, {
-                fileName: "src/components/AdminStudentForm.js",
-                lineNumber: 125,
+                fileName: "src/admin/components/AdminStudentForm.js",
+                lineNumber: 138,
                 columnNumber: 7
             }, undefined),
             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
@@ -45606,8 +46980,8 @@ const AdminStudentForm = ()=>{
                         className: "block text-gray-700 font-semibold mb-2",
                         children: "About the student"
                     }, void 0, false, {
-                        fileName: "src/components/AdminStudentForm.js",
-                        lineNumber: 143,
+                        fileName: "src/admin/components/AdminStudentForm.js",
+                        lineNumber: 156,
                         columnNumber: 9
                     }, undefined),
                     /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("textarea", {
@@ -45619,14 +46993,14 @@ const AdminStudentForm = ()=>{
                         className: "w-full px-3 py-2 border rounded-lg focus:outline-none focus:ring-2 focus:ring-ngo-primary",
                         rows: "4"
                     }, void 0, false, {
-                        fileName: "src/components/AdminStudentForm.js",
-                        lineNumber: 149,
+                        fileName: "src/admin/components/AdminStudentForm.js",
+                        lineNumber: 162,
                         columnNumber: 9
                     }, undefined)
                 ]
             }, void 0, true, {
-                fileName: "src/components/AdminStudentForm.js",
-                lineNumber: 142,
+                fileName: "src/admin/components/AdminStudentForm.js",
+                lineNumber: 155,
                 columnNumber: 7
             }, undefined),
             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
@@ -45637,8 +47011,8 @@ const AdminStudentForm = ()=>{
                         className: "block text-gray-700 font-semibold mb-2",
                         children: "Student Image"
                     }, void 0, false, {
-                        fileName: "src/components/AdminStudentForm.js",
-                        lineNumber: 160,
+                        fileName: "src/admin/components/AdminStudentForm.js",
+                        lineNumber: 173,
                         columnNumber: 9
                     }, undefined),
                     /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("input", {
@@ -45649,14 +47023,14 @@ const AdminStudentForm = ()=>{
                         accept: "image/*",
                         className: "w-full px-3 py-2 border rounded-lg focus:outline-none focus:ring-2 focus:ring-ngo-primary"
                     }, void 0, false, {
-                        fileName: "src/components/AdminStudentForm.js",
-                        lineNumber: 166,
+                        fileName: "src/admin/components/AdminStudentForm.js",
+                        lineNumber: 179,
                         columnNumber: 9
                     }, undefined)
                 ]
             }, void 0, true, {
-                fileName: "src/components/AdminStudentForm.js",
-                lineNumber: 159,
+                fileName: "src/admin/components/AdminStudentForm.js",
+                lineNumber: 172,
                 columnNumber: 7
             }, undefined),
             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("button", {
@@ -45664,28 +47038,37 @@ const AdminStudentForm = ()=>{
                 className: "w-full bg-ngo-primary hover:bg-ngo-secondary text-white font-bold py-3 px-4 rounded-lg transition duration-300 mt-6",
                 children: "Add Student"
             }, void 0, false, {
-                fileName: "src/components/AdminStudentForm.js",
-                lineNumber: 175,
+                fileName: "src/admin/components/AdminStudentForm.js",
+                lineNumber: 188,
                 columnNumber: 7
             }, undefined),
             message && /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("p", {
                 className: "mt-4 text-center font-semibold text-green-600",
                 children: message
             }, void 0, false, {
-                fileName: "src/components/AdminStudentForm.js",
-                lineNumber: 182,
+                fileName: "src/admin/components/AdminStudentForm.js",
+                lineNumber: 195,
+                columnNumber: 9
+            }, undefined),
+            error && /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("p", {
+                className: "mt-4 text-center font-semibold text-red-600",
+                children: error
+            }, void 0, false, {
+                fileName: "src/admin/components/AdminStudentForm.js",
+                lineNumber: 200,
                 columnNumber: 9
             }, undefined)
         ]
     }, void 0, true, {
-        fileName: "src/components/AdminStudentForm.js",
-        lineNumber: 51,
+        fileName: "src/admin/components/AdminStudentForm.js",
+        lineNumber: 64,
         columnNumber: 5
     }, undefined);
 };
-_s(AdminStudentForm, "1ezDMonuWFEYqN8nBBERWUOPVc4=", false, function() {
+_s(AdminStudentForm, "kO70pwyMdtaoepKpBDbJxBBAzHk=", false, function() {
     return [
-        (0, _studentContext.useStudents)
+        (0, _adminContext.useAdmin),
+        (0, _reactRouterDom.useNavigate)
     ];
 });
 _c = AdminStudentForm;
@@ -45693,11 +47076,11 @@ exports.default = AdminStudentForm;
 var _c;
 $RefreshReg$(_c, "AdminStudentForm");
 
-  $parcel$ReactRefreshHelpers$eb92.postlude(module);
+  $parcel$ReactRefreshHelpers$b18c.postlude(module);
 } finally {
   window.$RefreshReg$ = prevRefreshReg;
   window.$RefreshSig$ = prevRefreshSig;
 }
-},{"react/jsx-dev-runtime":"iTorj","react":"21dqq","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"km3Ru","../contexts/StudentContext":"76LUH"}]},["9wh9R","1xC6H","2kQhy"], "2kQhy", "parcelRequire7604")
+},{"react/jsx-dev-runtime":"iTorj","react":"21dqq","../contexts/AdminContext":"hL10n","react-router-dom":"9xmpe","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"km3Ru"}]},["9wh9R","1xC6H","2kQhy"], "2kQhy", "parcelRequire7604")
 
 //# sourceMappingURL=index.7271efb6.js.map

@@ -1,8 +1,10 @@
 import React, { useState } from "react";
-import { useStudents } from "../contexts/StudentContext";
+import { useAdmin } from "../contexts/AdminContext";
+import { useNavigate } from "react-router-dom";
 
 const AdminStudentForm = () => {
-  const { addStudent } = useStudents();
+  const { addStudent } = useAdmin();
+  const navigate = useNavigate();
   const [formData, setFormData] = useState({
     name: "",
     age: "",
@@ -11,6 +13,7 @@ const AdminStudentForm = () => {
     image: null,
   });
   const [message, setMessage] = useState("");
+  const [error, setError] = useState("");
 
   const handleChange = (e) => {
     if (e.target.name === "image") {
@@ -22,16 +25,24 @@ const AdminStudentForm = () => {
 
   const handleSubmit = async (e) => {
     e.preventDefault();
+    setMessage("");
+    setError("");
     try {
       const achievementsArray = formData.achievements
         .split(",")
         .map((item) => item.trim())
         .filter((item) => item !== "");
-      const dataToSend = {
-        ...formData,
-        achievements: JSON.stringify(achievementsArray),
-      };
-      const result = await addStudent(dataToSend);
+
+      const formDataToSend = new FormData();
+      formDataToSend.append("name", formData.name);
+      formDataToSend.append("age", formData.age);
+      formDataToSend.append("achievements", JSON.stringify(achievementsArray));
+      formDataToSend.append("aboutUs", formData.aboutUs);
+      if (formData.image) {
+        formDataToSend.append("image", formData.image);
+      }
+
+      const result = await addStudent(formDataToSend);
       console.log("Add student result:", result);
       setMessage("Student added successfully!");
       setFormData({
@@ -41,8 +52,10 @@ const AdminStudentForm = () => {
         aboutUs: "",
         image: null,
       });
+      // Optionally, redirect to the admin dashboard after successful addition
+      // navigate('/admin/dashboard');
     } catch (error) {
-      setMessage("Error adding student. Please try again.");
+      setError("Error adding student. Please try again.");
       console.error("Error adding student:", error);
     }
   };
@@ -182,6 +195,9 @@ const AdminStudentForm = () => {
         <p className="mt-4 text-center font-semibold text-green-600">
           {message}
         </p>
+      )}
+      {error && (
+        <p className="mt-4 text-center font-semibold text-red-600">{error}</p>
       )}
     </form>
   );

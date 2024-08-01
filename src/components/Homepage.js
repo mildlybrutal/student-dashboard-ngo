@@ -12,54 +12,45 @@ const HomePage = () => {
   const studentCount = 150;
 
   return (
-    <div className="bg-gray-100 min-h-screen">
-      <header className="bg-white shadow-md sticky top-0 z-50">
-        {/* Add navigation menu items here */}
-      </header>
-
-      <div
-        className="hero-section bg-cover bg-center h-screen flex items-center justify-center relative"
-        style={{ backgroundImage: "url('/path-to-hero-image.jpg')" }}
-      >
-        <div className="text-center text-white z-10">
-          <h1 className="text-5xl md:text-6xl font-bold mb-4 font-heading">
-            Welcome to NGO
-          </h1>
-          <p className="text-xl md:text-2xl mb-8 font-body">
-            Empowering communities and changing lives
-          </p>
-          <Link
-            to="/donate"
-            className="bg-ngo-accent hover:bg-ngo-secondary text-white font-bold py-3 px-8 rounded-full transition duration-300 text-lg"
-          >
-            Donate Now
-          </Link>
+    <div className="bg-gray-100">
+      <section className="relative">
+        <ImageCarousel images={carouselImages} />
+        <div className="absolute inset-0 bg-black bg-opacity-50 flex items-center justify-center">
+          <div className="text-center text-white z-10 max-w-3xl mx-auto px-4">
+            <h1 className="text-5xl md:text-7xl font-extrabold mb-6 leading-tight">
+              Welcome to <span className="text-yellow-400">NGO</span>
+            </h1>
+            <p className="text-xl md:text-2xl mb-10">
+              Empowering communities and changing lives, one step at a time
+            </p>
+            <Link
+              to="/donate"
+              className="bg-blue-600 hover:bg-blue-700 text-white font-bold py-4 px-10 rounded-full transition duration-300 text-lg inline-block"
+            >
+              Donate Now
+            </Link>
+          </div>
         </div>
-        <div className="absolute inset-0 bg-black opacity-50"></div>
-      </div>
+      </section>
 
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
-        <div className="mb-16">
-          <ImageCarousel images={carouselImages} />
-        </div>
-
-        <div className="bg-ngo-primary text-white shadow-lg rounded-lg p-8 mb-16">
-          <h2 className="text-3xl font-bold mb-4 font-heading">Our Impact</h2>
-          <div className="flex items-center justify-between">
-            <div>
-              <p className="text-5xl font-bold">{studentCount}</p>
-              <p className="text-xl">Students Supported</p>
+      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-16">
+        <div className="bg-gradient-to-r from-blue-500 to-blue-700 text-white shadow-2xl rounded-lg p-10 mb-20">
+          <h2 className="text-4xl font-bold mb-6">Our Impact</h2>
+          <div className="flex flex-col md:flex-row items-center justify-between">
+            <div className="text-center md:text-left mb-6 md:mb-0">
+              <p className="text-6xl font-bold mb-2">{studentCount}</p>
+              <p className="text-2xl">Students Supported</p>
             </div>
             <Link
               to="/our-students"
-              className="bg-white text-ngo-primary hover:bg-ngo-secondary hover:text-white font-bold py-3 px-6 rounded-full transition duration-300"
+              className="bg-white text-blue-600 hover:bg-yellow-400 hover:text-blue-800 font-bold py-3 px-8 rounded-full transition duration-300 text-lg"
             >
               Meet Our Students
             </Link>
           </div>
         </div>
 
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-8 mb-16">
+        <div className="grid grid-cols-1 md:grid-cols-3 gap-8 mb-20">
           <FeatureCard
             icon="🤝"
             title="Our Mission"
@@ -77,8 +68,8 @@ const HomePage = () => {
           />
         </div>
 
-        <div className="mb-16">
-          <h2 className="text-3xl font-bold mb-8 text-center font-heading">
+        <div className="mb-20">
+          <h2 className="text-4xl font-bold mb-10 text-center text-gray-800">
             How You Can Help
           </h2>
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
@@ -92,19 +83,19 @@ const HomePage = () => {
               title="Volunteer"
               description="Give your time and skills to make a difference."
               action="Join Us"
-              link="/volunteer"
+              link="/contact"
             />
             <HelpCard
               title="Spread the Word"
               description="Share our mission with your network."
-              action="Share"
-              link="#"
+              action="Learn More"
+              link="/about"
             />
           </div>
         </div>
 
-        <div className="mb-16">
-          <h2 className="text-3xl font-bold mb-8 text-center font-heading">
+        <div className="mb-20">
+          <h2 className="text-4xl font-bold mb-10 text-center text-gray-800">
             What People Say
           </h2>
           <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
@@ -124,22 +115,20 @@ const HomePage = () => {
 };
 
 const FeatureCard = ({ icon, title, description }) => (
-  <div className="bg-white rounded-lg shadow-md p-6 hover:shadow-lg transition duration-300 border-t-4 border-ngo-secondary">
-    <div className="text-5xl mb-4 text-ngo-primary">{icon}</div>
-    <h2 className="text-2xl font-semibold text-gray-800 mb-3 font-heading">
-      {title}
-    </h2>
-    <p className="text-gray-600 leading-relaxed font-body">{description}</p>
+  <div className="bg-white rounded-lg shadow-lg p-8 hover:shadow-xl transition duration-300 border-t-4 border-blue-500 transform hover:-translate-y-1">
+    <div className="text-5xl mb-4 text-blue-600">{icon}</div>
+    <h2 className="text-2xl font-semibold text-gray-800 mb-4">{title}</h2>
+    <p className="text-gray-600 leading-relaxed">{description}</p>
   </div>
 );
 
 const HelpCard = ({ title, description, action, link }) => (
-  <div className="bg-white rounded-lg shadow-md p-6 text-center">
-    <h3 className="text-xl font-semibold mb-3 font-heading">{title}</h3>
-    <p className="text-gray-600 mb-4 font-body">{description}</p>
+  <div className="bg-white rounded-lg shadow-lg p-8 text-center hover:shadow-xl transition duration-300">
+    <h3 className="text-2xl font-semibold mb-4 text-gray-800">{title}</h3>
+    <p className="text-gray-600 mb-6">{description}</p>
     <Link
       to={link}
-      className="bg-ngo-primary text-white px-4 py-2 rounded-full inline-block hover:bg-ngo-secondary transition duration-300"
+      className="bg-blue-600 text-white px-6 py-3 rounded-full inline-block hover:bg-blue-700 transition duration-300 font-bold"
     >
       {action}
     </Link>
@@ -147,9 +136,9 @@ const HelpCard = ({ title, description, action, link }) => (
 );
 
 const Testimonial = ({ quote, author }) => (
-  <div className="bg-white rounded-lg shadow-md p-6">
-    <p className="text-gray-600 italic mb-4 font-body">"{quote}"</p>
-    <p className="text-right font-semibold font-heading">- {author}</p>
+  <div className="bg-white rounded-lg shadow-lg p-8 hover:shadow-xl transition duration-300">
+    <p className="text-gray-600 italic mb-6 text-lg">"{quote}"</p>
+    <p className="text-right font-semibold text-blue-600">- {author}</p>
   </div>
 );
 

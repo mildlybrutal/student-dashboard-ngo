@@ -78,52 +78,61 @@ const StudentDetails = () => {
   const parsedAchievements = parseAchievements(achievements);
 
   return (
-    <div className="bg-gray-100 min-h-screen py-12 px-4 sm:px-6 lg:px-8">
-      <div className="max-w-4xl mx-auto bg-white shadow-xl rounded-lg overflow-hidden">
-        <div className="bg-ngo-primary px-6 py-8 md:flex md:items-center">
-          {image && (
-            <img
-              src={image}
-              alt={`${name}'s profile`}
-              className="w-32 h-32 rounded-full object-cover mx-auto md:mx-0 md:mr-8 border-4 border-white shadow-lg"
-            />
-          )}
-          <div className="mt-4 md:mt-0">
-            <h1 className="text-4xl font-bold text-white text-center md:text-left font-heading">
-              {name}
-            </h1>
-            <p className="text-ngo-accent mt-2 text-xl text-center md:text-left font-body">
-              Age: {age}
-            </p>
+    <div className="bg-gray-100 min-h-screen py-16 px-4 sm:px-6 lg:px-8">
+      <div className="max-w-6xl mx-auto">
+        <div className="bg-gradient-to-r from-ngo-primary to-ngo-secondary rounded-t-lg overflow-hidden">
+          <div className="px-8 py-12 md:flex md:items-center">
+            {image && (
+              <img
+                src={image}
+                alt={`${name}'s profile`}
+                className="w-48 h-48 rounded-full object-cover mx-auto md:mx-0 md:mr-10 border-4 border-white shadow-lg"
+              />
+            )}
+            <div className="mt-6 md:mt-0 text-center md:text-left">
+              <h1 className="text-5xl font-extrabold text-white mb-2 font-heading">
+                {name}
+              </h1>
+              <p className="text-ngo-accent text-2xl font-semibold">
+                Age: {age}
+              </p>
+            </div>
           </div>
         </div>
-        <div className="px-6 py-8">
-          <div className="mb-8">
-            <h2 className="text-2xl font-semibold text-gray-800 mb-4 font-heading">
+
+        <div className="bg-white shadow-xl p-8">
+          <div className="mb-12">
+            <h2 className="text-3xl font-bold text-gray-800 mb-6 font-heading">
               Achievements
             </h2>
-            <div className="bg-green-100 rounded-lg p-4">
+            <div className="bg-green-100 rounded-lg p-6">
               {parsedAchievements.length > 0 ? (
-                <ul className="list-disc list-inside text-gray-700 font-body">
+                <ul className="grid grid-cols-1 md:grid-cols-2 gap-4">
                   {parsedAchievements.map((achievement, index) => (
-                    <li key={index} className="mb-2">
-                      {achievement}
+                    <li key={index} className="flex items-start">
+                      <span className="text-green-500 mr-2">✓</span>
+                      <span className="text-gray-700 font-body">
+                        {achievement}
+                      </span>
                     </li>
                   ))}
                 </ul>
               ) : (
-                <p className="text-gray-700 font-body">
-                  No achievements listed
+                <p className="text-gray-700 font-body italic">
+                  No achievements listed yet. Great things are coming!
                 </p>
               )}
             </div>
           </div>
-          <h2 className="text-2xl font-semibold text-gray-800 mb-4 font-heading">
+
+          <h2 className="text-3xl font-bold text-gray-800 mb-6 font-heading">
             About {name}
           </h2>
-          <p className="text-gray-600 leading-relaxed bg-gray-100 p-4 rounded-lg font-body">
-            {aboutUs || "No information provided."}
-          </p>
+          <div className="bg-gray-100 p-6 rounded-lg">
+            <p className="text-gray-600 leading-relaxed font-body text-lg">
+              {aboutUs || "No information provided."}
+            </p>
+          </div>
         </div>
       </div>
     </div>
