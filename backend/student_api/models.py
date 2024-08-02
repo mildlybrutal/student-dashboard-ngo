@@ -10,7 +10,7 @@ class Student(models.Model):
     achievements = models.TextField(blank=True, default='[]')
     aboutUs = models.TextField(blank=True)
     image = models.ImageField(upload_to='student_images/', null=True, blank=True)
-    gallery = models.JSONField(default=list, blank=True)
+    gallery = models.TextField(default='[]', blank=True)
 
     def __str__(self):
         return self.name
@@ -25,4 +25,6 @@ class Student(models.Model):
         self.gallery = json.dumps(gallery)
 
     def get_gallery(self):
-        return json.loads(self.gallery)
+        if self.gallery:
+            return json.loads(self.gallery)
+        return []

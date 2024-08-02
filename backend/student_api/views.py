@@ -4,6 +4,8 @@ from .serializers import StudentSerializer
 from rest_framework.response import Response
 from rest_framework import status
 import logging
+import os
+from django.conf import settings
 
 logger = logging.getLogger(__name__)
 
@@ -17,20 +19,32 @@ class StudentViewSet(viewsets.ModelViewSet):
         # Handle gallery images
         gallery_images = request.FILES.getlist('gallery', [])
 
-        serializer = self.get_serializer(data=request.data)
+        # Create a mutable copy of request.data
+        mutable_data = request.data.copy()
+
+        # Remove gallery from the data to be validated by the serializer
+        mutable_data.pop('gallery', None)
+
+        serializer = self.get_serializer(data=mutable_data)
         if serializer.is_valid():
             student = serializer.save()
 
             # Process and save gallery images
             gallery_paths = []
             for image in gallery_images:
-                # Save the image and get its path
-                # You might want to use a function to generate a unique filename
-                image_path = f'gallery/{image.name}'
-                with open(image_path, 'wb+') as destination:
+                # Generate a unique filename
+                file_name = f"{student.id}_{image.name}"
+                file_path = os.path.join('gallery', file_name)
+                full_path = os.path.join(settings.MEDIA_ROOT, file_path)
+
+                # Ensure the directory exists
+                os.makedirs(os.path.dirname(full_path), exist_ok=True)
+
+                # Save the image
+                with open(full_path, 'wb+') as destination:
                     for chunk in image.chunks():
                         destination.write(chunk)
-                gallery_paths.append(image_path)
+                gallery_paths.append(file_path)
 
             # Update the student's gallery field
             student.set_gallery(gallery_paths)
@@ -49,7 +63,13 @@ class StudentViewSet(viewsets.ModelViewSet):
         # Handle gallery images
         gallery_images = request.FILES.getlist('gallery', [])
 
-        serializer = self.get_serializer(instance, data=request.data, partial=partial)
+        # Create a mutable copy of request.data
+        mutable_data = request.data.copy()
+
+        # Remove gallery from the data to be validated by the serializer
+        mutable_data.pop('gallery', None)
+
+        serializer = self.get_serializer(instance, data=mutable_data, partial=partial)
         if serializer.is_valid():
             self.perform_update(serializer)
 
@@ -57,13 +77,19 @@ class StudentViewSet(viewsets.ModelViewSet):
             if gallery_images:
                 existing_gallery = instance.get_gallery()
                 for image in gallery_images:
-                    # Save the image and get its path
-                    # You might want to use a function to generate a unique filename
-                    image_path = f'gallery/{image.name}'
-                    with open(image_path, 'wb+') as destination:
+                    # Generate a unique filename
+                    file_name = f"{instance.id}_{image.name}"
+                    file_path = os.path.join('gallery', file_name)
+                    full_path = os.path.join(settings.MEDIA_ROOT, file_path)
+
+                    # Ensure the directory exists
+                    os.makedirs(os.path.dirname(full_path), exist_ok=True)
+
+                    # Save the image
+                    with open(full_path, 'wb+') as destination:
                         for chunk in image.chunks():
                             destination.write(chunk)
-                    existing_gallery.append(image_path)
+                    existing_gallery.append(file_path)
 
                 # Update the student's gallery field
                 instance.set_gallery(existing_gallery)
