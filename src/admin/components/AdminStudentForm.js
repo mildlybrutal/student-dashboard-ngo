@@ -8,9 +8,13 @@ const AdminStudentForm = () => {
   const [formData, setFormData] = useState({
     name: "",
     age: "",
+    date_of_birth: "",
+    latitude: "",
+    longitude: "",
     achievements: "",
     aboutUs: "",
     image: null,
+    gallery: [],
   });
   const [message, setMessage] = useState("");
   const [error, setError] = useState("");
@@ -18,6 +22,8 @@ const AdminStudentForm = () => {
   const handleChange = (e) => {
     if (e.target.name === "image") {
       setFormData({ ...formData, image: e.target.files[0] });
+    } else if (e.target.name === "gallery") {
+      setFormData({ ...formData, gallery: Array.from(e.target.files) });
     } else {
       setFormData({ ...formData, [e.target.name]: e.target.value });
     }
@@ -36,11 +42,17 @@ const AdminStudentForm = () => {
       const formDataToSend = new FormData();
       formDataToSend.append("name", formData.name);
       formDataToSend.append("age", formData.age);
+      formDataToSend.append("date_of_birth", formData.date_of_birth);
+      formDataToSend.append("latitude", formData.latitude);
+      formDataToSend.append("longitude", formData.longitude);
       formDataToSend.append("achievements", JSON.stringify(achievementsArray));
       formDataToSend.append("aboutUs", formData.aboutUs);
       if (formData.image) {
         formDataToSend.append("image", formData.image);
       }
+      formData.gallery.forEach((file) => {
+        formDataToSend.append("gallery", file);
+      });
 
       const result = await addStudent(formDataToSend);
       console.log("Add student result:", result);
@@ -48,12 +60,14 @@ const AdminStudentForm = () => {
       setFormData({
         name: "",
         age: "",
+        date_of_birth: "",
+        latitude: "",
+        longitude: "",
         achievements: "",
         aboutUs: "",
         image: null,
+        gallery: [],
       });
-      // Optionally, redirect to the admin dashboard after successful addition
-      // navigate('/admin/dashboard');
     } catch (error) {
       setError("Error adding student. Please try again.");
       console.error("Error adding student:", error);
@@ -137,6 +151,58 @@ const AdminStudentForm = () => {
       </div>
       <div className="mb-4">
         <label
+          htmlFor="date_of_birth"
+          className="block text-gray-700 font-semibold mb-2"
+        >
+          Date of Birth
+        </label>
+        <input
+          type="date"
+          id="date_of_birth"
+          name="date_of_birth"
+          value={formData.date_of_birth}
+          onChange={handleChange}
+          className="w-full px-3 py-2 border rounded-lg focus:outline-none focus:ring-2 focus:ring-ngo-primary"
+        />
+      </div>
+      <div className="grid md:grid-cols-2 gap-6">
+        <div className="mb-4">
+          <label
+            htmlFor="latitude"
+            className="block text-gray-700 font-semibold mb-2"
+          >
+            Latitude
+          </label>
+          <input
+            type="number"
+            id="latitude"
+            name="latitude"
+            value={formData.latitude}
+            onChange={handleChange}
+            step="0.000001"
+            className="w-full px-3 py-2 border rounded-lg focus:outline-none focus:ring-2 focus:ring-ngo-primary"
+          />
+        </div>
+        <div className="mb-4">
+          <label
+            htmlFor="longitude"
+            className="block text-gray-700 font-semibold mb-2"
+          >
+            Longitude
+          </label>
+          <input
+            type="number"
+            id="longitude"
+            name="longitude"
+            value={formData.longitude}
+            onChange={handleChange}
+            step="0.000001"
+            className="w-full px-3 py-2 border rounded-lg focus:outline-none focus:ring-2 focus:ring-ngo-primary"
+          />
+        </div>
+      </div>
+      <div className="mb-4">
+        <label
           htmlFor="achievements"
           className="block text-gray-700 font-semibold mb-2"
         >
@@ -182,6 +248,23 @@ const AdminStudentForm = () => {
           name="image"
           onChange={handleChange}
           accept="image/*"
+          className="w-full px-3 py-2 border rounded-lg focus:outline-none focus:ring-2 focus:ring-ngo-primary"
+        />
+      </div>
+      <div className="mb-4">
+        <label
+          htmlFor="gallery"
+          className="block text-gray-700 font-semibold mb-2"
+        >
+          Gallery Images
+        </label>
+        <input
+          type="file"
+          id="gallery"
+          name="gallery"
+          onChange={handleChange}
+          accept="image/*"
+          multiple
           className="w-full px-3 py-2 border rounded-lg focus:outline-none focus:ring-2 focus:ring-ngo-primary"
         />
       </div>

@@ -445,6 +445,10 @@ img, video {
   height: 1.25rem;
 }
 
+.h-64 {
+  height: 16rem;
+}
+
 .h-\[600px\] {
   height: 600px;
 }

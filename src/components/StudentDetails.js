@@ -74,7 +74,17 @@ const StudentDetails = () => {
     );
   }
 
-  const { name, age, achievements, aboutUs, image } = studentData;
+  const {
+    name,
+    age,
+    date_of_birth,
+    latitude,
+    longitude,
+    achievements,
+    aboutUs,
+    image,
+    gallery,
+  } = studentData;
   const parsedAchievements = parseAchievements(achievements);
 
   return (
@@ -95,6 +105,12 @@ const StudentDetails = () => {
               </h1>
               <p className="text-ngo-accent text-2xl font-semibold">
                 Age: {age}
+              </p>
+              <p className="text-white text-xl">
+                Date of Birth: {date_of_birth}
+              </p>
+              <p className="text-white text-xl">
+                Location: {latitude}, {longitude}
               </p>
             </div>
           </div>
@@ -125,13 +141,36 @@ const StudentDetails = () => {
             </div>
           </div>
 
-          <h2 className="text-3xl font-bold text-gray-800 mb-6 font-heading">
-            About {name}
-          </h2>
-          <div className="bg-gray-100 p-6 rounded-lg">
-            <p className="text-gray-600 leading-relaxed font-body text-lg">
-              {aboutUs || "No information provided."}
-            </p>
+          <div className="mb-12">
+            <h2 className="text-3xl font-bold text-gray-800 mb-6 font-heading">
+              About {name}
+            </h2>
+            <div className="bg-gray-100 p-6 rounded-lg">
+              <p className="text-gray-600 leading-relaxed font-body text-lg">
+                {aboutUs || "No information provided."}
+              </p>
+            </div>
+          </div>
+          <div className="mb-12">
+            <h2 className="text-3xl font-bold text-gray-800 mb-6 font-heading">
+              Gallery
+            </h2>
+            <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-4">
+              {gallery && gallery.length > 0 ? (
+                gallery.map((image, index) => (
+                  <img
+                    key={index}
+                    src={image}
+                    alt={`Gallery image ${index + 1}`}
+                    className="w-full h-64 object-cover rounded-lg shadow-md"
+                  />
+                ))
+              ) : (
+                <p className="text-gray-600 font-body italic">
+                  No gallery images available.
+                </p>
+              )}
+            </div>
           </div>
         </div>
       </div>
