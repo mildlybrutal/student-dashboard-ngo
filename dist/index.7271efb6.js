@@ -40403,6 +40403,8 @@ const StudentDetails = ()=>{
     const [studentData, setStudentData] = (0, _react.useState)(null);
     const [loading, setLoading] = (0, _react.useState)(true);
     const [error, setError] = (0, _react.useState)(null);
+    const [baseUrl, setBaseUrl] = (0, _react.useState)("");
+    const [lightboxImage, setLightboxImage] = (0, _react.useState)(null);
     (0, _react.useEffect)(()=>{
         const fetchStudentData = async ()=>{
             try {
@@ -40411,6 +40413,7 @@ const StudentDetails = ()=>{
                 const data = await response.json();
                 console.log("Fetched student data:", data);
                 setStudentData(data);
+                setBaseUrl("http://localhost:8000"); // Set the base URL for gallery images
             } catch (error) {
                 console.error("Error fetching student details:", error);
                 setError("Failed to load student data. Please try again later.");
@@ -40438,13 +40441,13 @@ const StudentDetails = ()=>{
             children: "Loading..."
         }, void 0, false, {
             fileName: "src/components/StudentDetails.js",
-            lineNumber: 54,
-            columnNumber: 9
+            lineNumber: 57,
+            columnNumber: 5
         }, undefined)
     }, void 0, false, {
         fileName: "src/components/StudentDetails.js",
-        lineNumber: 53,
-        columnNumber: 7
+        lineNumber: 56,
+        columnNumber: 4
     }, undefined);
     if (error) return /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
         className: "flex items-center justify-center h-screen bg-gray-100",
@@ -40453,13 +40456,13 @@ const StudentDetails = ()=>{
             children: error
         }, void 0, false, {
             fileName: "src/components/StudentDetails.js",
-            lineNumber: 62,
-            columnNumber: 9
+            lineNumber: 65,
+            columnNumber: 5
         }, undefined)
     }, void 0, false, {
         fileName: "src/components/StudentDetails.js",
-        lineNumber: 61,
-        columnNumber: 7
+        lineNumber: 64,
+        columnNumber: 4
     }, undefined);
     if (!studentData) return /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
         className: "flex items-center justify-center h-screen bg-gray-100",
@@ -40468,23 +40471,24 @@ const StudentDetails = ()=>{
             children: "No student data found."
         }, void 0, false, {
             fileName: "src/components/StudentDetails.js",
-            lineNumber: 70,
-            columnNumber: 9
+            lineNumber: 73,
+            columnNumber: 5
         }, undefined)
     }, void 0, false, {
         fileName: "src/components/StudentDetails.js",
-        lineNumber: 69,
-        columnNumber: 7
+        lineNumber: 72,
+        columnNumber: 4
     }, undefined);
     const { name, age, date_of_birth, latitude, longitude, achievements, aboutUs, image, gallery } = studentData;
     const parsedAchievements = parseAchievements(achievements);
+    const galleryImages = gallery && gallery.length > 0 ? gallery.map((image)=>`${baseUrl}/media/${image}`) : [];
     return /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
         className: "bg-gray-100 min-h-screen py-16 px-4 sm:px-6 lg:px-8",
         children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
-            className: "max-w-6xl mx-auto",
+            className: "max-w-7xl mx-auto",
             children: [
                 /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
-                    className: "bg-gradient-to-r from-ngo-primary to-ngo-secondary rounded-t-lg overflow-hidden",
+                    className: "bg-gradient-to-r from-ngo-primary to-ngo-secondary rounded-lg overflow-hidden shadow-xl",
                     children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
                         className: "px-8 py-12 md:flex md:items-center",
                         children: [
@@ -40494,8 +40498,8 @@ const StudentDetails = ()=>{
                                 className: "w-48 h-48 rounded-full object-cover mx-auto md:mx-0 md:mr-10 border-4 border-white shadow-lg"
                             }, void 0, false, {
                                 fileName: "src/components/StudentDetails.js",
-                                lineNumber: 96,
-                                columnNumber: 15
+                                lineNumber: 104,
+                                columnNumber: 8
                             }, undefined),
                             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
                                 className: "mt-6 md:mt-0 text-center md:text-left",
@@ -40505,8 +40509,8 @@ const StudentDetails = ()=>{
                                         children: name
                                     }, void 0, false, {
                                         fileName: "src/components/StudentDetails.js",
-                                        lineNumber: 103,
-                                        columnNumber: 15
+                                        lineNumber: 111,
+                                        columnNumber: 8
                                     }, undefined),
                                     /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("p", {
                                         className: "text-ngo-accent text-2xl font-semibold",
@@ -40516,8 +40520,8 @@ const StudentDetails = ()=>{
                                         ]
                                     }, void 0, true, {
                                         fileName: "src/components/StudentDetails.js",
-                                        lineNumber: 106,
-                                        columnNumber: 15
+                                        lineNumber: 114,
+                                        columnNumber: 8
                                     }, undefined),
                                     /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("p", {
                                         className: "text-white text-xl",
@@ -40527,8 +40531,8 @@ const StudentDetails = ()=>{
                                         ]
                                     }, void 0, true, {
                                         fileName: "src/components/StudentDetails.js",
-                                        lineNumber: 109,
-                                        columnNumber: 15
+                                        lineNumber: 117,
+                                        columnNumber: 8
                                     }, undefined),
                                     /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("p", {
                                         className: "text-white text-xl",
@@ -40540,39 +40544,38 @@ const StudentDetails = ()=>{
                                         ]
                                     }, void 0, true, {
                                         fileName: "src/components/StudentDetails.js",
-                                        lineNumber: 112,
-                                        columnNumber: 15
+                                        lineNumber: 120,
+                                        columnNumber: 8
                                     }, undefined)
                                 ]
                             }, void 0, true, {
                                 fileName: "src/components/StudentDetails.js",
-                                lineNumber: 102,
-                                columnNumber: 13
+                                lineNumber: 110,
+                                columnNumber: 7
                             }, undefined)
                         ]
                     }, void 0, true, {
                         fileName: "src/components/StudentDetails.js",
-                        lineNumber: 94,
-                        columnNumber: 11
+                        lineNumber: 102,
+                        columnNumber: 6
                     }, undefined)
                 }, void 0, false, {
                     fileName: "src/components/StudentDetails.js",
-                    lineNumber: 93,
-                    columnNumber: 9
+                    lineNumber: 101,
+                    columnNumber: 5
                 }, undefined),
                 /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
-                    className: "bg-white shadow-xl p-8",
+                    className: "mt-8 space-y-8",
                     children: [
                         /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
-                            className: "mb-12",
                             children: [
                                 /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("h2", {
                                     className: "text-3xl font-bold text-gray-800 mb-6 font-heading",
                                     children: "Achievements"
                                 }, void 0, false, {
                                     fileName: "src/components/StudentDetails.js",
-                                    lineNumber: 121,
-                                    columnNumber: 13
+                                    lineNumber: 129,
+                                    columnNumber: 7
                                 }, undefined),
                                 /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
                                     className: "bg-green-100 rounded-lg p-6",
@@ -40586,48 +40589,47 @@ const StudentDetails = ()=>{
                                                         children: "\u2713"
                                                     }, void 0, false, {
                                                         fileName: "src/components/StudentDetails.js",
-                                                        lineNumber: 129,
-                                                        columnNumber: 23
+                                                        lineNumber: 137,
+                                                        columnNumber: 12
                                                     }, undefined),
                                                     /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("span", {
                                                         className: "text-gray-700 font-body",
                                                         children: achievement
                                                     }, void 0, false, {
                                                         fileName: "src/components/StudentDetails.js",
-                                                        lineNumber: 130,
-                                                        columnNumber: 23
+                                                        lineNumber: 138,
+                                                        columnNumber: 12
                                                     }, undefined)
                                                 ]
                                             }, index, true, {
                                                 fileName: "src/components/StudentDetails.js",
-                                                lineNumber: 128,
-                                                columnNumber: 21
+                                                lineNumber: 136,
+                                                columnNumber: 11
                                             }, undefined))
                                     }, void 0, false, {
                                         fileName: "src/components/StudentDetails.js",
-                                        lineNumber: 126,
-                                        columnNumber: 17
+                                        lineNumber: 134,
+                                        columnNumber: 9
                                     }, undefined) : /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("p", {
                                         className: "text-gray-700 font-body italic",
                                         children: "No achievements listed yet. Great things are coming!"
                                     }, void 0, false, {
                                         fileName: "src/components/StudentDetails.js",
-                                        lineNumber: 137,
-                                        columnNumber: 17
+                                        lineNumber: 145,
+                                        columnNumber: 9
                                     }, undefined)
                                 }, void 0, false, {
                                     fileName: "src/components/StudentDetails.js",
-                                    lineNumber: 124,
-                                    columnNumber: 13
+                                    lineNumber: 132,
+                                    columnNumber: 7
                                 }, undefined)
                             ]
                         }, void 0, true, {
                             fileName: "src/components/StudentDetails.js",
-                            lineNumber: 120,
-                            columnNumber: 11
+                            lineNumber: 128,
+                            columnNumber: 6
                         }, undefined),
                         /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
-                            className: "mb-12",
                             children: [
                                 /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("h2", {
                                     className: "text-3xl font-bold text-gray-800 mb-6 font-heading",
@@ -40637,8 +40639,8 @@ const StudentDetails = ()=>{
                                     ]
                                 }, void 0, true, {
                                     fileName: "src/components/StudentDetails.js",
-                                    lineNumber: 145,
-                                    columnNumber: 13
+                                    lineNumber: 153,
+                                    columnNumber: 7
                                 }, undefined),
                                 /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
                                     className: "bg-gray-100 p-6 rounded-lg",
@@ -40647,79 +40649,96 @@ const StudentDetails = ()=>{
                                         children: aboutUs || "No information provided."
                                     }, void 0, false, {
                                         fileName: "src/components/StudentDetails.js",
-                                        lineNumber: 149,
-                                        columnNumber: 15
+                                        lineNumber: 157,
+                                        columnNumber: 8
                                     }, undefined)
                                 }, void 0, false, {
                                     fileName: "src/components/StudentDetails.js",
-                                    lineNumber: 148,
-                                    columnNumber: 13
+                                    lineNumber: 156,
+                                    columnNumber: 7
                                 }, undefined)
                             ]
                         }, void 0, true, {
                             fileName: "src/components/StudentDetails.js",
-                            lineNumber: 144,
-                            columnNumber: 11
+                            lineNumber: 152,
+                            columnNumber: 6
                         }, undefined),
                         /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
-                            className: "mb-12",
                             children: [
                                 /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("h2", {
                                     className: "text-3xl font-bold text-gray-800 mb-6 font-heading",
                                     children: "Gallery"
                                 }, void 0, false, {
                                     fileName: "src/components/StudentDetails.js",
-                                    lineNumber: 155,
-                                    columnNumber: 13
+                                    lineNumber: 164,
+                                    columnNumber: 7
                                 }, undefined),
                                 /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
                                     className: "grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-4",
-                                    children: gallery && gallery.length > 0 ? gallery.map((image, index)=>/*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("img", {
+                                    children: galleryImages.length > 0 ? galleryImages.map((image, index)=>/*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("img", {
                                             src: image,
                                             alt: `Gallery image ${index + 1}`,
-                                            className: "w-full h-64 object-cover rounded-lg shadow-md"
+                                            className: "w-full h-64 object-cover rounded-lg shadow-md cursor-pointer",
+                                            onClick: ()=>setLightboxImage(image)
                                         }, index, false, {
                                             fileName: "src/components/StudentDetails.js",
-                                            lineNumber: 161,
-                                            columnNumber: 19
+                                            lineNumber: 170,
+                                            columnNumber: 10
                                         }, undefined)) : /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("p", {
                                         className: "text-gray-600 font-body italic",
                                         children: "No gallery images available."
                                     }, void 0, false, {
                                         fileName: "src/components/StudentDetails.js",
-                                        lineNumber: 169,
-                                        columnNumber: 17
+                                        lineNumber: 179,
+                                        columnNumber: 9
                                     }, undefined)
                                 }, void 0, false, {
                                     fileName: "src/components/StudentDetails.js",
-                                    lineNumber: 158,
-                                    columnNumber: 13
+                                    lineNumber: 167,
+                                    columnNumber: 7
                                 }, undefined)
                             ]
                         }, void 0, true, {
                             fileName: "src/components/StudentDetails.js",
-                            lineNumber: 154,
-                            columnNumber: 11
+                            lineNumber: 163,
+                            columnNumber: 6
                         }, undefined)
                     ]
                 }, void 0, true, {
                     fileName: "src/components/StudentDetails.js",
-                    lineNumber: 119,
-                    columnNumber: 9
+                    lineNumber: 127,
+                    columnNumber: 5
+                }, undefined),
+                lightboxImage && /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                    className: "fixed inset-0 bg-black bg-opacity-75 flex items-center justify-center z-50",
+                    onClick: ()=>setLightboxImage(null),
+                    children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("img", {
+                        src: lightboxImage,
+                        alt: "Enlarged view",
+                        className: "max-w-full max-h-full object-contain"
+                    }, void 0, false, {
+                        fileName: "src/components/StudentDetails.js",
+                        lineNumber: 191,
+                        columnNumber: 7
+                    }, undefined)
+                }, void 0, false, {
+                    fileName: "src/components/StudentDetails.js",
+                    lineNumber: 187,
+                    columnNumber: 6
                 }, undefined)
             ]
         }, void 0, true, {
             fileName: "src/components/StudentDetails.js",
-            lineNumber: 92,
-            columnNumber: 7
+            lineNumber: 100,
+            columnNumber: 4
         }, undefined)
     }, void 0, false, {
         fileName: "src/components/StudentDetails.js",
-        lineNumber: 91,
-        columnNumber: 5
+        lineNumber: 99,
+        columnNumber: 3
     }, undefined);
 };
-_s(StudentDetails, "V/n5Mrk3u4uQd8c0rNTsiSHNCZc=", false, function() {
+_s(StudentDetails, "rP1gdt8rqjVX+B/6Y8V3pONJgPo=", false, function() {
     return [
         (0, _reactRouterDom.useParams)
     ];
