@@ -2986,6 +2986,8 @@ var _adminStudentForm = require("./admin/components/AdminStudentForm");
 var _adminStudentFormDefault = parcelHelpers.interopDefault(_adminStudentForm);
 var _adminStudentList = require("./admin/components/AdminStudentList");
 var _adminStudentListDefault = parcelHelpers.interopDefault(_adminStudentList);
+var _adminNavBar = require("./admin/components/AdminNavBar");
+var _adminNavBarDefault = parcelHelpers.interopDefault(_adminNavBar);
 const AppLayout = ()=>{
     return /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _studentContext.StudentProvider), {
         children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
@@ -2993,36 +2995,36 @@ const AppLayout = ()=>{
             children: [
                 /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _headerDefault.default), {}, void 0, false, {
                     fileName: "src/App.js",
-                    lineNumber: 24,
-                    columnNumber: 9
+                    lineNumber: 25,
+                    columnNumber: 5
                 }, undefined),
                 /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("main", {
                     className: "flex-grow",
                     children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _reactRouterDom.Outlet), {}, void 0, false, {
                         fileName: "src/App.js",
-                        lineNumber: 26,
-                        columnNumber: 11
+                        lineNumber: 27,
+                        columnNumber: 6
                     }, undefined)
                 }, void 0, false, {
                     fileName: "src/App.js",
-                    lineNumber: 25,
-                    columnNumber: 9
+                    lineNumber: 26,
+                    columnNumber: 5
                 }, undefined),
                 /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _footerDefault.default), {}, void 0, false, {
                     fileName: "src/App.js",
-                    lineNumber: 28,
-                    columnNumber: 9
+                    lineNumber: 29,
+                    columnNumber: 5
                 }, undefined)
             ]
         }, void 0, true, {
             fileName: "src/App.js",
-            lineNumber: 23,
-            columnNumber: 7
+            lineNumber: 24,
+            columnNumber: 4
         }, undefined)
     }, void 0, false, {
         fileName: "src/App.js",
-        lineNumber: 22,
-        columnNumber: 5
+        lineNumber: 23,
+        columnNumber: 3
     }, undefined);
 };
 _c = AppLayout;
@@ -3034,23 +3036,23 @@ const AdminLayout = ()=>{
                 className: "flex-grow",
                 children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _reactRouterDom.Outlet), {}, void 0, false, {
                     fileName: "src/App.js",
-                    lineNumber: 39,
-                    columnNumber: 11
+                    lineNumber: 40,
+                    columnNumber: 6
                 }, undefined)
             }, void 0, false, {
                 fileName: "src/App.js",
-                lineNumber: 38,
-                columnNumber: 9
+                lineNumber: 39,
+                columnNumber: 5
             }, undefined)
         }, void 0, false, {
             fileName: "src/App.js",
-            lineNumber: 37,
-            columnNumber: 7
+            lineNumber: 38,
+            columnNumber: 4
         }, undefined)
     }, void 0, false, {
         fileName: "src/App.js",
-        lineNumber: 36,
-        columnNumber: 5
+        lineNumber: 37,
+        columnNumber: 3
     }, undefined);
 };
 _c1 = AdminLayout;
@@ -3059,56 +3061,56 @@ const appRouter = (0, _reactRouterDom.createBrowserRouter)([
         path: "/",
         element: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)(AppLayout, {}, void 0, false, {
             fileName: "src/App.js",
-            lineNumber: 49,
-            columnNumber: 14
+            lineNumber: 50,
+            columnNumber: 12
         }, undefined),
         children: [
             {
                 path: "/",
                 element: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _homepageDefault.default), {}, void 0, false, {
                     fileName: "src/App.js",
-                    lineNumber: 53,
-                    columnNumber: 18
+                    lineNumber: 54,
+                    columnNumber: 14
                 }, undefined)
             },
             {
                 path: "/our-students",
                 element: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _bodyDefault.default), {}, void 0, false, {
                     fileName: "src/App.js",
-                    lineNumber: 57,
-                    columnNumber: 18
+                    lineNumber: 58,
+                    columnNumber: 14
                 }, undefined)
             },
             {
                 path: "/about",
                 element: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _aboutDefault.default), {}, void 0, false, {
                     fileName: "src/App.js",
-                    lineNumber: 61,
-                    columnNumber: 18
+                    lineNumber: 62,
+                    columnNumber: 14
                 }, undefined)
             },
             {
                 path: "/contact",
                 element: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _contactDefault.default), {}, void 0, false, {
                     fileName: "src/App.js",
-                    lineNumber: 65,
-                    columnNumber: 18
+                    lineNumber: 66,
+                    columnNumber: 14
                 }, undefined)
             },
             {
                 path: "/student/:id",
                 element: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _studentDetailsDefault.default), {}, void 0, false, {
                     fileName: "src/App.js",
-                    lineNumber: 69,
-                    columnNumber: 18
+                    lineNumber: 70,
+                    columnNumber: 14
                 }, undefined)
             },
             {
                 path: "/donate",
                 element: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _donateDefault.default), {}, void 0, false, {
                     fileName: "src/App.js",
-                    lineNumber: 73,
-                    columnNumber: 18
+                    lineNumber: 74,
+                    columnNumber: 14
                 }, undefined)
             }
         ]
@@ -3117,48 +3119,48 @@ const appRouter = (0, _reactRouterDom.createBrowserRouter)([
         path: "/admin",
         element: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)(AdminLayout, {}, void 0, false, {
             fileName: "src/App.js",
-            lineNumber: 79,
-            columnNumber: 14
+            lineNumber: 80,
+            columnNumber: 12
         }, undefined),
         children: [
             {
                 path: "login",
                 element: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _adminLoginDefault.default), {}, void 0, false, {
                     fileName: "src/App.js",
-                    lineNumber: 83,
-                    columnNumber: 18
+                    lineNumber: 84,
+                    columnNumber: 14
                 }, undefined)
             },
             {
                 path: "dashboard",
                 element: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _adminDashboardDefault.default), {}, void 0, false, {
                     fileName: "src/App.js",
-                    lineNumber: 87,
-                    columnNumber: 18
+                    lineNumber: 88,
+                    columnNumber: 14
                 }, undefined)
             },
             {
                 path: "students",
                 element: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _adminStudentListDefault.default), {}, void 0, false, {
                     fileName: "src/App.js",
-                    lineNumber: 91,
-                    columnNumber: 18
+                    lineNumber: 92,
+                    columnNumber: 14
                 }, undefined)
             },
             {
                 path: "student/add",
                 element: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _adminStudentFormDefault.default), {}, void 0, false, {
                     fileName: "src/App.js",
-                    lineNumber: 95,
-                    columnNumber: 18
+                    lineNumber: 96,
+                    columnNumber: 14
                 }, undefined)
             },
             {
                 path: "student/:id/edit",
                 element: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _adminStudentEditDefault.default), {}, void 0, false, {
                     fileName: "src/App.js",
-                    lineNumber: 99,
-                    columnNumber: 18
+                    lineNumber: 100,
+                    columnNumber: 14
                 }, undefined)
             }
         ]
@@ -3169,7 +3171,7 @@ root.render(/*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _reactRouterDom.RouterP
     router: appRouter
 }, void 0, false, {
     fileName: "src/App.js",
-    lineNumber: 106,
+    lineNumber: 107,
     columnNumber: 13
 }, undefined));
 var _c, _c1;
@@ -3181,7 +3183,7 @@ $RefreshReg$(_c1, "AdminLayout");
   window.$RefreshReg$ = prevRefreshReg;
   window.$RefreshSig$ = prevRefreshSig;
 }
-},{"react/jsx-dev-runtime":"iTorj","react":"21dqq","react-dom/client":"lOjBx","./components/Header":"hsJbF","./components/Body":"8yaV8","./components/About":"9R1Eu","./components/Contact":"cgAOG","react-router-dom":"9xmpe","./components/StudentDetails":"aukjb","./components/Homepage":"f7Rc0","./components/Footer":"8pPOA","./components/Donate":"kOUbL","./contexts/StudentContext":"76LUH","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"km3Ru","./admin/contexts/AdminContext":"hL10n","./admin/components/AdminLogin":"jTg1i","./admin/components/AdminDashboard":"fWUgN","./admin/components/AdminStudentEdit":"5J0LL","./admin/components/AdminStudentForm":"8k8BT","./admin/components/AdminStudentList":"bLOF7"}],"iTorj":[function(require,module,exports) {
+},{"react/jsx-dev-runtime":"iTorj","react":"21dqq","react-dom/client":"lOjBx","./components/Header":"hsJbF","./components/Body":"8yaV8","./components/About":"9R1Eu","./components/Contact":"cgAOG","react-router-dom":"9xmpe","./components/StudentDetails":"aukjb","./components/Homepage":"f7Rc0","./components/Footer":"8pPOA","./components/Donate":"kOUbL","./contexts/StudentContext":"76LUH","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"km3Ru","./admin/contexts/AdminContext":"hL10n","./admin/components/AdminLogin":"jTg1i","./admin/components/AdminDashboard":"fWUgN","./admin/components/AdminStudentEdit":"5J0LL","./admin/components/AdminStudentForm":"8k8BT","./admin/components/AdminStudentList":"bLOF7","./admin/components/AdminNavBar":"2bFcP"}],"iTorj":[function(require,module,exports) {
 "use strict";
 module.exports = require("ee51401569654d91");
 
@@ -46295,46 +46297,67 @@ var _jsxDevRuntime = require("react/jsx-dev-runtime");
 var _react = require("react");
 var _reactDefault = parcelHelpers.interopDefault(_react);
 var _reactRouterDom = require("react-router-dom");
+var _adminNavBar = require("./AdminNavBar");
+var _adminNavBarDefault = parcelHelpers.interopDefault(_adminNavBar);
 var _adminStudentList = require("./AdminStudentList");
 var _adminStudentListDefault = parcelHelpers.interopDefault(_adminStudentList);
 const AdminDashboard = ()=>{
     return /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
-        className: "container mx-auto px-4 py-8",
         children: [
-            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("h1", {
-                className: "text-3xl font-bold mb-6",
-                children: "Admin Dashboard"
-            }, void 0, false, {
-                fileName: "src/admin/components/AdminDashboard.js",
-                lineNumber: 8,
-                columnNumber: 7
-            }, undefined),
-            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
-                className: "mb-6",
-                children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _reactRouterDom.Link), {
-                    to: "/admin/student/add",
-                    className: "bg-green-500 hover:bg-green-600 text-white font-bold py-2 px-4 rounded",
-                    children: "Add New Student"
-                }, void 0, false, {
-                    fileName: "src/admin/components/AdminDashboard.js",
-                    lineNumber: 10,
-                    columnNumber: 9
-                }, undefined)
-            }, void 0, false, {
+            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _adminNavBarDefault.default), {}, void 0, false, {
                 fileName: "src/admin/components/AdminDashboard.js",
                 lineNumber: 9,
                 columnNumber: 7
             }, undefined),
-            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _adminStudentListDefault.default), {}, void 0, false, {
+            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                    className: "container mx-auto px-4 py-8",
+                    children: [
+                        /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("h1", {
+                            className: "text-3xl font-bold mb-6",
+                            children: "Admin Dashboard"
+                        }, void 0, false, {
+                            fileName: "src/admin/components/AdminDashboard.js",
+                            lineNumber: 12,
+                            columnNumber: 6
+                        }, undefined),
+                        /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                            className: "mb-6",
+                            children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _reactRouterDom.Link), {
+                                to: "/admin/student/add",
+                                className: "bg-green-500 hover:bg-green-600 text-white font-bold py-2 px-4 rounded",
+                                children: "Add New Student"
+                            }, void 0, false, {
+                                fileName: "src/admin/components/AdminDashboard.js",
+                                lineNumber: 14,
+                                columnNumber: 7
+                            }, undefined)
+                        }, void 0, false, {
+                            fileName: "src/admin/components/AdminDashboard.js",
+                            lineNumber: 13,
+                            columnNumber: 6
+                        }, undefined),
+                        /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _adminStudentListDefault.default), {}, void 0, false, {
+                            fileName: "src/admin/components/AdminDashboard.js",
+                            lineNumber: 21,
+                            columnNumber: 6
+                        }, undefined)
+                    ]
+                }, void 0, true, {
+                    fileName: "src/admin/components/AdminDashboard.js",
+                    lineNumber: 11,
+                    columnNumber: 5
+                }, undefined)
+            }, void 0, false, {
                 fileName: "src/admin/components/AdminDashboard.js",
-                lineNumber: 17,
-                columnNumber: 7
+                lineNumber: 10,
+                columnNumber: 4
             }, undefined)
         ]
     }, void 0, true, {
         fileName: "src/admin/components/AdminDashboard.js",
-        lineNumber: 7,
-        columnNumber: 5
+        lineNumber: 8,
+        columnNumber: 3
     }, undefined);
 };
 _c = AdminDashboard;
@@ -46347,7 +46370,7 @@ $RefreshReg$(_c, "AdminDashboard");
   window.$RefreshReg$ = prevRefreshReg;
   window.$RefreshSig$ = prevRefreshSig;
 }
-},{"react/jsx-dev-runtime":"iTorj","react":"21dqq","react-router-dom":"9xmpe","./AdminStudentList":"bLOF7","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"km3Ru"}],"bLOF7":[function(require,module,exports) {
+},{"react/jsx-dev-runtime":"iTorj","react":"21dqq","react-router-dom":"9xmpe","./AdminStudentList":"bLOF7","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"km3Ru","./AdminNavBar":"2bFcP"}],"bLOF7":[function(require,module,exports) {
 var $parcel$ReactRefreshHelpers$4e1b = require("@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js");
 var prevRefreshReg = window.$RefreshReg$;
 var prevRefreshSig = window.$RefreshSig$;
@@ -46361,6 +46384,8 @@ var _react = require("react");
 var _reactDefault = parcelHelpers.interopDefault(_react);
 var _reactRouterDom = require("react-router-dom");
 var _adminContext = require("../contexts/AdminContext");
+var _adminNavBar = require("./AdminNavBar");
+var _adminNavBarDefault = parcelHelpers.interopDefault(_adminNavBar);
 var _s = $RefreshSig$();
 const AdminStudentList = ()=>{
     _s();
@@ -46395,127 +46420,140 @@ const AdminStudentList = ()=>{
         children: "Loading..."
     }, void 0, false, {
         fileName: "src/admin/components/AdminStudentList.js",
-        lineNumber: 36,
-        columnNumber: 23
+        lineNumber: 37,
+        columnNumber: 22
     }, undefined);
     if (error) return /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
         className: "text-red-500",
         children: error
     }, void 0, false, {
         fileName: "src/admin/components/AdminStudentList.js",
-        lineNumber: 37,
-        columnNumber: 21
+        lineNumber: 38,
+        columnNumber: 20
     }, undefined);
     return /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
-        className: "overflow-x-auto",
-        children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("table", {
-            className: "min-w-full bg-white",
-            children: [
-                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("thead", {
-                    children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("tr", {
-                        children: [
-                            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("th", {
-                                className: "px-6 py-3 border-b-2 border-gray-300 text-left text-xs font-semibold text-gray-600 uppercase tracking-wider",
-                                children: "Name"
-                            }, void 0, false, {
+        children: [
+            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _adminNavBarDefault.default), {}, void 0, false, {
+                fileName: "src/admin/components/AdminStudentList.js",
+                lineNumber: 42,
+                columnNumber: 4
+            }, undefined),
+            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                className: "overflow-x-auto",
+                children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("table", {
+                    className: "min-w-full bg-white",
+                    children: [
+                        /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("thead", {
+                            children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("tr", {
+                                children: [
+                                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("th", {
+                                        className: "px-6 py-3 border-b-2 border-gray-300 text-left text-xs font-semibold text-gray-600 uppercase tracking-wider",
+                                        children: "Name"
+                                    }, void 0, false, {
+                                        fileName: "src/admin/components/AdminStudentList.js",
+                                        lineNumber: 47,
+                                        columnNumber: 8
+                                    }, undefined),
+                                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("th", {
+                                        className: "px-6 py-3 border-b-2 border-gray-300 text-left text-xs font-semibold text-gray-600 uppercase tracking-wider",
+                                        children: "Age"
+                                    }, void 0, false, {
+                                        fileName: "src/admin/components/AdminStudentList.js",
+                                        lineNumber: 50,
+                                        columnNumber: 8
+                                    }, undefined),
+                                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("th", {
+                                        className: "px-6 py-3 border-b-2 border-gray-300 text-left text-xs font-semibold text-gray-600 uppercase tracking-wider",
+                                        children: "Actions"
+                                    }, void 0, false, {
+                                        fileName: "src/admin/components/AdminStudentList.js",
+                                        lineNumber: 53,
+                                        columnNumber: 8
+                                    }, undefined)
+                                ]
+                            }, void 0, true, {
                                 fileName: "src/admin/components/AdminStudentList.js",
-                                lineNumber: 44,
-                                columnNumber: 13
-                            }, undefined),
-                            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("th", {
-                                className: "px-6 py-3 border-b-2 border-gray-300 text-left text-xs font-semibold text-gray-600 uppercase tracking-wider",
-                                children: "Age"
-                            }, void 0, false, {
-                                fileName: "src/admin/components/AdminStudentList.js",
-                                lineNumber: 47,
-                                columnNumber: 13
-                            }, undefined),
-                            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("th", {
-                                className: "px-6 py-3 border-b-2 border-gray-300 text-left text-xs font-semibold text-gray-600 uppercase tracking-wider",
-                                children: "Actions"
-                            }, void 0, false, {
-                                fileName: "src/admin/components/AdminStudentList.js",
-                                lineNumber: 50,
-                                columnNumber: 13
+                                lineNumber: 46,
+                                columnNumber: 7
                             }, undefined)
-                        ]
-                    }, void 0, true, {
-                        fileName: "src/admin/components/AdminStudentList.js",
-                        lineNumber: 43,
-                        columnNumber: 11
-                    }, undefined)
-                }, void 0, false, {
-                    fileName: "src/admin/components/AdminStudentList.js",
-                    lineNumber: 42,
-                    columnNumber: 9
-                }, undefined),
-                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("tbody", {
-                    children: students.map((student)=>/*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("tr", {
-                            children: [
-                                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("td", {
-                                    className: "px-6 py-4 whitespace-nowrap",
-                                    children: student.name
-                                }, void 0, false, {
-                                    fileName: "src/admin/components/AdminStudentList.js",
-                                    lineNumber: 58,
-                                    columnNumber: 15
-                                }, undefined),
-                                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("td", {
-                                    className: "px-6 py-4 whitespace-nowrap",
-                                    children: student.age
-                                }, void 0, false, {
-                                    fileName: "src/admin/components/AdminStudentList.js",
-                                    lineNumber: 59,
-                                    columnNumber: 15
-                                }, undefined),
-                                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("td", {
-                                    className: "px-6 py-4 whitespace-nowrap",
+                        }, void 0, false, {
+                            fileName: "src/admin/components/AdminStudentList.js",
+                            lineNumber: 45,
+                            columnNumber: 6
+                        }, undefined),
+                        /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("tbody", {
+                            children: students.map((student)=>/*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("tr", {
                                     children: [
-                                        /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _reactRouterDom.Link), {
-                                            to: `/admin/student/${student.id}/edit`,
-                                            className: "text-indigo-600 hover:text-indigo-900 mr-4",
-                                            children: "Edit"
+                                        /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("td", {
+                                            className: "px-6 py-4 whitespace-nowrap",
+                                            children: student.name
                                         }, void 0, false, {
                                             fileName: "src/admin/components/AdminStudentList.js",
                                             lineNumber: 61,
-                                            columnNumber: 17
+                                            columnNumber: 9
                                         }, undefined),
-                                        /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("button", {
-                                            onClick: ()=>handleDelete(student.id),
-                                            className: "text-red-600 hover:text-red-900",
-                                            children: "Delete"
+                                        /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("td", {
+                                            className: "px-6 py-4 whitespace-nowrap",
+                                            children: student.age
                                         }, void 0, false, {
                                             fileName: "src/admin/components/AdminStudentList.js",
-                                            lineNumber: 67,
-                                            columnNumber: 17
+                                            lineNumber: 62,
+                                            columnNumber: 9
+                                        }, undefined),
+                                        /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("td", {
+                                            className: "px-6 py-4 whitespace-nowrap",
+                                            children: [
+                                                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _reactRouterDom.Link), {
+                                                    to: `/admin/student/${student.id}/edit`,
+                                                    className: "text-indigo-600 hover:text-indigo-900 mr-4",
+                                                    children: "Edit"
+                                                }, void 0, false, {
+                                                    fileName: "src/admin/components/AdminStudentList.js",
+                                                    lineNumber: 64,
+                                                    columnNumber: 10
+                                                }, undefined),
+                                                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("button", {
+                                                    onClick: ()=>handleDelete(student.id),
+                                                    className: "text-red-600 hover:text-red-900",
+                                                    children: "Delete"
+                                                }, void 0, false, {
+                                                    fileName: "src/admin/components/AdminStudentList.js",
+                                                    lineNumber: 70,
+                                                    columnNumber: 10
+                                                }, undefined)
+                                            ]
+                                        }, void 0, true, {
+                                            fileName: "src/admin/components/AdminStudentList.js",
+                                            lineNumber: 63,
+                                            columnNumber: 9
                                         }, undefined)
                                     ]
-                                }, void 0, true, {
+                                }, student.id, true, {
                                     fileName: "src/admin/components/AdminStudentList.js",
                                     lineNumber: 60,
-                                    columnNumber: 15
-                                }, undefined)
-                            ]
-                        }, student.id, true, {
+                                    columnNumber: 8
+                                }, undefined))
+                        }, void 0, false, {
                             fileName: "src/admin/components/AdminStudentList.js",
-                            lineNumber: 57,
-                            columnNumber: 13
-                        }, undefined))
-                }, void 0, false, {
+                            lineNumber: 58,
+                            columnNumber: 6
+                        }, undefined)
+                    ]
+                }, void 0, true, {
                     fileName: "src/admin/components/AdminStudentList.js",
-                    lineNumber: 55,
-                    columnNumber: 9
+                    lineNumber: 44,
+                    columnNumber: 5
                 }, undefined)
-            ]
-        }, void 0, true, {
-            fileName: "src/admin/components/AdminStudentList.js",
-            lineNumber: 41,
-            columnNumber: 7
-        }, undefined)
-    }, void 0, false, {
+            }, void 0, false, {
+                fileName: "src/admin/components/AdminStudentList.js",
+                lineNumber: 43,
+                columnNumber: 4
+            }, undefined)
+        ]
+    }, void 0, true, {
         fileName: "src/admin/components/AdminStudentList.js",
-        lineNumber: 40,
-        columnNumber: 5
+        lineNumber: 41,
+        columnNumber: 3
     }, undefined);
 };
 _s(AdminStudentList, "xyUHMc8Eq6yv3haR1Ld6wa1/O5E=", false, function() {
@@ -46533,7 +46571,115 @@ $RefreshReg$(_c, "AdminStudentList");
   window.$RefreshReg$ = prevRefreshReg;
   window.$RefreshSig$ = prevRefreshSig;
 }
-},{"react/jsx-dev-runtime":"iTorj","react":"21dqq","react-router-dom":"9xmpe","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"km3Ru","../contexts/AdminContext":"hL10n"}],"5J0LL":[function(require,module,exports) {
+},{"react/jsx-dev-runtime":"iTorj","react":"21dqq","react-router-dom":"9xmpe","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"km3Ru","../contexts/AdminContext":"hL10n","./AdminNavBar":"2bFcP"}],"2bFcP":[function(require,module,exports) {
+var $parcel$ReactRefreshHelpers$7fa8 = require("@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js");
+var prevRefreshReg = window.$RefreshReg$;
+var prevRefreshSig = window.$RefreshSig$;
+$parcel$ReactRefreshHelpers$7fa8.prelude(module);
+
+try {
+var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
+parcelHelpers.defineInteropFlag(exports);
+var _jsxDevRuntime = require("react/jsx-dev-runtime");
+var _react = require("react");
+var _reactDefault = parcelHelpers.interopDefault(_react);
+var _reactRouterDom = require("react-router-dom");
+var _s = $RefreshSig$();
+const AdminNavBar = ()=>{
+    _s();
+    const location = (0, _reactRouterDom.useLocation)();
+    const isActive = (path)=>location.pathname === path;
+    return /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("nav", {
+        className: "bg-gray-800 text-white p-4",
+        children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+            className: "container mx-auto flex flex-wrap justify-between items-center",
+            children: [
+                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                    className: "flex items-center flex-shrink-0 mr-6",
+                    children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("span", {
+                        className: "font-semibold text-xl tracking-tight",
+                        children: "Admin Panel"
+                    }, void 0, false, {
+                        fileName: "src/admin/components/AdminNavBar.js",
+                        lineNumber: 13,
+                        columnNumber: 6
+                    }, undefined)
+                }, void 0, false, {
+                    fileName: "src/admin/components/AdminNavBar.js",
+                    lineNumber: 12,
+                    columnNumber: 5
+                }, undefined),
+                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                    className: "w-full block flex-grow lg:flex lg:items-center lg:w-auto",
+                    children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                        className: "text-sm lg:flex-grow",
+                        children: [
+                            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _reactRouterDom.Link), {
+                                to: "/admin/dashboard",
+                                className: `block mt-4 lg:inline-block lg:mt-0 hover:text-white mr-4 ${isActive("/admin/dashboard") ? "text-white" : "text-gray-400"}`,
+                                children: "Dashboard"
+                            }, void 0, false, {
+                                fileName: "src/admin/components/AdminNavBar.js",
+                                lineNumber: 19,
+                                columnNumber: 7
+                            }, undefined),
+                            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _reactRouterDom.Link), {
+                                to: "/admin/student/add",
+                                className: `block mt-4 lg:inline-block lg:mt-0 hover:text-white mr-4 ${isActive("/admin/student/add") ? "text-white" : "text-gray-400"}`,
+                                children: "Add Student"
+                            }, void 0, false, {
+                                fileName: "src/admin/components/AdminNavBar.js",
+                                lineNumber: 27,
+                                columnNumber: 7
+                            }, undefined),
+                            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _reactRouterDom.Link), {
+                                to: "/admin/students",
+                                className: `block mt-4 lg:inline-block lg:mt-0 hover:text-white mr-4 ${isActive("/admin/students") ? "text-white" : "text-gray-400"}`,
+                                children: "Manage Students"
+                            }, void 0, false, {
+                                fileName: "src/admin/components/AdminNavBar.js",
+                                lineNumber: 35,
+                                columnNumber: 7
+                            }, undefined)
+                        ]
+                    }, void 0, true, {
+                        fileName: "src/admin/components/AdminNavBar.js",
+                        lineNumber: 18,
+                        columnNumber: 6
+                    }, undefined)
+                }, void 0, false, {
+                    fileName: "src/admin/components/AdminNavBar.js",
+                    lineNumber: 17,
+                    columnNumber: 5
+                }, undefined)
+            ]
+        }, void 0, true, {
+            fileName: "src/admin/components/AdminNavBar.js",
+            lineNumber: 11,
+            columnNumber: 4
+        }, undefined)
+    }, void 0, false, {
+        fileName: "src/admin/components/AdminNavBar.js",
+        lineNumber: 10,
+        columnNumber: 3
+    }, undefined);
+};
+_s(AdminNavBar, "pkHmaVRPskBaU4tMJuJJpV42k1I=", false, function() {
+    return [
+        (0, _reactRouterDom.useLocation)
+    ];
+});
+_c = AdminNavBar;
+exports.default = AdminNavBar;
+var _c;
+$RefreshReg$(_c, "AdminNavBar");
+
+  $parcel$ReactRefreshHelpers$7fa8.postlude(module);
+} finally {
+  window.$RefreshReg$ = prevRefreshReg;
+  window.$RefreshSig$ = prevRefreshSig;
+}
+},{"react/jsx-dev-runtime":"iTorj","react":"21dqq","react-router-dom":"9xmpe","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"km3Ru"}],"5J0LL":[function(require,module,exports) {
 var $parcel$ReactRefreshHelpers$3861 = require("@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js");
 var prevRefreshReg = window.$RefreshReg$;
 var prevRefreshSig = window.$RefreshSig$;
@@ -46547,6 +46693,8 @@ var _react = require("react");
 var _reactDefault = parcelHelpers.interopDefault(_react);
 var _reactRouterDom = require("react-router-dom");
 var _adminContext = require("../contexts/AdminContext");
+var _adminNavBar = require("./AdminNavBar");
+var _adminNavBarDefault = parcelHelpers.interopDefault(_adminNavBar);
 var _s = $RefreshSig$();
 const AdminStudentEdit = ()=>{
     _s();
@@ -46604,205 +46752,211 @@ const AdminStudentEdit = ()=>{
         children: "Loading..."
     }, void 0, false, {
         fileName: "src/admin/components/AdminStudentEdit.js",
-        lineNumber: 67,
-        columnNumber: 23
+        lineNumber: 68,
+        columnNumber: 22
     }, undefined);
     if (error) return /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
         className: "text-red-500",
         children: error
     }, void 0, false, {
         fileName: "src/admin/components/AdminStudentEdit.js",
-        lineNumber: 68,
-        columnNumber: 21
+        lineNumber: 69,
+        columnNumber: 20
     }, undefined);
     return /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
-        className: "max-w-4xl mx-auto mt-8 p-6 bg-white shadow-lg rounded-lg",
-        children: [
-            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("h2", {
-                className: "text-2xl font-bold mb-6",
-                children: "Edit Student"
-            }, void 0, false, {
-                fileName: "src/admin/components/AdminStudentEdit.js",
-                lineNumber: 72,
-                columnNumber: 7
-            }, undefined),
-            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("form", {
-                onSubmit: handleSubmit,
-                children: [
-                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
-                        className: "mb-4",
-                        children: [
-                            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("label", {
-                                htmlFor: "name",
-                                className: "block text-gray-700 font-bold mb-2",
-                                children: "Name"
-                            }, void 0, false, {
-                                fileName: "src/admin/components/AdminStudentEdit.js",
-                                lineNumber: 75,
-                                columnNumber: 11
-                            }, undefined),
-                            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("input", {
-                                type: "text",
-                                id: "name",
-                                name: "name",
-                                value: student.name,
-                                onChange: handleChange,
-                                className: "w-full px-3 py-2 border rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500",
-                                required: true
-                            }, void 0, false, {
-                                fileName: "src/admin/components/AdminStudentEdit.js",
-                                lineNumber: 78,
-                                columnNumber: 11
-                            }, undefined)
-                        ]
-                    }, void 0, true, {
-                        fileName: "src/admin/components/AdminStudentEdit.js",
-                        lineNumber: 74,
-                        columnNumber: 9
-                    }, undefined),
-                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
-                        className: "mb-4",
-                        children: [
-                            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("label", {
-                                htmlFor: "age",
-                                className: "block text-gray-700 font-bold mb-2",
-                                children: "Age"
-                            }, void 0, false, {
-                                fileName: "src/admin/components/AdminStudentEdit.js",
-                                lineNumber: 89,
-                                columnNumber: 11
-                            }, undefined),
-                            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("input", {
-                                type: "number",
-                                id: "age",
-                                name: "age",
-                                value: student.age,
-                                onChange: handleChange,
-                                className: "w-full px-3 py-2 border rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500",
-                                required: true
-                            }, void 0, false, {
-                                fileName: "src/admin/components/AdminStudentEdit.js",
-                                lineNumber: 92,
-                                columnNumber: 11
-                            }, undefined)
-                        ]
-                    }, void 0, true, {
-                        fileName: "src/admin/components/AdminStudentEdit.js",
-                        lineNumber: 88,
-                        columnNumber: 9
-                    }, undefined),
-                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
-                        className: "mb-4",
-                        children: [
-                            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("label", {
-                                htmlFor: "achievements",
-                                className: "block text-gray-700 font-bold mb-2",
-                                children: "Achievements"
-                            }, void 0, false, {
-                                fileName: "src/admin/components/AdminStudentEdit.js",
-                                lineNumber: 103,
-                                columnNumber: 11
-                            }, undefined),
-                            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("input", {
-                                type: "text",
-                                id: "achievements",
-                                name: "achievements",
-                                value: student.achievements,
-                                onChange: handleChange,
-                                className: "w-full px-3 py-2 border rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500"
-                            }, void 0, false, {
-                                fileName: "src/admin/components/AdminStudentEdit.js",
-                                lineNumber: 109,
-                                columnNumber: 11
-                            }, undefined)
-                        ]
-                    }, void 0, true, {
-                        fileName: "src/admin/components/AdminStudentEdit.js",
-                        lineNumber: 102,
-                        columnNumber: 9
-                    }, undefined),
-                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
-                        className: "mb-4",
-                        children: [
-                            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("label", {
-                                htmlFor: "aboutUs",
-                                className: "block text-gray-700 font-bold mb-2",
-                                children: "About the student"
-                            }, void 0, false, {
-                                fileName: "src/admin/components/AdminStudentEdit.js",
-                                lineNumber: 119,
-                                columnNumber: 11
-                            }, undefined),
-                            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("textarea", {
-                                id: "aboutUs",
-                                name: "aboutUs",
-                                value: student.aboutUs,
-                                onChange: handleChange,
-                                className: "w-full px-3 py-2 border rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500",
-                                rows: "4"
-                            }, void 0, false, {
-                                fileName: "src/admin/components/AdminStudentEdit.js",
-                                lineNumber: 125,
-                                columnNumber: 11
-                            }, undefined)
-                        ]
-                    }, void 0, true, {
-                        fileName: "src/admin/components/AdminStudentEdit.js",
-                        lineNumber: 118,
-                        columnNumber: 9
-                    }, undefined),
-                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
-                        className: "mb-4",
-                        children: [
-                            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("label", {
-                                htmlFor: "image",
-                                className: "block text-gray-700 font-bold mb-2",
-                                children: "Student Image"
-                            }, void 0, false, {
-                                fileName: "src/admin/components/AdminStudentEdit.js",
-                                lineNumber: 135,
-                                columnNumber: 11
-                            }, undefined),
-                            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("input", {
-                                type: "file",
-                                id: "image",
-                                name: "image",
-                                onChange: handleChange,
-                                className: "w-full px-3 py-2 border rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500"
-                            }, void 0, false, {
-                                fileName: "src/admin/components/AdminStudentEdit.js",
-                                lineNumber: 138,
-                                columnNumber: 11
-                            }, undefined)
-                        ]
-                    }, void 0, true, {
-                        fileName: "src/admin/components/AdminStudentEdit.js",
-                        lineNumber: 134,
-                        columnNumber: 9
-                    }, undefined),
-                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("button", {
-                        type: "submit",
-                        className: "bg-blue-500 hover:bg-blue-600 text-white font-bold py-2 px-4 rounded-lg transition duration-300",
-                        children: "Update Student"
-                    }, void 0, false, {
-                        fileName: "src/admin/components/AdminStudentEdit.js",
-                        lineNumber: 146,
-                        columnNumber: 9
-                    }, undefined)
-                ]
-            }, void 0, true, {
-                fileName: "src/admin/components/AdminStudentEdit.js",
-                lineNumber: 73,
-                columnNumber: 7
-            }, undefined)
-        ]
-    }, void 0, true, {
+        children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+            className: "max-w-4xl mx-auto mt-8 p-6 bg-white shadow-lg rounded-lg",
+            children: [
+                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("h2", {
+                    className: "text-2xl font-bold mb-6",
+                    children: "Edit Student"
+                }, void 0, false, {
+                    fileName: "src/admin/components/AdminStudentEdit.js",
+                    lineNumber: 74,
+                    columnNumber: 5
+                }, undefined),
+                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("form", {
+                    onSubmit: handleSubmit,
+                    children: [
+                        /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                            className: "mb-4",
+                            children: [
+                                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("label", {
+                                    htmlFor: "name",
+                                    className: "block text-gray-700 font-bold mb-2",
+                                    children: "Name"
+                                }, void 0, false, {
+                                    fileName: "src/admin/components/AdminStudentEdit.js",
+                                    lineNumber: 77,
+                                    columnNumber: 7
+                                }, undefined),
+                                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("input", {
+                                    type: "text",
+                                    id: "name",
+                                    name: "name",
+                                    value: student.name,
+                                    onChange: handleChange,
+                                    className: "w-full px-3 py-2 border rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500",
+                                    required: true
+                                }, void 0, false, {
+                                    fileName: "src/admin/components/AdminStudentEdit.js",
+                                    lineNumber: 83,
+                                    columnNumber: 7
+                                }, undefined)
+                            ]
+                        }, void 0, true, {
+                            fileName: "src/admin/components/AdminStudentEdit.js",
+                            lineNumber: 76,
+                            columnNumber: 6
+                        }, undefined),
+                        /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                            className: "mb-4",
+                            children: [
+                                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("label", {
+                                    htmlFor: "age",
+                                    className: "block text-gray-700 font-bold mb-2",
+                                    children: "Age"
+                                }, void 0, false, {
+                                    fileName: "src/admin/components/AdminStudentEdit.js",
+                                    lineNumber: 94,
+                                    columnNumber: 7
+                                }, undefined),
+                                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("input", {
+                                    type: "number",
+                                    id: "age",
+                                    name: "age",
+                                    value: student.age,
+                                    onChange: handleChange,
+                                    className: "w-full px-3 py-2 border rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500",
+                                    required: true
+                                }, void 0, false, {
+                                    fileName: "src/admin/components/AdminStudentEdit.js",
+                                    lineNumber: 97,
+                                    columnNumber: 7
+                                }, undefined)
+                            ]
+                        }, void 0, true, {
+                            fileName: "src/admin/components/AdminStudentEdit.js",
+                            lineNumber: 93,
+                            columnNumber: 6
+                        }, undefined),
+                        /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                            className: "mb-4",
+                            children: [
+                                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("label", {
+                                    htmlFor: "achievements",
+                                    className: "block text-gray-700 font-bold mb-2",
+                                    children: "Achievements"
+                                }, void 0, false, {
+                                    fileName: "src/admin/components/AdminStudentEdit.js",
+                                    lineNumber: 108,
+                                    columnNumber: 7
+                                }, undefined),
+                                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("input", {
+                                    type: "text",
+                                    id: "achievements",
+                                    name: "achievements",
+                                    value: student.achievements,
+                                    onChange: handleChange,
+                                    className: "w-full px-3 py-2 border rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500"
+                                }, void 0, false, {
+                                    fileName: "src/admin/components/AdminStudentEdit.js",
+                                    lineNumber: 114,
+                                    columnNumber: 7
+                                }, undefined)
+                            ]
+                        }, void 0, true, {
+                            fileName: "src/admin/components/AdminStudentEdit.js",
+                            lineNumber: 107,
+                            columnNumber: 6
+                        }, undefined),
+                        /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                            className: "mb-4",
+                            children: [
+                                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("label", {
+                                    htmlFor: "aboutUs",
+                                    className: "block text-gray-700 font-bold mb-2",
+                                    children: "About the student"
+                                }, void 0, false, {
+                                    fileName: "src/admin/components/AdminStudentEdit.js",
+                                    lineNumber: 124,
+                                    columnNumber: 7
+                                }, undefined),
+                                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("textarea", {
+                                    id: "aboutUs",
+                                    name: "aboutUs",
+                                    value: student.aboutUs,
+                                    onChange: handleChange,
+                                    className: "w-full px-3 py-2 border rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500",
+                                    rows: "4"
+                                }, void 0, false, {
+                                    fileName: "src/admin/components/AdminStudentEdit.js",
+                                    lineNumber: 130,
+                                    columnNumber: 7
+                                }, undefined)
+                            ]
+                        }, void 0, true, {
+                            fileName: "src/admin/components/AdminStudentEdit.js",
+                            lineNumber: 123,
+                            columnNumber: 6
+                        }, undefined),
+                        /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                            className: "mb-4",
+                            children: [
+                                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("label", {
+                                    htmlFor: "image",
+                                    className: "block text-gray-700 font-bold mb-2",
+                                    children: "Student Image"
+                                }, void 0, false, {
+                                    fileName: "src/admin/components/AdminStudentEdit.js",
+                                    lineNumber: 140,
+                                    columnNumber: 7
+                                }, undefined),
+                                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("input", {
+                                    type: "file",
+                                    id: "image",
+                                    name: "image",
+                                    onChange: handleChange,
+                                    className: "w-full px-3 py-2 border rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500"
+                                }, void 0, false, {
+                                    fileName: "src/admin/components/AdminStudentEdit.js",
+                                    lineNumber: 146,
+                                    columnNumber: 7
+                                }, undefined)
+                            ]
+                        }, void 0, true, {
+                            fileName: "src/admin/components/AdminStudentEdit.js",
+                            lineNumber: 139,
+                            columnNumber: 6
+                        }, undefined),
+                        /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("button", {
+                            type: "submit",
+                            className: "bg-blue-500 hover:bg-blue-600 text-white font-bold py-2 px-4 rounded-lg transition duration-300",
+                            children: "Update Student"
+                        }, void 0, false, {
+                            fileName: "src/admin/components/AdminStudentEdit.js",
+                            lineNumber: 154,
+                            columnNumber: 6
+                        }, undefined)
+                    ]
+                }, void 0, true, {
+                    fileName: "src/admin/components/AdminStudentEdit.js",
+                    lineNumber: 75,
+                    columnNumber: 5
+                }, undefined)
+            ]
+        }, void 0, true, {
+            fileName: "src/admin/components/AdminStudentEdit.js",
+            lineNumber: 73,
+            columnNumber: 4
+        }, undefined)
+    }, void 0, false, {
         fileName: "src/admin/components/AdminStudentEdit.js",
-        lineNumber: 71,
-        columnNumber: 5
+        lineNumber: 72,
+        columnNumber: 3
     }, undefined);
 };
-_s(AdminStudentEdit, "zubjLFDmawjY4O8TvseTzt991uc=", false, function() {
+_s(AdminStudentEdit, "p5z4Sky08KnQG7+QvYgjnYOfIbk=", false, function() {
     return [
         (0, _reactRouterDom.useParams),
         (0, _reactRouterDom.useNavigate),
@@ -46819,7 +46973,7 @@ $RefreshReg$(_c, "AdminStudentEdit");
   window.$RefreshReg$ = prevRefreshReg;
   window.$RefreshSig$ = prevRefreshSig;
 }
-},{"react/jsx-dev-runtime":"iTorj","react":"21dqq","react-router-dom":"9xmpe","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"km3Ru","../contexts/AdminContext":"hL10n"}],"8k8BT":[function(require,module,exports) {
+},{"react/jsx-dev-runtime":"iTorj","react":"21dqq","react-router-dom":"9xmpe","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"km3Ru","../contexts/AdminContext":"hL10n","./AdminNavBar":"2bFcP"}],"8k8BT":[function(require,module,exports) {
 var $parcel$ReactRefreshHelpers$b18c = require("@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js");
 var prevRefreshReg = window.$RefreshReg$;
 var prevRefreshSig = window.$RefreshSig$;
@@ -46833,6 +46987,8 @@ var _react = require("react");
 var _reactDefault = parcelHelpers.interopDefault(_react);
 var _adminContext = require("../contexts/AdminContext");
 var _reactRouterDom = require("react-router-dom");
+var _adminNavBar = require("./AdminNavBar");
+var _adminNavBarDefault = parcelHelpers.interopDefault(_adminNavBar);
 var _s = $RefreshSig$();
 const AdminStudentForm = ()=>{
     _s();
@@ -46902,410 +47058,423 @@ const AdminStudentForm = ()=>{
             console.error("Error adding student:", error);
         }
     };
-    return /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("form", {
-        onSubmit: handleSubmit,
-        className: "max-w-4xl mx-auto mt-8 p-6 bg-white shadow-lg rounded-lg",
+    return /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
         children: [
-            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
-                className: "grid md:grid-cols-2 gap-6",
+            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _adminNavBarDefault.default), {}, void 0, false, {
+                fileName: "src/admin/components/AdminStudentForm.js",
+                lineNumber: 80,
+                columnNumber: 7
+            }, undefined),
+            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("form", {
+                onSubmit: handleSubmit,
+                className: "max-w-4xl mx-auto mt-8 p-6 bg-white shadow-lg rounded-lg",
                 children: [
                     /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
-                        className: "mb-4",
+                        className: "grid md:grid-cols-2 gap-6",
                         children: [
-                            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("label", {
-                                htmlFor: "name",
-                                className: "block text-gray-700 font-semibold mb-2",
-                                children: "Name"
-                            }, void 0, false, {
-                                fileName: "src/admin/components/AdminStudentForm.js",
-                                lineNumber: 84,
-                                columnNumber: 11
-                            }, undefined),
                             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
-                                className: "relative",
+                                className: "mb-4",
                                 children: [
-                                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("input", {
-                                        type: "text",
-                                        id: "name",
-                                        name: "name",
-                                        value: formData.name,
-                                        onChange: handleChange,
-                                        placeholder: "Name",
-                                        required: true,
-                                        className: "w-full px-3 py-2 pl-10 border rounded-lg focus:outline-none focus:ring-2 focus:ring-ngo-primary"
+                                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("label", {
+                                        htmlFor: "name",
+                                        className: "block text-gray-700 font-semibold mb-2",
+                                        children: "Name"
                                     }, void 0, false, {
                                         fileName: "src/admin/components/AdminStudentForm.js",
-                                        lineNumber: 91,
-                                        columnNumber: 13
+                                        lineNumber: 87,
+                                        columnNumber: 7
                                     }, undefined),
-                                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("span", {
-                                        className: "absolute left-3 top-2 text-gray-400",
-                                        children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("svg", {
-                                            xmlns: "http://www.w3.org/2000/svg",
-                                            className: "h-5 w-5",
-                                            viewBox: "0 0 20 20",
-                                            fill: "currentColor",
-                                            children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("path", {
-                                                fillRule: "evenodd",
-                                                d: "M10 9a3 3 0 100-6 3 3 0 000 6zm-7 9a7 7 0 1114 0H3z",
-                                                clipRule: "evenodd"
+                                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                                        className: "relative",
+                                        children: [
+                                            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("input", {
+                                                type: "text",
+                                                id: "name",
+                                                name: "name",
+                                                value: formData.name,
+                                                onChange: handleChange,
+                                                placeholder: "Name",
+                                                required: true,
+                                                className: "w-full px-3 py-2 pl-10 border rounded-lg focus:outline-none focus:ring-2 focus:ring-ngo-primary"
                                             }, void 0, false, {
                                                 fileName: "src/admin/components/AdminStudentForm.js",
-                                                lineNumber: 108,
-                                                columnNumber: 17
+                                                lineNumber: 94,
+                                                columnNumber: 8
+                                            }, undefined),
+                                            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("span", {
+                                                className: "absolute left-3 top-2 text-gray-400",
+                                                children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("svg", {
+                                                    xmlns: "http://www.w3.org/2000/svg",
+                                                    className: "h-5 w-5",
+                                                    viewBox: "0 0 20 20",
+                                                    fill: "currentColor",
+                                                    children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("path", {
+                                                        fillRule: "evenodd",
+                                                        d: "M10 9a3 3 0 100-6 3 3 0 000 6zm-7 9a7 7 0 1114 0H3z",
+                                                        clipRule: "evenodd"
+                                                    }, void 0, false, {
+                                                        fileName: "src/admin/components/AdminStudentForm.js",
+                                                        lineNumber: 111,
+                                                        columnNumber: 10
+                                                    }, undefined)
+                                                }, void 0, false, {
+                                                    fileName: "src/admin/components/AdminStudentForm.js",
+                                                    lineNumber: 105,
+                                                    columnNumber: 9
+                                                }, undefined)
+                                            }, void 0, false, {
+                                                fileName: "src/admin/components/AdminStudentForm.js",
+                                                lineNumber: 104,
+                                                columnNumber: 8
                                             }, undefined)
-                                        }, void 0, false, {
-                                            fileName: "src/admin/components/AdminStudentForm.js",
-                                            lineNumber: 102,
-                                            columnNumber: 15
-                                        }, undefined)
-                                    }, void 0, false, {
+                                        ]
+                                    }, void 0, true, {
                                         fileName: "src/admin/components/AdminStudentForm.js",
-                                        lineNumber: 101,
-                                        columnNumber: 13
+                                        lineNumber: 93,
+                                        columnNumber: 7
                                     }, undefined)
                                 ]
                             }, void 0, true, {
                                 fileName: "src/admin/components/AdminStudentForm.js",
-                                lineNumber: 90,
-                                columnNumber: 11
+                                lineNumber: 86,
+                                columnNumber: 6
+                            }, undefined),
+                            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                                className: "mb-4",
+                                children: [
+                                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("label", {
+                                        htmlFor: "age",
+                                        className: "block text-gray-700 font-semibold mb-2",
+                                        children: "Age"
+                                    }, void 0, false, {
+                                        fileName: "src/admin/components/AdminStudentForm.js",
+                                        lineNumber: 121,
+                                        columnNumber: 7
+                                    }, undefined),
+                                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                                        className: "relative",
+                                        children: [
+                                            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("input", {
+                                                type: "number",
+                                                id: "age",
+                                                name: "age",
+                                                value: formData.age,
+                                                onChange: handleChange,
+                                                placeholder: "Age",
+                                                required: true,
+                                                className: "w-full px-3 py-2 pl-10 border rounded-lg focus:outline-none focus:ring-2 focus:ring-ngo-primary"
+                                            }, void 0, false, {
+                                                fileName: "src/admin/components/AdminStudentForm.js",
+                                                lineNumber: 128,
+                                                columnNumber: 8
+                                            }, undefined),
+                                            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("span", {
+                                                className: "absolute left-3 top-2 text-gray-400",
+                                                children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("svg", {
+                                                    xmlns: "http://www.w3.org/2000/svg",
+                                                    className: "h-5 w-5",
+                                                    viewBox: "0 0 20 20",
+                                                    fill: "currentColor",
+                                                    children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("path", {
+                                                        fillRule: "evenodd",
+                                                        d: "M6 2a1 1 0 00-1 1v1H4a2 2 0 00-2 2v10a2 2 0 002 2h12a2 2 0 002-2V6a2 2 0 00-2-2h-1V3a1 1 0 10-2 0v1H7V3a1 1 0 00-1-1zm0 5a1 1 0 000 2h8a1 1 0 100-2H6z",
+                                                        clipRule: "evenodd"
+                                                    }, void 0, false, {
+                                                        fileName: "src/admin/components/AdminStudentForm.js",
+                                                        lineNumber: 145,
+                                                        columnNumber: 10
+                                                    }, undefined)
+                                                }, void 0, false, {
+                                                    fileName: "src/admin/components/AdminStudentForm.js",
+                                                    lineNumber: 139,
+                                                    columnNumber: 9
+                                                }, undefined)
+                                            }, void 0, false, {
+                                                fileName: "src/admin/components/AdminStudentForm.js",
+                                                lineNumber: 138,
+                                                columnNumber: 8
+                                            }, undefined)
+                                        ]
+                                    }, void 0, true, {
+                                        fileName: "src/admin/components/AdminStudentForm.js",
+                                        lineNumber: 127,
+                                        columnNumber: 7
+                                    }, undefined)
+                                ]
+                            }, void 0, true, {
+                                fileName: "src/admin/components/AdminStudentForm.js",
+                                lineNumber: 120,
+                                columnNumber: 6
                             }, undefined)
                         ]
                     }, void 0, true, {
                         fileName: "src/admin/components/AdminStudentForm.js",
-                        lineNumber: 83,
-                        columnNumber: 9
+                        lineNumber: 85,
+                        columnNumber: 5
                     }, undefined),
                     /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
                         className: "mb-4",
                         children: [
                             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("label", {
-                                htmlFor: "age",
+                                htmlFor: "date_of_birth",
                                 className: "block text-gray-700 font-semibold mb-2",
-                                children: "Age"
+                                children: "Date of Birth"
                             }, void 0, false, {
                                 fileName: "src/admin/components/AdminStudentForm.js",
-                                lineNumber: 118,
-                                columnNumber: 11
+                                lineNumber: 156,
+                                columnNumber: 6
                             }, undefined),
+                            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("input", {
+                                type: "date",
+                                id: "date_of_birth",
+                                name: "date_of_birth",
+                                value: formData.date_of_birth,
+                                onChange: handleChange,
+                                className: "w-full px-3 py-2 border rounded-lg focus:outline-none focus:ring-2 focus:ring-ngo-primary"
+                            }, void 0, false, {
+                                fileName: "src/admin/components/AdminStudentForm.js",
+                                lineNumber: 162,
+                                columnNumber: 6
+                            }, undefined)
+                        ]
+                    }, void 0, true, {
+                        fileName: "src/admin/components/AdminStudentForm.js",
+                        lineNumber: 155,
+                        columnNumber: 5
+                    }, undefined),
+                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                        className: "grid md:grid-cols-2 gap-6",
+                        children: [
                             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
-                                className: "relative",
+                                className: "mb-4",
                                 children: [
+                                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("label", {
+                                        htmlFor: "latitude",
+                                        className: "block text-gray-700 font-semibold mb-2",
+                                        children: "Latitude"
+                                    }, void 0, false, {
+                                        fileName: "src/admin/components/AdminStudentForm.js",
+                                        lineNumber: 173,
+                                        columnNumber: 7
+                                    }, undefined),
                                     /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("input", {
                                         type: "number",
-                                        id: "age",
-                                        name: "age",
-                                        value: formData.age,
+                                        id: "latitude",
+                                        name: "latitude",
+                                        value: formData.latitude,
                                         onChange: handleChange,
-                                        placeholder: "Age",
-                                        required: true,
-                                        className: "w-full px-3 py-2 pl-10 border rounded-lg focus:outline-none focus:ring-2 focus:ring-ngo-primary"
+                                        step: "0.000001",
+                                        className: "w-full px-3 py-2 border rounded-lg focus:outline-none focus:ring-2 focus:ring-ngo-primary"
                                     }, void 0, false, {
                                         fileName: "src/admin/components/AdminStudentForm.js",
-                                        lineNumber: 125,
-                                        columnNumber: 13
-                                    }, undefined),
-                                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("span", {
-                                        className: "absolute left-3 top-2 text-gray-400",
-                                        children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("svg", {
-                                            xmlns: "http://www.w3.org/2000/svg",
-                                            className: "h-5 w-5",
-                                            viewBox: "0 0 20 20",
-                                            fill: "currentColor",
-                                            children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("path", {
-                                                fillRule: "evenodd",
-                                                d: "M6 2a1 1 0 00-1 1v1H4a2 2 0 00-2 2v10a2 2 0 002 2h12a2 2 0 002-2V6a2 2 0 00-2-2h-1V3a1 1 0 10-2 0v1H7V3a1 1 0 00-1-1zm0 5a1 1 0 000 2h8a1 1 0 100-2H6z",
-                                                clipRule: "evenodd"
-                                            }, void 0, false, {
-                                                fileName: "src/admin/components/AdminStudentForm.js",
-                                                lineNumber: 142,
-                                                columnNumber: 17
-                                            }, undefined)
-                                        }, void 0, false, {
-                                            fileName: "src/admin/components/AdminStudentForm.js",
-                                            lineNumber: 136,
-                                            columnNumber: 15
-                                        }, undefined)
-                                    }, void 0, false, {
-                                        fileName: "src/admin/components/AdminStudentForm.js",
-                                        lineNumber: 135,
-                                        columnNumber: 13
+                                        lineNumber: 179,
+                                        columnNumber: 7
                                     }, undefined)
                                 ]
                             }, void 0, true, {
                                 fileName: "src/admin/components/AdminStudentForm.js",
-                                lineNumber: 124,
-                                columnNumber: 11
-                            }, undefined)
-                        ]
-                    }, void 0, true, {
-                        fileName: "src/admin/components/AdminStudentForm.js",
-                        lineNumber: 117,
-                        columnNumber: 9
-                    }, undefined)
-                ]
-            }, void 0, true, {
-                fileName: "src/admin/components/AdminStudentForm.js",
-                lineNumber: 82,
-                columnNumber: 7
-            }, undefined),
-            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
-                className: "mb-4",
-                children: [
-                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("label", {
-                        htmlFor: "date_of_birth",
-                        className: "block text-gray-700 font-semibold mb-2",
-                        children: "Date of Birth"
-                    }, void 0, false, {
-                        fileName: "src/admin/components/AdminStudentForm.js",
-                        lineNumber: 153,
-                        columnNumber: 9
-                    }, undefined),
-                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("input", {
-                        type: "date",
-                        id: "date_of_birth",
-                        name: "date_of_birth",
-                        value: formData.date_of_birth,
-                        onChange: handleChange,
-                        className: "w-full px-3 py-2 border rounded-lg focus:outline-none focus:ring-2 focus:ring-ngo-primary"
-                    }, void 0, false, {
-                        fileName: "src/admin/components/AdminStudentForm.js",
-                        lineNumber: 159,
-                        columnNumber: 9
-                    }, undefined)
-                ]
-            }, void 0, true, {
-                fileName: "src/admin/components/AdminStudentForm.js",
-                lineNumber: 152,
-                columnNumber: 7
-            }, undefined),
-            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
-                className: "grid md:grid-cols-2 gap-6",
-                children: [
-                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
-                        className: "mb-4",
-                        children: [
-                            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("label", {
-                                htmlFor: "latitude",
-                                className: "block text-gray-700 font-semibold mb-2",
-                                children: "Latitude"
-                            }, void 0, false, {
-                                fileName: "src/admin/components/AdminStudentForm.js",
-                                lineNumber: 170,
-                                columnNumber: 11
+                                lineNumber: 172,
+                                columnNumber: 6
                             }, undefined),
-                            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("input", {
-                                type: "number",
-                                id: "latitude",
-                                name: "latitude",
-                                value: formData.latitude,
-                                onChange: handleChange,
-                                step: "0.000001",
-                                className: "w-full px-3 py-2 border rounded-lg focus:outline-none focus:ring-2 focus:ring-ngo-primary"
-                            }, void 0, false, {
+                            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                                className: "mb-4",
+                                children: [
+                                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("label", {
+                                        htmlFor: "longitude",
+                                        className: "block text-gray-700 font-semibold mb-2",
+                                        children: "Longitude"
+                                    }, void 0, false, {
+                                        fileName: "src/admin/components/AdminStudentForm.js",
+                                        lineNumber: 190,
+                                        columnNumber: 7
+                                    }, undefined),
+                                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("input", {
+                                        type: "number",
+                                        id: "longitude",
+                                        name: "longitude",
+                                        value: formData.longitude,
+                                        onChange: handleChange,
+                                        step: "0.000001",
+                                        className: "w-full px-3 py-2 border rounded-lg focus:outline-none focus:ring-2 focus:ring-ngo-primary"
+                                    }, void 0, false, {
+                                        fileName: "src/admin/components/AdminStudentForm.js",
+                                        lineNumber: 196,
+                                        columnNumber: 7
+                                    }, undefined)
+                                ]
+                            }, void 0, true, {
                                 fileName: "src/admin/components/AdminStudentForm.js",
-                                lineNumber: 176,
-                                columnNumber: 11
+                                lineNumber: 189,
+                                columnNumber: 6
                             }, undefined)
                         ]
                     }, void 0, true, {
                         fileName: "src/admin/components/AdminStudentForm.js",
-                        lineNumber: 169,
-                        columnNumber: 9
+                        lineNumber: 171,
+                        columnNumber: 5
                     }, undefined),
                     /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
                         className: "mb-4",
                         children: [
                             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("label", {
-                                htmlFor: "longitude",
+                                htmlFor: "achievements",
                                 className: "block text-gray-700 font-semibold mb-2",
-                                children: "Longitude"
+                                children: "Achievements"
                             }, void 0, false, {
                                 fileName: "src/admin/components/AdminStudentForm.js",
-                                lineNumber: 187,
-                                columnNumber: 11
+                                lineNumber: 208,
+                                columnNumber: 6
                             }, undefined),
                             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("input", {
-                                type: "number",
-                                id: "longitude",
-                                name: "longitude",
-                                value: formData.longitude,
+                                type: "text",
+                                id: "achievements",
+                                name: "achievements",
+                                value: formData.achievements,
                                 onChange: handleChange,
-                                step: "0.000001",
+                                placeholder: "Achievements (comma-separated)",
                                 className: "w-full px-3 py-2 border rounded-lg focus:outline-none focus:ring-2 focus:ring-ngo-primary"
                             }, void 0, false, {
                                 fileName: "src/admin/components/AdminStudentForm.js",
-                                lineNumber: 193,
-                                columnNumber: 11
+                                lineNumber: 214,
+                                columnNumber: 6
                             }, undefined)
                         ]
                     }, void 0, true, {
                         fileName: "src/admin/components/AdminStudentForm.js",
-                        lineNumber: 186,
-                        columnNumber: 9
-                    }, undefined)
-                ]
-            }, void 0, true, {
-                fileName: "src/admin/components/AdminStudentForm.js",
-                lineNumber: 168,
-                columnNumber: 7
-            }, undefined),
-            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
-                className: "mb-4",
-                children: [
-                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("label", {
-                        htmlFor: "achievements",
-                        className: "block text-gray-700 font-semibold mb-2",
-                        children: "Achievements"
-                    }, void 0, false, {
-                        fileName: "src/admin/components/AdminStudentForm.js",
-                        lineNumber: 205,
-                        columnNumber: 9
+                        lineNumber: 207,
+                        columnNumber: 5
                     }, undefined),
-                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("input", {
-                        type: "text",
-                        id: "achievements",
-                        name: "achievements",
-                        value: formData.achievements,
-                        onChange: handleChange,
-                        placeholder: "Achievements (comma-separated)",
-                        className: "w-full px-3 py-2 border rounded-lg focus:outline-none focus:ring-2 focus:ring-ngo-primary"
-                    }, void 0, false, {
+                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                        className: "mb-4",
+                        children: [
+                            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("label", {
+                                htmlFor: "aboutUs",
+                                className: "block text-gray-700 font-semibold mb-2",
+                                children: "About the student"
+                            }, void 0, false, {
+                                fileName: "src/admin/components/AdminStudentForm.js",
+                                lineNumber: 225,
+                                columnNumber: 6
+                            }, undefined),
+                            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("textarea", {
+                                id: "aboutUs",
+                                name: "aboutUs",
+                                value: formData.aboutUs,
+                                onChange: handleChange,
+                                placeholder: "About the student",
+                                className: "w-full px-3 py-2 border rounded-lg focus:outline-none focus:ring-2 focus:ring-ngo-primary",
+                                rows: "4"
+                            }, void 0, false, {
+                                fileName: "src/admin/components/AdminStudentForm.js",
+                                lineNumber: 231,
+                                columnNumber: 6
+                            }, undefined)
+                        ]
+                    }, void 0, true, {
                         fileName: "src/admin/components/AdminStudentForm.js",
-                        lineNumber: 211,
-                        columnNumber: 9
-                    }, undefined)
-                ]
-            }, void 0, true, {
-                fileName: "src/admin/components/AdminStudentForm.js",
-                lineNumber: 204,
-                columnNumber: 7
-            }, undefined),
-            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
-                className: "mb-4",
-                children: [
-                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("label", {
-                        htmlFor: "aboutUs",
-                        className: "block text-gray-700 font-semibold mb-2",
-                        children: "About the student"
-                    }, void 0, false, {
-                        fileName: "src/admin/components/AdminStudentForm.js",
-                        lineNumber: 222,
-                        columnNumber: 9
+                        lineNumber: 224,
+                        columnNumber: 5
                     }, undefined),
-                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("textarea", {
-                        id: "aboutUs",
-                        name: "aboutUs",
-                        value: formData.aboutUs,
-                        onChange: handleChange,
-                        placeholder: "About the student",
-                        className: "w-full px-3 py-2 border rounded-lg focus:outline-none focus:ring-2 focus:ring-ngo-primary",
-                        rows: "4"
-                    }, void 0, false, {
+                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                        className: "mb-4",
+                        children: [
+                            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("label", {
+                                htmlFor: "image",
+                                className: "block text-gray-700 font-semibold mb-2",
+                                children: "Student Image"
+                            }, void 0, false, {
+                                fileName: "src/admin/components/AdminStudentForm.js",
+                                lineNumber: 242,
+                                columnNumber: 6
+                            }, undefined),
+                            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("input", {
+                                type: "file",
+                                id: "image",
+                                name: "image",
+                                onChange: handleChange,
+                                accept: "image/*",
+                                className: "w-full px-3 py-2 border rounded-lg focus:outline-none focus:ring-2 focus:ring-ngo-primary"
+                            }, void 0, false, {
+                                fileName: "src/admin/components/AdminStudentForm.js",
+                                lineNumber: 248,
+                                columnNumber: 6
+                            }, undefined)
+                        ]
+                    }, void 0, true, {
                         fileName: "src/admin/components/AdminStudentForm.js",
-                        lineNumber: 228,
-                        columnNumber: 9
-                    }, undefined)
-                ]
-            }, void 0, true, {
-                fileName: "src/admin/components/AdminStudentForm.js",
-                lineNumber: 221,
-                columnNumber: 7
-            }, undefined),
-            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
-                className: "mb-4",
-                children: [
-                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("label", {
-                        htmlFor: "image",
-                        className: "block text-gray-700 font-semibold mb-2",
-                        children: "Student Image"
-                    }, void 0, false, {
-                        fileName: "src/admin/components/AdminStudentForm.js",
-                        lineNumber: 239,
-                        columnNumber: 9
+                        lineNumber: 241,
+                        columnNumber: 5
                     }, undefined),
-                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("input", {
-                        type: "file",
-                        id: "image",
-                        name: "image",
-                        onChange: handleChange,
-                        accept: "image/*",
-                        className: "w-full px-3 py-2 border rounded-lg focus:outline-none focus:ring-2 focus:ring-ngo-primary"
-                    }, void 0, false, {
+                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                        className: "mb-4",
+                        children: [
+                            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("label", {
+                                htmlFor: "gallery",
+                                className: "block text-gray-700 font-semibold mb-2",
+                                children: "Gallery Images"
+                            }, void 0, false, {
+                                fileName: "src/admin/components/AdminStudentForm.js",
+                                lineNumber: 258,
+                                columnNumber: 6
+                            }, undefined),
+                            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("input", {
+                                type: "file",
+                                id: "gallery",
+                                name: "gallery",
+                                onChange: handleChange,
+                                accept: "image/*",
+                                multiple: true,
+                                className: "w-full px-3 py-2 border rounded-lg focus:outline-none focus:ring-2 focus:ring-ngo-primary"
+                            }, void 0, false, {
+                                fileName: "src/admin/components/AdminStudentForm.js",
+                                lineNumber: 264,
+                                columnNumber: 6
+                            }, undefined)
+                        ]
+                    }, void 0, true, {
                         fileName: "src/admin/components/AdminStudentForm.js",
-                        lineNumber: 245,
-                        columnNumber: 9
-                    }, undefined)
-                ]
-            }, void 0, true, {
-                fileName: "src/admin/components/AdminStudentForm.js",
-                lineNumber: 238,
-                columnNumber: 7
-            }, undefined),
-            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
-                className: "mb-4",
-                children: [
-                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("label", {
-                        htmlFor: "gallery",
-                        className: "block text-gray-700 font-semibold mb-2",
-                        children: "Gallery Images"
-                    }, void 0, false, {
-                        fileName: "src/admin/components/AdminStudentForm.js",
-                        lineNumber: 255,
-                        columnNumber: 9
+                        lineNumber: 257,
+                        columnNumber: 5
                     }, undefined),
-                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("input", {
-                        type: "file",
-                        id: "gallery",
-                        name: "gallery",
-                        onChange: handleChange,
-                        accept: "image/*",
-                        multiple: true,
-                        className: "w-full px-3 py-2 border rounded-lg focus:outline-none focus:ring-2 focus:ring-ngo-primary"
+                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("button", {
+                        type: "submit",
+                        className: "w-full bg-ngo-primary hover:bg-ngo-secondary text-white font-bold py-3 px-4 rounded-lg transition duration-300 mt-6",
+                        children: "Add Student"
                     }, void 0, false, {
                         fileName: "src/admin/components/AdminStudentForm.js",
-                        lineNumber: 261,
-                        columnNumber: 9
+                        lineNumber: 274,
+                        columnNumber: 5
+                    }, undefined),
+                    message && /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("p", {
+                        className: "mt-4 text-center font-semibold text-green-600",
+                        children: message
+                    }, void 0, false, {
+                        fileName: "src/admin/components/AdminStudentForm.js",
+                        lineNumber: 281,
+                        columnNumber: 6
+                    }, undefined),
+                    error && /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("p", {
+                        className: "mt-4 text-center font-semibold text-red-600",
+                        children: error
+                    }, void 0, false, {
+                        fileName: "src/admin/components/AdminStudentForm.js",
+                        lineNumber: 286,
+                        columnNumber: 6
                     }, undefined)
                 ]
             }, void 0, true, {
                 fileName: "src/admin/components/AdminStudentForm.js",
-                lineNumber: 254,
-                columnNumber: 7
-            }, undefined),
-            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("button", {
-                type: "submit",
-                className: "w-full bg-ngo-primary hover:bg-ngo-secondary text-white font-bold py-3 px-4 rounded-lg transition duration-300 mt-6",
-                children: "Add Student"
-            }, void 0, false, {
-                fileName: "src/admin/components/AdminStudentForm.js",
-                lineNumber: 271,
-                columnNumber: 7
-            }, undefined),
-            message && /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("p", {
-                className: "mt-4 text-center font-semibold text-green-600",
-                children: message
-            }, void 0, false, {
-                fileName: "src/admin/components/AdminStudentForm.js",
-                lineNumber: 278,
-                columnNumber: 9
-            }, undefined),
-            error && /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("p", {
-                className: "mt-4 text-center font-semibold text-red-600",
-                children: error
-            }, void 0, false, {
-                fileName: "src/admin/components/AdminStudentForm.js",
-                lineNumber: 283,
-                columnNumber: 9
+                lineNumber: 81,
+                columnNumber: 4
             }, undefined)
         ]
     }, void 0, true, {
         fileName: "src/admin/components/AdminStudentForm.js",
-        lineNumber: 78,
-        columnNumber: 5
+        lineNumber: 79,
+        columnNumber: 3
     }, undefined);
 };
-_s(AdminStudentForm, "oeFPkcKODji5lb7FrY7rp9t7pHI=", false, function() {
+_s(AdminStudentForm, "SH3GWdqZqvo+5Xf/3J1qfX/p3lw=", false, function() {
     return [
         (0, _adminContext.useAdmin),
         (0, _reactRouterDom.useNavigate)
@@ -47321,6 +47490,6 @@ $RefreshReg$(_c, "AdminStudentForm");
   window.$RefreshReg$ = prevRefreshReg;
   window.$RefreshSig$ = prevRefreshSig;
 }
-},{"react/jsx-dev-runtime":"iTorj","react":"21dqq","../contexts/AdminContext":"hL10n","react-router-dom":"9xmpe","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"km3Ru"}]},["9wh9R","1xC6H","2kQhy"], "2kQhy", "parcelRequire7604")
+},{"react/jsx-dev-runtime":"iTorj","react":"21dqq","../contexts/AdminContext":"hL10n","react-router-dom":"9xmpe","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"km3Ru","./AdminNavBar":"2bFcP"}]},["9wh9R","1xC6H","2kQhy"], "2kQhy", "parcelRequire7604")
 
 //# sourceMappingURL=index.7271efb6.js.map
